@@ -1,0 +1,19 @@
+.petition-container {
+    margin-top: 50vh;
+}
+
+.petition-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.petition {
+    width: calc(33.33% - 10px); 
+    margin-bottom: 20px; 
+}
+
+.petition img {
+    width: 200px;
+    height: auto;
+}

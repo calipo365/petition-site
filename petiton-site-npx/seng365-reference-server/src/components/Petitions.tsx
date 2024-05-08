@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React from 'react';
 import {Link, useNavigate, useParams} from 'react-router-dom';
+import './Petitions.css';
 
 const Petitions = () => {
     const navigate = useNavigate();
@@ -28,7 +29,11 @@ const Petitions = () => {
     const list_of_petitions = () => {
         return petitions.map((item: Petition) =>
             <div key={item.petitionId} className="petition">
-                <img src={`http://localhost:4941/api/v1/petitions/${item.petitionId}/image`} alt={item.title} onClick={() => navigate(`/petitions/${item.petitionId}`)} />
+                <img 
+                    src={`http://localhost:4941/api/v1/petitions/${item.petitionId}/image`}
+                    alt={item.title}
+                    onClick={() => navigate(`/petitions/${item.petitionId}`)}
+                />
                 <div className="petition-details">
                     <h4>{item.title}</h4>
                     <p>Date: {new Date(item.creationDate).toLocaleDateString()}</p>
@@ -42,10 +47,11 @@ const Petitions = () => {
 
     return (
         <div>
-            <h1>Petitions</h1>
-            {list_of_petitions()}
+            <h2>Petition Pledge</h2>
+            <div className="petition-container">
+                <div className="petition-grid">{list_of_petitions()}</div>
+            </div>
         </div>
-
     )
 }
 

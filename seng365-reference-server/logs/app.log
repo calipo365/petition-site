@@ -294,3 +294,140 @@
 2024-05-08 21:58:22:5822 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_16.png'[39m
 2024-05-08 21:58:22:5822 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_17.png'[39m
 2024-05-08 21:58:22:5822 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_18.png'[39m
+2024-05-08 21:59:01:591 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-08 21:59:01:591 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-08 21:59:01:591 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/image #####[39m
+2024-05-08 21:59:01:591 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/image #####[39m
+2024-05-08 21:59:01:591 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/image #####[39m
+2024-05-08 21:59:01:591 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/image #####[39m
+2024-05-08 21:59:01:591 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/image #####[39m
+2024-05-08 21:59:01:591 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_8.png'[39m
+2024-05-08 21:59:01:591 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_7.png'[39m
+2024-05-08 21:59:01:591 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_6.png'[39m
+2024-05-08 21:59:01:591 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_1.png'[39m
+2024-05-08 21:59:01:591 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_2.png'[39m
+2024-05-08 21:59:01:591 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/image #####[39m
+2024-05-08 21:59:01:591 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/image #####[39m
+2024-05-08 21:59:01:591 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/image #####[39m
+2024-05-08 21:59:01:591 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/image #####[39m
+2024-05-08 21:59:01:591 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/image #####[39m
+2024-05-08 21:59:01:591 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/image #####[39m
+2024-05-08 21:59:01:591 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_4.png'[39m
+2024-05-08 21:59:01:591 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_9.png'[39m
+2024-05-08 21:59:01:591 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_10.png'[39m
+2024-05-08 21:59:01:591 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_3.jpg'[39m
+2024-05-08 21:59:01:591 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_11.png'[39m
+2024-05-08 21:59:01:591 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/image #####[39m
+2024-05-08 21:59:01:591 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/image #####[39m
+2024-05-08 21:59:01:591 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/image #####[39m
+2024-05-08 21:59:01:591 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/image #####[39m
+2024-05-08 21:59:01:591 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/image #####[39m
+2024-05-08 21:59:01:591 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_12.png'[39m
+2024-05-08 21:59:01:591 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/image #####[39m
+2024-05-08 21:59:01:591 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_5.png'[39m
+2024-05-08 21:59:01:591 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_14.png'[39m
+2024-05-08 21:59:01:591 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_13.png'[39m
+2024-05-08 21:59:01:591 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_15.png'[39m
+2024-05-08 21:59:01:591 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_16.png'[39m
+2024-05-08 21:59:01:591 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/image #####[39m
+2024-05-08 21:59:01:591 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_17.png'[39m
+2024-05-08 21:59:01:591 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_18.png'[39m
+2024-05-08 21:59:22:5922 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-08 21:59:22:5922 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-08 21:59:22:5922 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/image #####[39m
+2024-05-08 21:59:22:5922 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/image #####[39m
+2024-05-08 21:59:22:5922 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/image #####[39m
+2024-05-08 21:59:22:5922 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/image #####[39m
+2024-05-08 21:59:22:5922 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/image #####[39m
+2024-05-08 21:59:22:5922 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_2.png'[39m
+2024-05-08 21:59:22:5922 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_1.png'[39m
+2024-05-08 21:59:22:5922 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_7.png'[39m
+2024-05-08 21:59:22:5922 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_8.png'[39m
+2024-05-08 21:59:22:5922 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_6.png'[39m
+2024-05-08 21:59:22:5922 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/image #####[39m
+2024-05-08 21:59:22:5922 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/image #####[39m
+2024-05-08 21:59:22:5922 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/image #####[39m
+2024-05-08 21:59:22:5922 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/image #####[39m
+2024-05-08 21:59:22:5922 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/image #####[39m
+2024-05-08 21:59:22:5922 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/image #####[39m
+2024-05-08 21:59:22:5922 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_4.png'[39m
+2024-05-08 21:59:22:5922 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_9.png'[39m
+2024-05-08 21:59:22:5922 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_10.png'[39m
+2024-05-08 21:59:22:5922 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_3.jpg'[39m
+2024-05-08 21:59:22:5922 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_11.png'[39m
+2024-05-08 21:59:22:5922 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/image #####[39m
+2024-05-08 21:59:22:5922 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/image #####[39m
+2024-05-08 21:59:22:5922 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/image #####[39m
+2024-05-08 21:59:22:5922 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/image #####[39m
+2024-05-08 21:59:22:5922 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/image #####[39m
+2024-05-08 21:59:22:5922 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_12.png'[39m
+2024-05-08 21:59:22:5922 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/image #####[39m
+2024-05-08 21:59:22:5922 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_5.png'[39m
+2024-05-08 21:59:22:5922 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_13.png'[39m
+2024-05-08 21:59:22:5922 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_14.png'[39m
+2024-05-08 21:59:22:5922 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_15.png'[39m
+2024-05-08 21:59:22:5922 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_16.png'[39m
+2024-05-08 21:59:22:5922 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/image #####[39m
+2024-05-08 21:59:22:5922 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_17.png'[39m
+2024-05-08 21:59:22:5922 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_18.png'[39m
+2024-05-08 22:00:42:042 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-08 22:00:42:042 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-08 22:00:42:042 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/image #####[39m
+2024-05-08 22:00:42:042 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/image #####[39m
+2024-05-08 22:00:42:042 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/image #####[39m
+2024-05-08 22:00:42:042 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/image #####[39m
+2024-05-08 22:00:42:042 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/image #####[39m
+2024-05-08 22:00:42:042 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_2.png'[39m
+2024-05-08 22:00:42:042 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_7.png'[39m
+2024-05-08 22:00:42:042 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_8.png'[39m
+2024-05-08 22:00:42:042 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_1.png'[39m
+2024-05-08 22:00:42:042 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_6.png'[39m
+2024-05-08 22:00:42:042 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/image #####[39m
+2024-05-08 22:00:42:042 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/image #####[39m
+2024-05-08 22:00:42:042 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/image #####[39m
+2024-05-08 22:00:42:042 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/image #####[39m
+2024-05-08 22:00:42:042 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/image #####[39m
+2024-05-08 22:00:42:042 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/image #####[39m
+2024-05-08 22:00:42:042 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_4.png'[39m
+2024-05-08 22:00:42:042 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_9.png'[39m
+2024-05-08 22:00:42:042 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_10.png'[39m
+2024-05-08 22:00:42:042 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_3.jpg'[39m
+2024-05-08 22:00:42:042 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_11.png'[39m
+2024-05-08 22:00:42:042 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/image #####[39m
+2024-05-08 22:00:42:042 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/image #####[39m
+2024-05-08 22:00:42:042 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/image #####[39m
+2024-05-08 22:00:42:042 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/image #####[39m
+2024-05-08 22:00:42:042 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/image #####[39m
+2024-05-08 22:00:42:042 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_12.png'[39m
+2024-05-08 22:00:42:042 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/image #####[39m
+2024-05-08 22:00:42:042 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_5.png'[39m
+2024-05-08 22:00:42:042 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_13.png'[39m
+2024-05-08 22:00:42:042 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_14.png'[39m
+2024-05-08 22:00:42:042 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_15.png'[39m
+2024-05-08 22:00:42:042 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_16.png'[39m
+2024-05-08 22:00:42:042 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/image #####[39m
+2024-05-08 22:00:42:042 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_17.png'[39m
+2024-05-08 22:01:52:152 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-08 22:01:52:152 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-08 22:01:52:152 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/image #####[39m
+2024-05-08 22:01:52:152 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/image #####[39m
+2024-05-08 22:01:52:152 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/image #####[39m
+2024-05-08 22:01:52:152 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/image #####[39m
+2024-05-08 22:01:52:152 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/image #####[39m
+2024-05-08 22:01:52:152 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/image #####[39m
+2024-05-08 22:01:52:152 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/image #####[39m
+2024-05-08 22:01:52:152 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/image #####[39m
+2024-05-08 22:01:52:152 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/image #####[39m
+2024-05-08 22:01:52:152 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/image #####[39m
+2024-05-08 22:01:52:152 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/image #####[39m
+2024-05-08 22:01:52:152 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/image #####[39m
+2024-05-08 22:01:52:152 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/image #####[39m
+2024-05-08 22:01:52:152 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/image #####[39m
+2024-05-08 22:01:52:152 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/image #####[39m
+2024-05-08 22:01:52:152 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/image #####[39m
+2024-05-08 22:01:52:152 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/image #####[39m
+2024-05-08 22:01:52:152 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/image #####[39m
+2024-05-08 22:02:36:236 [35mhttp[39m: [35m##### GET /api/v1/petitions/4 #####[39m
+2024-05-08 22:02:36:236 [35mhttp[39m: [35m##### GET /api/v1/petitions/4 #####[39m
+2024-05-08 22:02:38:238 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-08 22:02:38:238 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
