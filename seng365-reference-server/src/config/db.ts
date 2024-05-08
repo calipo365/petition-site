@@ -14,8 +14,7 @@ const connect = async (): Promise<void> => {
         host: process.env.SENG365_MYSQL_HOST,
         user: process.env.SENG365_MYSQL_USER,
         password: process.env.SENG365_MYSQL_PASSWORD,
-        database: process.env.SENG365_MYSQL_DATABASE,
-        port: parseInt(process.env.SENG365_MYSQL_PORT,10) || 3306
+        database: process.env.SENG365_MYSQL_DATABASE
     } );
     await state.pool.getConnection(); // Check connection
     Logger.info(`Successfully connected to database`)

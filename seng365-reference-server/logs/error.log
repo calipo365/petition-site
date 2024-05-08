@@ -1,1 +1,130 @@
 2024-05-08 15:57:18:5718 [31merror[39m: [31mUnable to connect to MySQL.[39m
+2024-05-08 20:51:17:5117 [31merror[39m: [31mread ECONNRESET[39m
+2024-05-08 20:51:17:5117 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-08 21:03:30:330 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_1.png'[39m
+2024-05-08 21:06:38:638 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_1.png'[39m
+2024-05-08 21:06:56:656 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_1.png'[39m
+2024-05-08 21:14:40:1440 [31merror[39m: [31mread ECONNRESET[39m
+2024-05-08 21:14:40:1440 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-08 21:27:10:2710 [31merror[39m: [31mread ECONNRESET[39m
+2024-05-08 21:27:10:2710 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-08 21:39:40:3940 [31merror[39m: [31mread ECONNRESET[39m
+2024-05-08 21:39:40:3940 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:104:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getOne (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:90:24)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:106:41[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-08 21:52:17:5217 [31merror[39m: [31mread ECONNRESET[39m
+2024-05-08 21:52:17:5217 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-08 21:57:54:5754 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_6.png'[39m
+2024-05-08 21:57:54:5754 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_7.png'[39m
+2024-05-08 21:57:54:5754 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_2.png'[39m
+2024-05-08 21:57:54:5754 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_1.png'[39m
+2024-05-08 21:57:54:5754 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_8.png'[39m
+2024-05-08 21:57:54:5754 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_4.png'[39m
+2024-05-08 21:57:54:5754 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_9.png'[39m
+2024-05-08 21:57:54:5754 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_10.png'[39m
+2024-05-08 21:57:54:5754 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_3.jpg'[39m
+2024-05-08 21:57:54:5754 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_11.png'[39m
+2024-05-08 21:57:54:5754 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_12.png'[39m
+2024-05-08 21:57:54:5754 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_5.png'[39m
+2024-05-08 21:57:54:5754 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_13.png'[39m
+2024-05-08 21:57:54:5754 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_14.png'[39m
+2024-05-08 21:57:54:5754 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_16.png'[39m
+2024-05-08 21:57:54:5754 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_15.png'[39m
+2024-05-08 21:57:54:5754 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_17.png'[39m
+2024-05-08 21:57:55:5755 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_18.png'[39m
+2024-05-08 21:58:22:5822 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_1.png'[39m
+2024-05-08 21:58:22:5822 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_2.png'[39m
+2024-05-08 21:58:22:5822 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_6.png'[39m
+2024-05-08 21:58:22:5822 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_4.png'[39m
+2024-05-08 21:58:22:5822 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_9.png'[39m
+2024-05-08 21:58:22:5822 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_10.png'[39m
+2024-05-08 21:58:22:5822 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_3.jpg'[39m
+2024-05-08 21:58:22:5822 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_11.png'[39m
+2024-05-08 21:58:22:5822 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_12.png'[39m
+2024-05-08 21:58:22:5822 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_5.png'[39m
+2024-05-08 21:58:22:5822 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_7.png'[39m
+2024-05-08 21:58:22:5822 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_8.png'[39m
+2024-05-08 21:58:22:5822 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_13.png'[39m
+2024-05-08 21:58:22:5822 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_14.png'[39m
+2024-05-08 21:58:22:5822 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_15.png'[39m
+2024-05-08 21:58:22:5822 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_16.png'[39m
+2024-05-08 21:58:22:5822 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_17.png'[39m
+2024-05-08 21:58:22:5822 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\petition_18.png'[39m

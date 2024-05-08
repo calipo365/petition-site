@@ -2,7 +2,7 @@ type Petition = {
     /**
      * Petitions id as defined by the database
      */
-    id: number, 
+    petitionId: number, 
     /**
      * Petitions title as defined by the user
      */
@@ -14,17 +14,21 @@ type Petition = {
     /**
      * Petitions creation date as defined by the database
      */
-    creation_date: Date, 
+    creationDate: Date, 
     /**
      * Petitions image filename as defined by the user
      */
     image_filename: string, 
     /**
-     * Petitions owner id as defined by the user
+     * Petitions owner first name as defined by the user
      */
-    owner_id: number, 
+    ownerFirstName: string,
+    /**
+     * Petitions owner last name as defined by the user
+     */
+    ownerLastName: string, 
     /**
      * Petitions catergory id as defined by the user
      */
-    category_id: number
+    categoryId: number
 }
