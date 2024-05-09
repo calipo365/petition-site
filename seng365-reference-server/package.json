@@ -13,6 +13,7 @@
     "author": "Morgan English",
     "license": "ISC",
     "dependencies": {
+        "@mui/material": "^5.15.17",
         "ajv": "^8.11.0",
         "bcrypt": "^5.1.1",
         "dotenv": "^16.0.3",

@@ -1,9 +1,9 @@
 .make-petition-container {
-    margin-top: 20vh;
+    margin-top: 15vh;
 }
 
 .petition-container {
-    margin-top: 30vh;
+    margin-top: 5vh;
 }
 
 .petition-grid {
@@ -33,3 +33,15 @@
     display: inline-block;
     font-size: 16px;
   }
+
+.filter-container {
+    margin-top: 125px;
+    margin-left: 1000px;
+}
+
+#categoryFilter {
+    width: 300px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 5px;
+}

@@ -2,7 +2,7 @@ type Category = {
     /**
      * Categorys id as defined by the database
      */
-    id: number,
+    categoryId: number,
     /**
      * Categorys name as defined by the user
      */
