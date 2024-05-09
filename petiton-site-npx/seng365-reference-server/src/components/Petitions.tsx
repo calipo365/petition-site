@@ -8,6 +8,7 @@ const Petitions = () => {
     const [petitions, setPetitions] = React.useState([]);
     const [errorFlag, setErrorFlag] = React.useState(false)
     const [errorMessage, setErrorMessage] = React.useState(" ")
+    const [title, setTitle]= React.useState("")
 
     React.useEffect(() => {
         getPetitions()
@@ -42,15 +43,50 @@ const Petitions = () => {
                 </div>
             </div>
         )
+    }
+
+    const addPetition = () => {
+
+    }
+
+    const updateTitleState = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setTitle(event.target.value);
     };
 
 
     return (
         <div>
             <h2>Petition Pledge</h2>
-            <div className="petition-container">
-                <div className="petition-grid">{list_of_petitions()}</div>
-            </div>
+            <div className="make-petition-container">
+                <button type="button" className="make-button" data-toggle="modal" data-target="#makePetitionModal">
+                        Make your own petition!
+                    </button>
+                        <div className='modal fade' id='makePetitionModal' tabIndex={-1} role="dialog"
+                            aria-labelledby="makePetitionModalLabel" aria-hiddden="true">
+                                <div className="modal-dialog" role="document">
+                                    <div className="modal-content">
+                                        <div className="modal-header">
+                                            <h5 className='modal-title' id='makePetitionModalLabel'>Make a petition</h5>
+                                            <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div className='modal-footer'>
+                                            <form onSubmit={addPetition}>
+                                                <input type='text' value={title} onChange={updateTitleState} />
+                                                <input type='submit' value='Submit' />
+                                            </form>
+                                            <button type='button' className='btn btn-secondary' data-dismiss='modal'>
+                                                Close
+                                            </button>
+                                </div>  
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                <div className="petition-container">
+                    <div className="petition-grid">{list_of_petitions()}</div>
+                </div>
         </div>
     )
 }
