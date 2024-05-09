@@ -30,5 +30,28 @@ type Petition = {
     /**
      * Petitions catergory id as defined by the user
      */
-    categoryId: number
+    categoryId: number,
+    /**
+     * Petitions support tiers as defined by the user
+     */
+    supportTiers: SupportTier[]
+}
+
+type SupportTier = {
+    /**
+     * Unique ID of the support tier
+     */
+    supportTierId: number,
+    /**
+     * Name or description of the support tier
+     */
+    title: string,
+    /**
+     * Name or description of the support tier
+     */
+    description: string,
+    /**
+     * The required cost of supporters to achieve this tier
+     */
+    cost: number
 }

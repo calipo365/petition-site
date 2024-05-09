@@ -5,7 +5,7 @@ import {Link, useNavigate, useParams} from 'react-router-dom';
 const Petition = () => {
     const {id} = useParams();
     const navigate = useNavigate();
-    const [petition, setPetition] = React.useState<Petition>({petitionId: 0, title: "", description: "", creationDate: new Date(), image_filename: "", ownerFirstName: "", ownerLastName: "", categoryId: 0})
+    const [petition, setPetition] = React.useState<Petition>({petitionId: 0, title: "", description: "", creationDate: new Date(), image_filename: "", ownerFirstName: "", ownerLastName: "", categoryId: 0, supportTiers: []})
     const [errorFlag, setErrorFlag] = React.useState(false)
     const [errorMessage, setErrorMessage] = React.useState("")
     const [title, setTitle] = React.useState("")

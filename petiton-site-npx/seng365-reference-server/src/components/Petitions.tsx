@@ -74,6 +74,16 @@ const Petitions = () => {
         )
     }
 
+    const getLowestCost = (supportTiers: SupportTier[]): string => {
+        if (supportTiers.length === 0) {
+            return "Not available";
+        }
+        const costs = supportTiers.map(tier => tier.cost);
+        const lowestCost = Math.min(...costs);
+        return `${lowestCost.toFixed(2)}`; 
+    };
+    
+
     const list_of_petitions = () => {
         const filteredPetitions = selectedCategories.length === 0 ? petitions : petitions.filter((item) => selectedCategories.includes(item.categoryId));
 
@@ -89,6 +99,7 @@ const Petitions = () => {
                     <p>Date: {new Date(item.creationDate).toLocaleDateString()}</p>
                     <p>Category: {getCategoryNameById(item.categoryId)}</p>
                     <p>Owner: {item.ownerFirstName} {item.ownerLastName}</p>
+                    <p>Cost:  ${getLowestCost(item.supportTiers)}</p>
                 </div>
             </div>
         ));
@@ -189,8 +200,8 @@ const Petitions = () => {
                     </FormControl>
                 </div>
                 <div className="petition-container">
-                        <div className="petition-grid">{list_of_petitions()}</div>
-                    </div>
+                    <div className="petition-grid">{list_of_petitions()}</div>
+                </div>
         </div>
     )
 }
