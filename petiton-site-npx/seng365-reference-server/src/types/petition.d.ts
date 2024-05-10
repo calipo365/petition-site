@@ -20,6 +20,10 @@ type Petition = {
      */
     image_filename: string, 
     /**
+     * Petitions owner id as defined by the user
+     */
+    ownerId: number, 
+    /**
      * Petitions owner first name as defined by the user
      */
     ownerFirstName: string,
@@ -34,7 +38,7 @@ type Petition = {
     /**
      * Petitions support tiers as defined by the user
      */
-    supportTiers: SupportTier[]
+    supportingCost: number
 }
 
 type SupportTier = {

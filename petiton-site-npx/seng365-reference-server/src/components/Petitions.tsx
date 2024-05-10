@@ -10,7 +10,8 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import Chip from '@mui/material/Chip';
-import { Menu } from '@mui/material';
+import Pagination from '@mui/material/Pagination';
+import Stack from '@mui/material/Stack';
 
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
@@ -32,12 +33,21 @@ function getStyles(name: string, selectedNames: readonly string[], theme: Theme)
     };
 }
 
+const costGroups = [
+    { label: "$0", min: 0, max: 0 },
+    { label: "$1 - $10", min: 1, max: 10 },
+    { label: "$20 - $30", min: 20, max: 30 },
+    { label: "$31 - $50", min: 31, max: 50 },
+    { label: "Over $50", min: 51, max: Infinity }
+];
+
 const Petitions = () => {
     const navigate = useNavigate();
     const theme = useTheme();
 
     const [selectedCategories, setSelectedCategories] = React.useState<number[]>([]);
     const [categories, setCategories] = React.useState<Category[]>([]);
+    const [selectedCostGroups, setSelectedCostGroups] = React.useState<string[]>([]);
     const [petitions, setPetitions] = React.useState<Petition[]>([]);
     const [errorFlag, setErrorFlag] = React.useState(false)
     const [errorMessage, setErrorMessage] = React.useState(" ")
@@ -74,18 +84,23 @@ const Petitions = () => {
         )
     }
 
-    const getLowestCost = (supportTiers: SupportTier[]): string => {
-        if (supportTiers.length === 0) {
-            return "Not available";
-        }
-        const costs = supportTiers.map(tier => tier.cost);
-        const lowestCost = Math.min(...costs);
-        return `${lowestCost.toFixed(2)}`; 
+    const filterByCostGroup = (lowestCost: number) => {
+        if (lowestCost < 0) return false;
+        return selectedCostGroups.some((groupLabel) => {
+            const group = costGroups.find((g) => g.label === groupLabel);
+            return group && lowestCost >= group.min && lowestCost <= group.max;
+        });
     };
-    
 
     const list_of_petitions = () => {
-        const filteredPetitions = selectedCategories.length === 0 ? petitions : petitions.filter((item) => selectedCategories.includes(item.categoryId));
+        const filteredPetitions = petitions
+        .filter((item) =>
+            selectedCategories.length === 0 || selectedCategories.includes(item.categoryId)
+        )
+        .filter((item) => {
+            const lowestCost = item.supportingCost;
+            return selectedCostGroups.length === 0 || filterByCostGroup(lowestCost);
+        });
 
         return filteredPetitions.map((item: Petition) => (
             <div key={item.petitionId} className="petition">
@@ -98,8 +113,13 @@ const Petitions = () => {
                     <h4>{item.title}</h4>
                     <p>Date: {new Date(item.creationDate).toLocaleDateString()}</p>
                     <p>Category: {getCategoryNameById(item.categoryId)}</p>
-                    <p>Owner: {item.ownerFirstName} {item.ownerLastName}</p>
-                    <p>Cost:  ${getLowestCost(item.supportTiers)}</p>
+                    <p>Owner: {item.ownerFirstName} {item.ownerLastName}
+                        <img 
+                            src={`http://localhost:4941/api/v1/users/${item.ownerId}/image`}
+                            alt={item.title} className='small-image'
+                        />
+                    </p>
+                    <p>Lowest Cost: ${item.supportingCost}</p>
                 </div>
             </div>
         ));
@@ -127,6 +147,13 @@ const Petitions = () => {
        const selectedStrings = typeof value === 'string' ? value.split(',') : value;
        const selectedNumbers = selectedStrings.map(Number);
        setSelectedCategories(selectedNumbers);
+    };
+
+    const handleCostGroupChange = (event: SelectChangeEvent<string[]>) => {
+        const {
+            target: { value },
+        } = event;
+        setSelectedCostGroups(typeof value === 'string' ? value.split(',') : value);
     };
 
     const getCategoryNameById = (categoryId: number) => {
@@ -198,6 +225,35 @@ const Petitions = () => {
                             ))}
                         </Select>
                     </FormControl>
+                    <FormControl sx={{ m: 1, width: 300 }}>
+                    <InputLabel id="cost-group-multiple-chip-label">Cost</InputLabel>
+                    <Select
+                        labelId='cost-group-multiple-chip-label'
+                        id='cost-group-multiple-chip'
+                        multiple
+                        value={selectedCostGroups}
+                        onChange={handleCostGroupChange}
+                        input={<OutlinedInput id='select-multiple-chip' label='Cost' />}
+                        renderValue={(selected) => (
+                            <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5 }}>
+                                {selected.map((value) => (
+                                    <Chip key={value} label={value} />
+                                ))}
+                            </Box>
+                        )}
+                        MenuProps={MenuProps}
+                    >
+                        {costGroups.map((group) => (
+                            <MenuItem
+                                key={group.label}
+                                value={group.label}
+                                style={getStyles(group.label, selectedCostGroups, theme)}
+                            >
+                                {group.label}
+                            </MenuItem>
+                        ))}
+                    </Select>
+                </FormControl>
                 </div>
                 <div className="petition-container">
                     <div className="petition-grid">{list_of_petitions()}</div>
