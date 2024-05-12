@@ -58,6 +58,7 @@ const Petitions = () => {
     const [categories, setCategories] = React.useState<Category[]>([]);
     const [sort, setSort] = React.useState("Petition name A-Z")
     const [selectedCostGroups, setSelectedCostGroups] = React.useState<string[]>([]);
+    const [searchTerm, setSearchTerm] = React.useState('');
     const [petitions, setPetitions] = React.useState<Petition[]>([]);
     const [errorFlag, setErrorFlag] = React.useState(false)
     const [errorMessage, setErrorMessage] = React.useState(" ")
@@ -113,6 +114,10 @@ const Petitions = () => {
         .filter((item) => {
             const lowestCost = item.supportingCost;
             return selectedCostGroups.length === 0 || filterByCostGroup(lowestCost);
+        })
+        .filter((item) => {
+            const searchLower = searchTerm.toLowerCase();
+            return item.title.toLowerCase().includes(searchLower) || (item.description && item.description.toLowerCase().includes(searchLower));
         });
 
         const sortedPetitions = filteredPetitions.sort((a, b) => {
@@ -328,6 +333,15 @@ const Petitions = () => {
                                     </MenuItem>
                                 ))}
                             </Select>
+                        </FormControl>
+                        <FormControl fullWidth sx={{ m: 1 }}>
+                            <InputLabel htmlFor='search-box'>Search Petitions</InputLabel>
+                            <OutlinedInput
+                                id="search-box"
+                                value={searchTerm}
+                                onChange={(e) => setSearchTerm(e.target.value)}
+                                label="Search Petitions"
+                            />
                         </FormControl>
                     </div>
                     <div className="petition-container">
