@@ -122,7 +122,7 @@ const Petition = () => {
                 <div style={{ color:"red" }}>
                     {errorMessage}
                 </div>
-                <Link to={"/petitions"}> Back to Petitions</Link>
+                <Link to={"/"}> Back to Petitions</Link>
             </div>
         )
     } else {
@@ -154,7 +154,7 @@ const Petition = () => {
                         {list_of_supporters()}
                     </body>
                 </body>
-                <Link to={'/petitions'}> Back to Petitions </Link>
+                <Link to={'/'}> Back to Petitions </Link>
             </div>
         )
     }

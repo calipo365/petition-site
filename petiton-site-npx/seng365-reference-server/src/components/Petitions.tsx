@@ -173,7 +173,7 @@ const Petitions = () => {
         } else { 
             axios.post('http://localhost:4941/api/v1/petitions', { "title": title }) 
             .then((response) => {
-                navigate('/petitions')
+                navigate('/')
             }, (error) => {
                 setErrorFlag(true)
                 setErrorMessage(error.toString())
@@ -230,6 +230,15 @@ const Petitions = () => {
         return (
             <div>
                 <h2>Petition Pledge</h2>
+                <button type="button">
+                    Sign in
+                </button>
+                <button type="button">
+                    Sign out
+                </button>
+                <button type="button">
+                    Register
+                </button>
                 <div className="make-petition-container">
                     <button type="button" className="make-button" data-toggle="modal" data-target="#makePetitionModal">
                             Make your own petition!
