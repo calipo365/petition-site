@@ -28,6 +28,14 @@ type Petition = {
      */
     ownerFirstName: string,
     /**
+     * Petitions number of supporters as defined by the user
+     */
+    numberOfSupporters: number,
+    /**
+     * Petitons money raised as defined by the user
+     */
+    moneyRaised: number,
+    /**
      * Petitions owner last name as defined by the user
      */
     ownerLastName: string, 
@@ -38,7 +46,11 @@ type Petition = {
     /**
      * Petitions support tiers as defined by the user
      */
-    supportingCost: number
+    supportingCost: number,
+    /**
+     * Petitions support tiers as defined by the user.
+     */
+    supportTiers: SupportTier[]
 }
 
 type SupportTier = {
