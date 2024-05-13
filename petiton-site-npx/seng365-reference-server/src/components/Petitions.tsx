@@ -230,13 +230,13 @@ const Petitions = () => {
         return (
             <div>
                 <h2>Petition Pledge</h2>
-                <button type="button">
+                <button type="button" onClick={() => navigate(`/users/login`)}>
                     Sign in
                 </button>
-                <button type="button">
+                <button type="button" onClick={() => navigate(`/users/logout`)}>
                     Sign out
                 </button>
-                <button type="button">
+                <button type="button" onClick={() => navigate(`/users/register`)}>
                     Register
                 </button>
                 <div className="make-petition-container">
