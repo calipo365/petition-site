@@ -1,8 +1,5 @@
 import axios from 'axios';
-import { error } from 'console';
-import { get } from 'http';
 import React from 'react';
-import ReactDOM from "react-dom";
 import {Link, useNavigate, useParams} from 'react-router-dom';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
@@ -26,12 +23,65 @@ const Register = () => {
     const [email, setEmail] = React.useState("")
     const [password, setPassword] = React.useState("")
 
+    const [firstNameError, setFirstNameError] = React.useState("")
+    const [lastNameError, setLastNameError] = React.useState("")
+    const [emailError, setEmailError] = React.useState("")
+    const [passwordError, setPasswordError] = React.useState("")
+
+    const [firstNameTouched, setFirstNameTouched] = React.useState(false);
+    const [lastNameTouched, setLastNameTouched] = React.useState(false);
+    const [emailTouched, setEmailTouched] = React.useState(false);
+    const [passwordTouched, setPasswordTouched] = React.useState(false);
+
+    const validateFirstName = () => {
+        if (firstName.trim() === "") {
+            setFirstNameError("First name is required.");
+        } else {
+            setFirstNameError("");
+        }
+    };
+
+    const validateLastName = () => {
+        if (lastName.trim() === "") {
+            setLastNameError("Last name is required.");
+        } else {
+            setLastNameError("");
+        }
+    };
+
+    const validateEmail = () => {
+        const emailRegex = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+        if (!emailRegex.test(email)) {
+            setEmailError("Invalid email format.");
+        } else {
+            setEmailError("");
+        }
+    };
+
+    const validatePassword = () => {
+        if (password.length < 6) {
+            setPasswordError("Password must be at least 6 characters.");
+        } else {
+            setPasswordError("");
+        }
+    };
+
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
+        validateFirstName();
+        validateLastName();
+        validateEmail();
+        validatePassword();
+       
+        if (firstNameError || lastNameError || emailError || passwordError) {
+            return;
+        }
+
         axios.post('http://localhost:4941/api/v1/users/register', { "firstName": firstName, "lastName": lastName, "email": email, "password": password })
             .then((response) => {
                 console.log("Registration successful", response.data)
                 axios.post('http://localhost:4941/api/v1/users/login', { "email": email, "password": password })
+                navigate("/")
             }, (error) => {
                 console.error('Registration failed', error.response)
                 setErrorFlag(true);
@@ -46,18 +96,6 @@ const Register = () => {
 
     const handleMouseDownPassword = (event: React.MouseEvent<HTMLButtonElement>) => {
         event.preventDefault();
-    }
-
-    const updateFirstNameState = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setFirstName(event.target.value);
-    }
-
-    const updateLastNameState = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setLastName(event.target.value);
-    }
-
-    const updateEmailState = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setEmail(event.target.value);
     }
 
     const updatePasswordState = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -113,27 +151,45 @@ const Register = () => {
                 >
                 <div>
                 <TextField
-                    id="outlined-multiline-flexible"
+                    error={firstNameTouched && !!firstNameError}
+                    id="outlined-first-name"
                     label="First Name"
                     multiline
                     maxRows={4}
-                    onChange={updateFirstNameState}
-                    />
+                    helperText={firstNameTouched ? firstNameError : ""}
+                    onChange={(e) => setFirstName(e.target.value)}
+                    onBlur={() => {
+                        setFirstNameTouched(true);
+                        validateFirstName();
+                    }}
+                />
                 <TextField
-                    id="outlined-multiline-flexible"
+                    error={lastNameTouched && !!lastNameError}
+                    id="outlined-last-name"
                     label="Last Name"
                     multiline
                     maxRows={4}
-                    onChange={updateLastNameState}
+                    helperText={lastNameTouched ? lastNameError : ""}
+                    onChange={(e) => setLastName(e.target.value)}
+                        onBlur={() => {
+                            setLastNameTouched(true);
+                            validateLastName();
+                        }}
                     />
                 </div>
                 <div>
                 <TextField
-                    id="outlined-multiline-flexible"
+                    error={emailTouched && !! emailError}
+                    id="outlined-email"
                     label="Email"
                     multiline
                     maxRows={4}
-                    onChange={updateEmailState}
+                    helperText={emailTouched ? emailError : ""}
+                    onChange={(e) => setEmail(e.target.value)}
+                        onBlur={() => {
+                            setEmailTouched(true);
+                            validateEmail();
+                        }}
                     />
                 </div>
                 <div>
@@ -159,6 +215,8 @@ const Register = () => {
                         />
                     </FormControl>
                 </div>
+                Pasword must be atleast 6 characters
+                <h1></h1>
                 <div>
                     <h6> Add a profile picture (optional): </h6>
                     <Stack alignItems="center">

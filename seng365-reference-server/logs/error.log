@@ -3126,3 +3126,23 @@
 [31m}[39m
 2024-05-13 16:32:25:3225 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
 2024-05-13 16:45:09:459 [31merror[39m: [31mwrite ECONNRESET[39m
+2024-05-14 10:37:05:375 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 10:37:06:376 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 10:37:15:3715 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 10:37:22:3722 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 10:37:22:3722 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 10:37:28:3728 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 10:37:41:3741 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 11:55:10:5510 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 11:55:25:5525 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 11:55:25:5525 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 12:00:37:037 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 12:00:37:037 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 12:00:49:049 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 12:00:49:049 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 12:01:06:16 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 12:01:06:16 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 12:02:13:213 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 12:02:48:248 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 12:14:09:149 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 12:14:09:149 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
