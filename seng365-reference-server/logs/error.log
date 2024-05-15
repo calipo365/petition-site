@@ -3126,6 +3126,7 @@
 [31m}[39m
 2024-05-13 16:32:25:3225 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
 2024-05-13 16:45:09:459 [31merror[39m: [31mwrite ECONNRESET[39m
+<<<<<<< HEAD
 2024-05-13 17:04:36:436 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
 2024-05-13 17:25:25:2525 [31merror[39m: [31mread ECONNRESET[39m
 2024-05-13 17:31:11:3111 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
@@ -3433,3 +3434,25 @@
 2024-05-13 21:54:09:549 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
 2024-05-13 22:01:11:111 [31merror[39m: [31mDuplicate entry 'nina.c.day4@gmail.com' for key 'unique_key'[39m
 2024-05-15 12:05:47:547 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+=======
+2024-05-14 10:37:05:375 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 10:37:06:376 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 10:37:15:3715 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 10:37:22:3722 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 10:37:22:3722 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 10:37:28:3728 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 10:37:41:3741 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 11:55:10:5510 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 11:55:25:5525 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 11:55:25:5525 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 12:00:37:037 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 12:00:37:037 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 12:00:49:049 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 12:00:49:049 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 12:01:06:16 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 12:01:06:16 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 12:02:13:213 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 12:02:48:248 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 12:14:09:149 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-14 12:14:09:149 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+>>>>>>> 10d2fbff1b455284847b2bd390dcd55d9023817c

@@ -181,6 +181,17 @@ const Petitions = () => {
         }
     }
 
+    const signOut = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        axios.post('http://localhost:4941/api/v1/logout')
+            .then((response) => {
+                navigate('/')
+            }, (error) => {
+                setErrorFlag(true);
+                setErrorMessage(error.toString())
+            });
+    }
+
     const handleCategoryChange = (event: SelectChangeEvent<string[]>) => {
        const {
         target: { value },
@@ -233,9 +244,31 @@ const Petitions = () => {
                 <button type="button" onClick={() => navigate(`/users/login`)}>
                     Sign in
                 </button>
-                <button type="button" onClick={() => navigate(`/users/logout`)}>
+                <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#signoutModal">
                     Sign out
                 </button>
+                    <div className='modal fade' id='signoutModal' tabIndex={-1} role="dialog"
+                        aria-labelledby="signoutModalLabel" aria-hiddden="true">
+                            <div className="modal-dialog" role="document">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <h5 className='modal-title' id='usignoutModalLabel'>Sign out</h5>
+                                        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div className='modal-footer'>
+                                        Are you sure you want to sign out?
+                                        <form onSubmit={(e) => signOut(e)}>
+                                            <input type="submit" value="Submit" />
+                                        </form>
+                                        <button type="button" className="btn btn-secondary" data-dismiss="modal">
+                                            Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 <button type="button" onClick={() => navigate(`/users/register`)}>
                     Register
                 </button>

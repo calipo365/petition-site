@@ -17,6 +17,13 @@ const Login = () => {
     const [password, setPassword] = React.useState("")
     const [showPassword, setShowPassword] = React.useState(false);
 
+    const [emailError, setEmailError] = React.useState("")
+    const [passwordError, setPasswordError] = React.useState("")
+
+    const [emailTouched, setEmailTouched] = React.useState(false);
+    const [passwordTouched, setPasswordTouched] = React.useState(false);
+
+
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         axios.post('http://localhost:4941/api/v1/users/login', { "email": email, "password": password })
@@ -31,10 +38,6 @@ const Login = () => {
         )
     }
 
-    const updateEmailState = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setEmail(event.target.value);
-    }
-
     const handleClickShowPassword = () => {
         setShowPassword(!showPassword);
     };
@@ -43,9 +46,22 @@ const Login = () => {
         event.preventDefault();
     }
 
-    const updatePasswordState = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setPassword(event.target.value);
-    }
+    const validateEmail = () => {
+        const emailRegex = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+        if (!emailRegex.test(email)) {
+            setEmailError("Invalid email format.");
+        } else {
+            setEmailError("");
+        }
+    };
+
+    const validatePassword = () => {
+        if (password.length < 6) {
+            setPasswordError("Password must be at least 6 characters.");
+        } else {
+            setPasswordError("");
+        }
+    };
 
     function VisiblityIcon(props: SvgIconProps) {
         return (
@@ -87,37 +103,43 @@ const Login = () => {
                     onSubmit={handleSubmit}
                 >
                 <div>
-                    <TextField
-                        id="outlined-multiline-flexible"
-                        label="Email"
-                        multiline
-                        maxRows={4}
-                        onChange={updateEmailState}
+                <TextField
+                    error={emailTouched && !! emailError}
+                    id="outlined-email"
+                    label="Email"
+                    multiline
+                    maxRows={4}
+                    helperText={emailTouched ? emailError : ""}
+                    onChange={(e) => setEmail(e.target.value)}
+                        onBlur={() => {
+                            setEmailTouched(true);
+                            validateEmail();
+                        }}
+                    />
+                </div>
+                <div>
+                    <FormControl sx={{ m: 1, width: '25ch' }} variant="outlined">
+                        <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
+                        <OutlinedInput
+                            id="outlined-adornment-password"
+                            type={showPassword ? 'text' : 'password'}
+                            onChange={(e) => setPassword(e.target.value)}
+                            endAdornment={
+                            <InputAdornment position="end">
+                                <IconButton
+                                    aria-label="toggle password visibility"
+                                    onClick={handleClickShowPassword}
+                                    onMouseDown={handleMouseDownPassword}
+                                    edge="end"
+                                    >
+                                {showPassword ? <VisiblityIcon /> : <VisiblityOffIcon />}
+                                </IconButton>
+                            </InputAdornment>
+                            }
+                            label="Password"
                         />
-                    </div>
-                    <div>
-                        <FormControl sx={{ m: 1, width: '25ch' }} variant="outlined">
-                            <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
-                            <OutlinedInput
-                                id="outlined-adornment-password"
-                                type={showPassword ? 'text' : 'password'}
-                                onChange={updatePasswordState}
-                                endAdornment={
-                                <InputAdornment position="end">
-                                    <IconButton
-                                        aria-label="toggle password visibility"
-                                        onClick={handleClickShowPassword}
-                                        onMouseDown={handleMouseDownPassword}
-                                        edge="end"
-                                        >
-                                    {showPassword ? <VisiblityIcon /> : <VisiblityOffIcon />}
-                                    </IconButton>
-                                </InputAdornment>
-                                }
-                                label="Password"
-                            />
-                        </FormControl>
-                    </div>
+                    </FormControl>
+                </div>
                     <Button type="submit" variant="outlined">Log in</Button>
                     </Box>
             </div>
