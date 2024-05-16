@@ -5,6 +5,7 @@ import Petitions from "./components/Petitions";
 import Petition from "./components/Petition";
 import Register from "./components/Register";
 import Login from "./components/Login";
+import Create from "./components/Create";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/petitions/:id" element={<Petition/>}/>
             <Route path="/users/register" element={<Register/>}/>
             <Route path="/users/login" element={<Login/>}/>
+            <Route path="/create" element={<Create/>}/>
           </Routes>
         </div>
       </Router>

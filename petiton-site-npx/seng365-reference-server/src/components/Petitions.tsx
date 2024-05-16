@@ -98,6 +98,8 @@ const Petitions = () => {
         )
     }
 
+
+
     const filterByCostGroup = (lowestCost: number) => {
         if (lowestCost < 0) return false;
         return selectedCostGroups.some((groupLabel) => {
@@ -273,32 +275,10 @@ const Petitions = () => {
                     Register
                 </button>
                 <div className="make-petition-container">
-                    <button type="button" className="make-button" data-toggle="modal" data-target="#makePetitionModal">
-                            Make your own petition!
-                        </button>
-                            <div className='modal fade' id='makePetitionModal' tabIndex={-1} role="dialog"
-                                aria-labelledby="makePetitionModalLabel" aria-hiddden="true">
-                                    <div className="modal-dialog" role="document">
-                                        <div className="modal-content">
-                                            <div className="modal-header">
-                                                <h5 className='modal-title' id='makePetitionModalLabel'>Make a petition</h5>
-                                                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div className='modal-footer'>
-                                                <form onSubmit={addPetition}>
-                                                    <input type='text' value={title} onChange={updateTitleState} />
-                                                    <input type='submit' value='Submit' />
-                                                </form>
-                                                <button type='button' className='btn btn-secondary' data-dismiss='modal'>
-                                                    Close
-                                                </button>
-                                            </div>  
-                                        </div>
-                                    </div>    
-                                </div>
-                            </div>
+                    <button type="button" onClick={() => navigate(`/create`)}>
+                        Make your own petition!
+                    </button>
+                </div>
                     <div className="filter-container">
                         <FormControl sx={{ m: 1, width: 300}}>
                             <InputLabel id="category-multiple-chip-label">Categories</InputLabel>
