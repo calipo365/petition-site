@@ -174,13 +174,17 @@ const Petitions = () => {
 
     const signOut = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        axios.post('http://localhost:4941/api/v1/logout')
-            .then((response) => {
-                navigate('/')
-            }, (error) => {
-                setErrorFlag(true);
-                setErrorMessage(error.toString())
-            });
+        axios.post('http://localhost:4941/api/v1/logout', {
+            headers: {
+                'X-Authorization': token
+            }
+        })
+        .then((response) => {
+            console.log("Response: ", response)
+        }, (error) => {
+            setErrorFlag(true);
+            setErrorMessage(error.toString())
+        });
     }
 
     const handleCategoryChange = (event: SelectChangeEvent<string[]>) => {

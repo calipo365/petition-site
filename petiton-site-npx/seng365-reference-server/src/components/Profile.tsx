@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React from 'react';
+import React, { useEffect } from 'react';
 import './User.css';
 import {Link, useNavigate, useParams} from 'react-router-dom';
 import Box from '@mui/material/Box';
@@ -12,7 +12,10 @@ const Profile = () => {
 
     const [errorFlag, setErrorFlag] = React.useState(false)
     const [errorMessage, setErrorMessage] = React.useState("")
+    const [categories, setCategories] = React.useState<Category[]>([]);
     const [user, setUser] = React.useState<sentUser>({firstName: '', lastName: '', email: ''})
+    const [petitions, setPetitions] = React.useState<Petition[]>([]);
+    const [myPetitions, setMyPetitions] = React.useState<Petition[]>([]);
     const [image, setImage] = React.useState("")
     const token = localStorage.getItem('authToken'); 
     const userId = localStorage.getItem('userId');
@@ -29,10 +32,18 @@ const Profile = () => {
     const [newPassword, setNewPassword] = React.useState("");
     const [passwordError, setPasswordError] = React.useState("");
 
-
     React.useEffect(() => {
         getUser()
+        getPetitions()
+        getCategories();
     }, [userId])
+
+    React.useEffect(() => {
+        if (petitions.length > 0) {
+            const filteredPetitions = petitions.filter(petition => petition.ownerId === Number(userId));
+            setMyPetitions(filteredPetitions);
+        }
+    }, [petitions, userId]);
 
     const getUser = () => {
         axios.get(`http://localhost:4941/api/v1/users/${userId}`, {headers: { 'X-Authorization': token }})
@@ -47,6 +58,56 @@ const Profile = () => {
                 setErrorFlag(true)
                 setErrorMessage(error.toString())
             })
+    }
+
+    const getCategories = () => {
+        axios.get('http://localhost:4941/api/v1/petitions/categories')
+            .then((response) => {
+                setErrorFlag(false)
+                setErrorMessage(" ")
+                setCategories(response.data);
+            }, (error) => {
+                setErrorFlag(true)
+                setErrorMessage(error.toString())
+            }
+        )
+    }
+
+    const getPetitions = () => {
+        axios.get('http://localhost:4941/api/v1/petitions')
+            .then((response) => {
+                setErrorFlag(false)
+                setErrorMessage("")
+                setPetitions(response.data)
+            }, (error) => {
+                setErrorFlag(true)
+                setErrorMessage(error.toString())
+            })
+    }
+
+    const list_of_my_petitions = () => {
+        console.log("My petitions:", myPetitions)
+        return myPetitions.map((item: Petition) => (
+            <div key={item.petitionId} className="petition">
+                <img 
+                    src={`http://localhost:4941/api/v1/petitions/${item.petitionId}/image`}
+                    alt={item.title}
+                    onClick={() => navigate(`/petitions/${item.petitionId}`)}
+                />
+                <div className="petition-details">
+                    <h4>{item.title}</h4>
+                    <p>Date: {new Date(item.creationDate).toLocaleDateString()}</p>
+                    <p>Category: {getCategoryNameById(item.categoryId)}</p>
+                    <p>Owner: {item.ownerFirstName} {item.ownerLastName}
+                        <img 
+                            src={`http://localhost:4941/api/v1/users/${item.ownerId}/image`}
+                            alt={item.title} className='small-image'
+                        />
+                    </p>
+                    <p>Lowest Cost: ${item.supportingCost}</p>
+                </div>
+            </div>
+        ));
     }
 
     const validateFirstName= () => {
@@ -93,14 +154,14 @@ const Profile = () => {
         }
     
         const UserData = {
-            'firstName': firstName,
-            'lastName': lastName,
-            'email': email
+            "firstName": firstName,
+            "lastName": lastName,
+            "email": email
         };
 
         console.log("Sending user data:", UserData);
     
-        axios.post('http://localhost:4941/api/v1/users', UserData, {
+        axios.patch('http://localhost:4941/api/v1/users/' + userId, UserData, {
             headers: {
                 'X-Authorization': token
             }
@@ -144,6 +205,11 @@ const Profile = () => {
             setPasswordError(error.response.data.error || "Failed to change password");
         });
     };
+
+    const getCategoryNameById = (categoryId: number) => {
+        const category = categories.find(cat => cat.categoryId === categoryId);
+        return category ? category.name : 'Unknown';
+    };
     
 
     if (errorFlag) {
@@ -186,19 +252,19 @@ const Profile = () => {
                     <TextField
                         id="outlined-controlled"
                         label="First Name"
-                        value={user.firstName}
+                        value={firstName}
                         onChange={(event) => setFirstName(event.target.value)}
                     />
                      <TextField
                         id="outlined-controlled"
                         label="Last Name"
-                        value={user.lastName}
+                        value={lastName}
                         onChange={(event) => setLastName(event.target.value)}
                     />
                     <TextField
                         id="outlined-controlled"
                         label="Email"
-                        value={user.email}
+                        value={email}
                         onChange={(event) => setEmail(event.target.value)}
                         />
                     </div>  
@@ -254,6 +320,10 @@ const Profile = () => {
                     src={`http://localhost:4941/api/v1/users/${userId}/image`}
                     alt='User profile'
                 />
+                </div>
+                <div>
+                    <h2>Your petitions</h2>
+                    {list_of_my_petitions()}
                 </div>
             </div>
             )
