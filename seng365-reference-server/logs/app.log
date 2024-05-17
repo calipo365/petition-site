@@ -7898,3 +7898,2026 @@
 2024-05-14 12:15:48:1548 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
 2024-05-14 12:15:48:1548 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
 >>>>>>> 10d2fbff1b455284847b2bd390dcd55d9023817c
+2024-05-17 11:30:52:3052 [32minfo[39m: [32mSuccessfully connected to database[39m
+2024-05-17 11:30:52:3052 [32minfo[39m: [32mListening on port: 4941[39m
+2024-05-17 11:31:17:3117 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 11:31:17:3117 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 11:31:17:3117 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 11:31:17:3117 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 11:31:17:3117 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/image #####[39m
+2024-05-17 11:31:17:3117 [35mhttp[39m: [35m##### GET /api/v1/users/3/image #####[39m
+2024-05-17 11:31:17:3117 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/image #####[39m
+2024-05-17 11:31:17:3117 [35mhttp[39m: [35m##### GET /api/v1/users/2/image #####[39m
+2024-05-17 11:31:17:3117 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/image #####[39m
+2024-05-17 11:31:17:3117 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-17 11:31:17:3117 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/image #####[39m
+2024-05-17 11:31:17:3117 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-17 11:31:17:3117 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/image #####[39m
+2024-05-17 11:31:17:3117 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/image #####[39m
+2024-05-17 11:31:17:3117 [35mhttp[39m: [35m##### GET /api/v1/users/5/image #####[39m
+2024-05-17 11:31:17:3117 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/image #####[39m
+2024-05-17 11:31:17:3117 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-17 11:31:17:3117 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/image #####[39m
+2024-05-17 11:31:17:3117 [35mhttp[39m: [35m##### GET /api/v1/users/9/image #####[39m
+2024-05-17 11:31:17:3117 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/image #####[39m
+2024-05-17 11:31:17:3117 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-17 11:31:17:3117 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-17 11:45:45:4545 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 11:45:45:4545 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 11:45:45:4545 [31merror[39m: [31mread ECONNRESET[39m
+2024-05-17 11:45:45:4545 [31merror[39m: [31mread ECONNRESET[39m
+2024-05-17 11:45:45:4545 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 11:45:45:4545 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 11:45:45:4545 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 11:45:45:4545 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 11:47:59:4759 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 11:47:59:4759 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 11:47:59:4759 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 11:47:59:4759 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 11:49:42:4942 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 11:49:42:4942 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 11:49:42:4942 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 11:49:42:4942 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 11:49:42:4942 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 11:49:42:4942 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 11:49:42:4942 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 11:49:42:4942 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 11:53:32:5332 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 11:53:32:5332 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 11:53:32:5332 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 11:53:32:5332 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 11:53:32:5332 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 11:53:32:5332 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 11:53:32:5332 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 11:53:32:5332 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 11:54:38:5438 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 11:54:38:5438 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 11:54:38:5438 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 11:54:38:5438 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 11:54:38:5438 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 11:54:38:5438 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 11:54:38:5438 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 11:54:38:5438 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 11:55:16:5516 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 11:55:16:5516 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 11:55:16:5516 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 11:55:16:5516 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 11:55:16:5516 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/image #####[39m
+2024-05-17 11:55:16:5516 [35mhttp[39m: [35m##### GET /api/v1/users/3/image #####[39m
+2024-05-17 11:55:16:5516 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/image #####[39m
+2024-05-17 11:55:16:5516 [35mhttp[39m: [35m##### GET /api/v1/users/2/image #####[39m
+2024-05-17 11:55:16:5516 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/image #####[39m
+2024-05-17 11:55:16:5516 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-17 11:55:16:5516 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/image #####[39m
+2024-05-17 11:55:16:5516 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-17 11:55:16:5516 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/image #####[39m
+2024-05-17 11:55:16:5516 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/image #####[39m
+2024-05-17 11:55:16:5516 [35mhttp[39m: [35m##### GET /api/v1/users/5/image #####[39m
+2024-05-17 11:55:16:5516 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/image #####[39m
+2024-05-17 11:55:16:5516 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-17 11:55:16:5516 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/image #####[39m
+2024-05-17 11:55:16:5516 [35mhttp[39m: [35m##### GET /api/v1/users/9/image #####[39m
+2024-05-17 11:55:16:5516 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/image #####[39m
+2024-05-17 11:55:16:5516 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-17 11:55:16:5516 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-17 11:55:22:5522 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 11:55:22:5522 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 11:55:22:5522 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 11:55:22:5522 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 11:56:19:5619 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 11:56:19:5619 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 11:56:21:5621 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 11:56:21:5621 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 11:56:21:5621 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 11:56:21:5621 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 11:56:21:5621 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-17 11:56:21:5621 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-17 11:56:21:5621 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-17 11:56:21:5621 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-17 11:56:21:5621 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-17 11:56:44:5644 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 11:56:44:5644 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 11:56:52:5652 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 11:56:52:5652 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 11:56:52:5652 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 11:56:52:5652 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 11:56:52:5652 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-17 11:56:52:5652 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-17 11:56:52:5652 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-17 11:56:52:5652 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-17 11:56:52:5652 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-17 11:56:53:5653 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 11:56:53:5653 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 11:56:53:5653 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 11:56:53:5653 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 11:56:54:5654 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 11:56:54:5654 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 11:56:54:5654 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 11:56:54:5654 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 11:56:54:5654 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-17 11:56:54:5654 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-17 11:56:54:5654 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-17 11:56:54:5654 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-17 11:56:54:5654 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-17 11:57:14:5714 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 11:57:14:5714 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 12:09:13:913 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 12:09:13:913 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 12:09:13:913 [31merror[39m: [31mread ECONNRESET[39m
+2024-05-17 12:09:13:913 [31merror[39m: [31mread ECONNRESET[39m
+2024-05-17 12:09:13:913 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 12:09:13:913 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 12:09:13:913 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 12:09:13:913 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 12:10:39:1039 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 12:10:39:1039 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 12:10:39:1039 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 12:10:39:1039 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 12:10:39:1039 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/image #####[39m
+2024-05-17 12:10:39:1039 [35mhttp[39m: [35m##### GET /api/v1/users/3/image #####[39m
+2024-05-17 12:10:39:1039 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/image #####[39m
+2024-05-17 12:10:39:1039 [35mhttp[39m: [35m##### GET /api/v1/users/2/image #####[39m
+2024-05-17 12:10:39:1039 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/image #####[39m
+2024-05-17 12:10:39:1039 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-17 12:10:39:1039 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/image #####[39m
+2024-05-17 12:10:39:1039 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-17 12:10:40:1040 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/image #####[39m
+2024-05-17 12:10:40:1040 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/image #####[39m
+2024-05-17 12:10:40:1040 [35mhttp[39m: [35m##### GET /api/v1/users/5/image #####[39m
+2024-05-17 12:10:40:1040 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/image #####[39m
+2024-05-17 12:10:40:1040 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-17 12:10:40:1040 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/image #####[39m
+2024-05-17 12:10:40:1040 [35mhttp[39m: [35m##### GET /api/v1/users/9/image #####[39m
+2024-05-17 12:10:40:1040 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-17 12:10:40:1040 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/image #####[39m
+2024-05-17 12:10:40:1040 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-17 12:10:40:1040 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 12:10:40:1040 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 12:10:40:1040 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 12:10:40:1040 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 12:12:04:124 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 12:12:04:124 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 12:13:00:130 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 12:13:00:130 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 12:14:51:1451 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 12:14:51:1451 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 12:19:25:1925 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 12:19:25:1925 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 12:19:25:1925 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 12:19:25:1925 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 12:22:19:2219 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 12:22:19:2219 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 12:22:28:2228 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 12:22:28:2228 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 12:22:28:2228 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 12:22:28:2228 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 12:25:57:2557 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 12:25:57:2557 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 12:25:57:2557 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 12:25:57:2557 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 12:33:12:3312 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 12:33:12:3312 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 12:33:12:3312 [31merror[39m: [31mread ECONNRESET[39m
+2024-05-17 12:33:12:3312 [31merror[39m: [31mread ECONNRESET[39m
+2024-05-17 12:33:12:3312 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 12:33:12:3312 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 12:33:12:3312 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 12:33:12:3312 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 12:34:20:3420 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 12:34:20:3420 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 12:34:20:3420 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 12:34:20:3420 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 12:34:20:3420 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 12:34:20:3420 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 12:34:20:3420 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 12:34:20:3420 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 12:34:25:3425 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 12:34:25:3425 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 12:34:25:3425 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 12:34:25:3425 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 12:34:25:3425 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 12:34:25:3425 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 12:34:25:3425 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 12:34:25:3425 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 12:34:43:3443 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 12:34:43:3443 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 12:34:43:3443 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 12:34:43:3443 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 12:34:43:3443 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 12:34:43:3443 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 12:34:43:3443 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 12:34:43:3443 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 12:36:23:3623 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 12:36:23:3623 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 12:36:23:3623 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 12:36:23:3623 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 12:36:23:3623 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 12:36:23:3623 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 12:36:23:3623 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 12:36:23:3623 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 12:36:49:3649 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 12:36:49:3649 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 12:36:49:3649 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 12:36:49:3649 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 12:36:49:3649 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/image #####[39m
+2024-05-17 12:36:49:3649 [35mhttp[39m: [35m##### GET /api/v1/users/3/image #####[39m
+2024-05-17 12:36:49:3649 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/image #####[39m
+2024-05-17 12:36:49:3649 [35mhttp[39m: [35m##### GET /api/v1/users/2/image #####[39m
+2024-05-17 12:36:49:3649 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/image #####[39m
+2024-05-17 12:36:49:3649 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-17 12:36:49:3649 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/image #####[39m
+2024-05-17 12:36:49:3649 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-17 12:36:49:3649 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/image #####[39m
+2024-05-17 12:36:49:3649 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/image #####[39m
+2024-05-17 12:36:49:3649 [35mhttp[39m: [35m##### GET /api/v1/users/5/image #####[39m
+2024-05-17 12:36:49:3649 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/image #####[39m
+2024-05-17 12:36:49:3649 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-17 12:36:49:3649 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/image #####[39m
+2024-05-17 12:36:49:3649 [35mhttp[39m: [35m##### GET /api/v1/users/9/image #####[39m
+2024-05-17 12:36:49:3649 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/image #####[39m
+2024-05-17 12:36:49:3649 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-17 12:36:49:3649 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-17 12:36:51:3651 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 12:36:51:3651 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 12:36:51:3651 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 12:36:51:3651 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 12:37:29:3729 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 12:37:29:3729 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 12:37:29:3729 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 12:37:29:3729 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:22:11:2211 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:22:11:2211 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:22:11:2211 [31merror[39m: [31mread ECONNRESET[39m
+2024-05-17 14:22:11:2211 [31merror[39m: [31mread ECONNRESET[39m
+2024-05-17 14:22:11:2211 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:22:11:2211 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:22:12:2212 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 14:22:12:2212 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 14:23:17:2317 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:23:17:2317 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:23:17:2317 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:23:17:2317 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:23:17:2317 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/image #####[39m
+2024-05-17 14:23:17:2317 [35mhttp[39m: [35m##### GET /api/v1/users/3/image #####[39m
+2024-05-17 14:23:17:2317 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/image #####[39m
+2024-05-17 14:23:17:2317 [35mhttp[39m: [35m##### GET /api/v1/users/2/image #####[39m
+2024-05-17 14:23:17:2317 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/image #####[39m
+2024-05-17 14:23:17:2317 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-17 14:23:17:2317 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/image #####[39m
+2024-05-17 14:23:17:2317 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-17 14:23:17:2317 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/image #####[39m
+2024-05-17 14:23:17:2317 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/image #####[39m
+2024-05-17 14:23:17:2317 [35mhttp[39m: [35m##### GET /api/v1/users/5/image #####[39m
+2024-05-17 14:23:17:2317 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/image #####[39m
+2024-05-17 14:23:17:2317 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-17 14:23:17:2317 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/image #####[39m
+2024-05-17 14:23:17:2317 [35mhttp[39m: [35m##### GET /api/v1/users/9/image #####[39m
+2024-05-17 14:23:17:2317 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/image #####[39m
+2024-05-17 14:23:17:2317 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-17 14:23:17:2317 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-17 14:23:24:2324 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:23:24:2324 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:23:24:2324 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:23:24:2324 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:35:44:3544 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:35:44:3544 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:35:44:3544 [31merror[39m: [31mread ECONNRESET[39m
+2024-05-17 14:35:44:3544 [31merror[39m: [31mread ECONNRESET[39m
+2024-05-17 14:35:44:3544 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:35:44:3544 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:35:44:3544 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 14:35:44:3544 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 14:36:18:3618 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:36:18:3618 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:36:18:3618 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:36:18:3618 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:36:18:3618 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/image #####[39m
+2024-05-17 14:36:18:3618 [35mhttp[39m: [35m##### GET /api/v1/users/3/image #####[39m
+2024-05-17 14:36:18:3618 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/image #####[39m
+2024-05-17 14:36:18:3618 [35mhttp[39m: [35m##### GET /api/v1/users/2/image #####[39m
+2024-05-17 14:36:18:3618 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/image #####[39m
+2024-05-17 14:36:18:3618 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-17 14:36:19:3619 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/image #####[39m
+2024-05-17 14:36:19:3619 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-17 14:36:19:3619 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/image #####[39m
+2024-05-17 14:36:19:3619 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/image #####[39m
+2024-05-17 14:36:19:3619 [35mhttp[39m: [35m##### GET /api/v1/users/5/image #####[39m
+2024-05-17 14:36:19:3619 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/image #####[39m
+2024-05-17 14:36:19:3619 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-17 14:36:19:3619 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/image #####[39m
+2024-05-17 14:36:19:3619 [35mhttp[39m: [35m##### GET /api/v1/users/9/image #####[39m
+2024-05-17 14:36:19:3619 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/image #####[39m
+2024-05-17 14:36:19:3619 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-17 14:36:19:3619 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-17 14:36:24:3624 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/image #####[39m
+2024-05-17 14:36:24:3624 [35mhttp[39m: [35m##### GET /api/v1/users/12/image #####[39m
+2024-05-17 14:36:24:3624 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/image #####[39m
+2024-05-17 14:36:24:3624 [35mhttp[39m: [35m##### GET /api/v1/users/18/image #####[39m
+2024-05-17 14:36:24:3624 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/image #####[39m
+2024-05-17 14:36:24:3624 [35mhttp[39m: [35m##### GET /api/v1/users/16/image #####[39m
+2024-05-17 14:36:24:3624 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/image #####[39m
+2024-05-17 14:36:24:3624 [35mhttp[39m: [35m##### GET /api/v1/users/1/image #####[39m
+2024-05-17 14:36:24:3624 [35mhttp[39m: [35m##### GET /api/v1/users/10/image #####[39m
+2024-05-17 14:36:24:3624 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/image #####[39m
+2024-05-17 14:36:24:3624 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/image #####[39m
+2024-05-17 14:36:24:3624 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/image #####[39m
+2024-05-17 14:36:24:3624 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/image #####[39m
+2024-05-17 14:36:24:3624 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/image #####[39m
+2024-05-17 14:36:24:3624 [35mhttp[39m: [35m##### GET /api/v1/users/17/image #####[39m
+2024-05-17 14:36:24:3624 [35mhttp[39m: [35m##### GET /api/v1/users/8/image #####[39m
+2024-05-17 14:36:28:3628 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/image #####[39m
+2024-05-17 14:36:28:3628 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/image #####[39m
+2024-05-17 14:36:28:3628 [35mhttp[39m: [35m##### GET /api/v1/users/2/image #####[39m
+2024-05-17 14:36:28:3628 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/image #####[39m
+2024-05-17 14:36:28:3628 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-17 14:36:28:3628 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/image #####[39m
+2024-05-17 14:36:28:3628 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/image #####[39m
+2024-05-17 14:36:28:3628 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-17 14:36:28:3628 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-17 14:36:28:3628 [35mhttp[39m: [35m##### GET /api/v1/users/9/image #####[39m
+2024-05-17 14:36:28:3628 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/image #####[39m
+2024-05-17 14:36:28:3628 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/image #####[39m
+2024-05-17 14:36:28:3628 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-17 14:36:28:3628 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-17 14:36:28:3628 [35mhttp[39m: [35m##### GET /api/v1/users/5/image #####[39m
+2024-05-17 14:36:28:3628 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/image #####[39m
+2024-05-17 14:36:28:3628 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/image #####[39m
+2024-05-17 14:36:30:3630 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:36:30:3630 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:36:30:3630 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:36:30:3630 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:36:31:3631 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:36:31:3631 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:36:31:3631 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:36:31:3631 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:36:31:3631 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-17 14:36:31:3631 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-17 14:36:31:3631 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-17 14:36:31:3631 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-17 14:36:31:3631 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-17 14:37:15:3715 [35mhttp[39m: [35m##### GET /api/v1/petitions/6 #####[39m
+2024-05-17 14:37:15:3715 [35mhttp[39m: [35m##### GET /favicon.ico #####[39m
+2024-05-17 14:37:29:3729 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supportTiers #####[39m
+2024-05-17 14:38:46:3846 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:38:46:3846 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:38:46:3846 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:38:46:3846 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:38:47:3847 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:38:47:3847 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:38:47:3847 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:38:47:3847 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:38:47:3847 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-17 14:38:47:3847 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-17 14:38:47:3847 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-17 14:38:47:3847 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-17 14:38:48:3848 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-17 14:44:27:4427 [35mhttp[39m: [35m##### POST /api/v1/logout #####[39m
+2024-05-17 14:44:34:4434 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:44:34:4434 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:44:34:4434 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:44:34:4434 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:44:34:4434 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/image #####[39m
+2024-05-17 14:44:34:4434 [35mhttp[39m: [35m##### GET /api/v1/users/3/image #####[39m
+2024-05-17 14:44:34:4434 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/image #####[39m
+2024-05-17 14:44:34:4434 [35mhttp[39m: [35m##### GET /api/v1/users/2/image #####[39m
+2024-05-17 14:44:34:4434 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/image #####[39m
+2024-05-17 14:44:34:4434 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-17 14:44:34:4434 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/image #####[39m
+2024-05-17 14:44:34:4434 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/image #####[39m
+2024-05-17 14:44:34:4434 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/image #####[39m
+2024-05-17 14:44:34:4434 [35mhttp[39m: [35m##### GET /api/v1/users/5/image #####[39m
+2024-05-17 14:44:34:4434 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/image #####[39m
+2024-05-17 14:44:34:4434 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/image #####[39m
+2024-05-17 14:44:34:4434 [35mhttp[39m: [35m##### GET /api/v1/users/9/image #####[39m
+2024-05-17 14:44:34:4434 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/image #####[39m
+2024-05-17 14:44:34:4434 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-17 14:44:34:4434 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-17 14:44:34:4434 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-17 14:44:34:4434 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-17 14:44:48:4448 [35mhttp[39m: [35m##### OPTIONS /api/v1/users/login #####[39m
+2024-05-17 14:44:48:4448 [35mhttp[39m: [35m##### POST /api/v1/users/login #####[39m
+2024-05-17 14:44:48:4448 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:44:48:4448 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:44:48:4448 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:44:48:4448 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:44:48:4448 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-17 14:44:48:4448 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-17 14:44:48:4448 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-17 14:44:48:4448 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-17 14:44:48:4448 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-17 14:44:50:4450 [35mhttp[39m: [35m##### POST /api/v1/logout #####[39m
+2024-05-17 14:44:55:4455 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:44:55:4455 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:44:55:4455 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:44:55:4455 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:44:55:4455 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-17 14:44:55:4455 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-17 14:44:55:4455 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-17 14:44:55:4455 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-17 14:44:55:4455 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-17 14:44:56:4456 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:44:56:4456 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:44:56:4456 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:44:56:4456 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:44:56:4456 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/image #####[39m
+2024-05-17 14:44:56:4456 [35mhttp[39m: [35m##### GET /api/v1/users/3/image #####[39m
+2024-05-17 14:44:56:4456 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/image #####[39m
+2024-05-17 14:44:56:4456 [35mhttp[39m: [35m##### GET /api/v1/users/2/image #####[39m
+2024-05-17 14:44:56:4456 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/image #####[39m
+2024-05-17 14:44:56:4456 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-17 14:44:56:4456 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/image #####[39m
+2024-05-17 14:44:56:4456 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/image #####[39m
+2024-05-17 14:44:56:4456 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/image #####[39m
+2024-05-17 14:44:56:4456 [35mhttp[39m: [35m##### GET /api/v1/users/5/image #####[39m
+2024-05-17 14:44:56:4456 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/image #####[39m
+2024-05-17 14:44:56:4456 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/image #####[39m
+2024-05-17 14:44:56:4456 [35mhttp[39m: [35m##### GET /api/v1/users/9/image #####[39m
+2024-05-17 14:44:56:4456 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/image #####[39m
+2024-05-17 14:44:56:4456 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-17 14:44:56:4456 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-17 14:44:56:4456 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-17 14:44:56:4456 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-17 14:44:57:4457 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:44:57:4457 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:44:57:4457 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:44:57:4457 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:45:02:452 [35mhttp[39m: [35m##### OPTIONS /api/v1/petitions #####[39m
+2024-05-17 14:45:02:452 [35mhttp[39m: [35m##### POST /api/v1/petitions #####[39m
+2024-05-17 14:45:05:455 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:45:05:455 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:45:05:455 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:45:05:455 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:45:05:455 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/image #####[39m
+2024-05-17 14:45:05:455 [35mhttp[39m: [35m##### GET /api/v1/users/3/image #####[39m
+2024-05-17 14:45:05:455 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/image #####[39m
+2024-05-17 14:45:05:455 [35mhttp[39m: [35m##### GET /api/v1/users/2/image #####[39m
+2024-05-17 14:45:05:455 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/image #####[39m
+2024-05-17 14:45:05:455 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-17 14:45:05:455 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/image #####[39m
+2024-05-17 14:45:05:455 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-17 14:45:05:455 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/image #####[39m
+2024-05-17 14:45:05:455 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/image #####[39m
+2024-05-17 14:45:05:455 [35mhttp[39m: [35m##### GET /api/v1/users/5/image #####[39m
+2024-05-17 14:45:05:455 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/image #####[39m
+2024-05-17 14:45:05:455 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-17 14:45:05:455 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/image #####[39m
+2024-05-17 14:45:05:455 [35mhttp[39m: [35m##### GET /api/v1/users/9/image #####[39m
+2024-05-17 14:45:05:455 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/image #####[39m
+2024-05-17 14:45:05:455 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-17 14:45:05:455 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-17 14:46:04:464 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:46:04:464 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:47:57:4757 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:47:57:4757 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:47:57:4757 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-17 14:47:57:4757 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-17 14:47:57:4757 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-17 14:47:57:4757 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-17 14:47:57:4757 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-17 14:48:03:483 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:48:03:483 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:48:11:4811 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:48:11:4811 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:48:17:4817 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:48:17:4817 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:48:20:4820 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:48:20:4820 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:48:23:4823 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:48:23:4823 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:48:23:4823 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:48:23:4823 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:48:23:4823 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/image #####[39m
+2024-05-17 14:48:23:4823 [35mhttp[39m: [35m##### GET /api/v1/users/3/image #####[39m
+2024-05-17 14:48:23:4823 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/image #####[39m
+2024-05-17 14:48:23:4823 [35mhttp[39m: [35m##### GET /api/v1/users/2/image #####[39m
+2024-05-17 14:48:23:4823 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/image #####[39m
+2024-05-17 14:48:23:4823 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/image #####[39m
+2024-05-17 14:48:23:4823 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/image #####[39m
+2024-05-17 14:48:23:4823 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/image #####[39m
+2024-05-17 14:48:23:4823 [35mhttp[39m: [35m##### GET /api/v1/users/5/image #####[39m
+2024-05-17 14:48:23:4823 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/image #####[39m
+2024-05-17 14:48:23:4823 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/image #####[39m
+2024-05-17 14:48:23:4823 [35mhttp[39m: [35m##### GET /api/v1/users/9/image #####[39m
+2024-05-17 14:48:23:4823 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/image #####[39m
+2024-05-17 14:48:23:4823 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-17 14:48:23:4823 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-17 14:48:23:4823 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-17 14:48:23:4823 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-17 14:48:23:4823 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-17 14:48:34:4834 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:48:34:4834 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:48:39:4839 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:48:39:4839 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:48:39:4839 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:48:39:4839 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:48:39:4839 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-17 14:48:39:4839 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-17 14:48:39:4839 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-17 14:48:39:4839 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-17 14:48:39:4839 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-17 14:48:59:4859 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:48:59:4859 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:49:13:4913 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:49:13:4913 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:49:15:4915 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:49:15:4915 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:49:15:4915 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:49:15:4915 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:49:15:4915 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-17 14:49:15:4915 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-17 14:49:15:4915 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-17 14:49:15:4915 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-17 14:49:15:4915 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-17 14:50:29:5029 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:50:36:5036 [35mhttp[39m: [35m##### GET /api/v1/users/login #####[39m
+2024-05-17 14:51:53:5153 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:51:53:5153 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:51:53:5153 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:51:53:5153 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:51:53:5153 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-17 14:51:53:5153 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-17 14:51:53:5153 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-17 14:51:53:5153 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-17 14:51:53:5153 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-17 14:51:55:5155 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 14:51:55:5155 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:51:55:5155 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 14:51:55:5155 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:17:34:1734 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:17:34:1734 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:17:34:1734 [31merror[39m: [31mread ECONNRESET[39m
+2024-05-17 15:17:34:1734 [31merror[39m: [31mread ECONNRESET[39m
+2024-05-17 15:17:34:1734 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:17:34:1734 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:17:34:1734 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:17:34:1734 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:17:59:1759 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:17:59:1759 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:17:59:1759 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:17:59:1759 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:18:01:181 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:18:01:181 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:18:01:181 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:18:01:181 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:18:01:181 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:18:01:181 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:18:01:181 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:18:01:181 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:25:19:2519 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:25:19:2519 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:25:19:2519 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:25:19:2519 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:26:02:262 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:26:02:262 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:26:02:262 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:26:02:262 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:28:38:2838 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:28:38:2838 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:28:38:2838 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:28:38:2838 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:28:45:2845 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:28:45:2845 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:28:45:2845 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:28:45:2845 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:28:55:2855 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:28:55:2855 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:28:55:2855 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:28:55:2855 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:29:07:297 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:29:07:297 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:29:07:297 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:29:07:297 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:31:02:312 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:31:02:312 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:31:02:312 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:31:02:312 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:32:07:327 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:32:07:327 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:32:08:328 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:32:08:328 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:32:24:3224 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:32:24:3224 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:32:24:3224 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:32:24:3224 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:32:28:3228 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:32:28:3228 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:32:28:3228 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:32:28:3228 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:32:28:3228 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:32:28:3228 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:32:28:3228 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:32:28:3228 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:37:40:3740 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:37:40:3740 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:37:40:3740 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:37:40:3740 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:39:04:394 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:39:04:394 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:39:04:394 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:39:04:394 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:39:22:3922 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:39:22:3922 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:39:22:3922 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:39:22:3922 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:39:48:3948 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:39:48:3948 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:39:48:3948 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:39:48:3948 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:39:48:3948 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:39:48:3948 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:39:48:3948 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:83:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.viewAll (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:14:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:86:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:28:58) {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:39:48:3948 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:159:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getCategories (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:157:29)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:301:43[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-17 15:40:13:4013 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:40:13:4013 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:40:13:4013 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:40:13:4013 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:40:13:4013 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/image #####[39m
+2024-05-17 15:40:13:4013 [35mhttp[39m: [35m##### GET /api/v1/users/3/image #####[39m
+2024-05-17 15:40:13:4013 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/image #####[39m
+2024-05-17 15:40:13:4013 [35mhttp[39m: [35m##### GET /api/v1/users/2/image #####[39m
+2024-05-17 15:40:13:4013 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/image #####[39m
+2024-05-17 15:40:13:4013 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-17 15:40:13:4013 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/image #####[39m
+2024-05-17 15:40:13:4013 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-17 15:40:13:4013 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/image #####[39m
+2024-05-17 15:40:13:4013 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/image #####[39m
+2024-05-17 15:40:13:4013 [35mhttp[39m: [35m##### GET /api/v1/users/5/image #####[39m
+2024-05-17 15:40:14:4014 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/image #####[39m
+2024-05-17 15:40:14:4014 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-17 15:40:14:4014 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/image #####[39m
+2024-05-17 15:40:14:4014 [35mhttp[39m: [35m##### GET /api/v1/users/9/image #####[39m
+2024-05-17 15:40:14:4014 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/image #####[39m
+2024-05-17 15:40:14:4014 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-17 15:40:14:4014 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-17 15:40:15:4015 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:40:15:4015 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:40:15:4015 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:40:16:4016 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:40:40:4040 [35mhttp[39m: [35m##### OPTIONS /api/v1/petitions #####[39m
+2024-05-17 15:40:40:4040 [35mhttp[39m: [35m##### POST /api/v1/petitions #####[39m
+2024-05-17 15:41:39:4139 [35mhttp[39m: [35m##### OPTIONS /api/v1/petitions #####[39m
+2024-05-17 15:47:23:4723 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:47:23:4723 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:47:23:4723 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:47:23:4723 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:47:23:4723 [35mhttp[39m: [35m##### OPTIONS /api/v1/petitions #####[39m
+2024-05-17 15:47:23:4723 [35mhttp[39m: [35m##### OPTIONS /api/v1/petitions #####[39m
+2024-05-17 15:47:23:4723 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:47:23:4723 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:47:23:4723 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:47:23:4723 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:47:23:4723 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:47:23:4723 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:47:23:4723 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:47:23:4723 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:47:23:4723 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:47:23:4723 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:47:23:4723 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/image #####[39m
+2024-05-17 15:47:23:4723 [35mhttp[39m: [35m##### GET /api/v1/users/3/image #####[39m
+2024-05-17 15:47:23:4723 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/image #####[39m
+2024-05-17 15:47:23:4723 [35mhttp[39m: [35m##### GET /api/v1/users/2/image #####[39m
+2024-05-17 15:47:23:4723 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/image #####[39m
+2024-05-17 15:47:23:4723 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-17 15:47:23:4723 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/image #####[39m
+2024-05-17 15:47:23:4723 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-17 15:47:23:4723 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/image #####[39m
+2024-05-17 15:47:23:4723 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/image #####[39m
+2024-05-17 15:47:23:4723 [35mhttp[39m: [35m##### GET /api/v1/users/5/image #####[39m
+2024-05-17 15:47:23:4723 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/image #####[39m
+2024-05-17 15:47:23:4723 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-17 15:47:23:4723 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/image #####[39m
+2024-05-17 15:47:23:4723 [35mhttp[39m: [35m##### GET /api/v1/users/9/image #####[39m
+2024-05-17 15:47:23:4723 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/image #####[39m
+2024-05-17 15:47:23:4723 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-17 15:47:23:4723 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-17 15:47:30:4730 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:47:30:4730 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:47:31:4731 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:47:31:4731 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:47:40:4740 [35mhttp[39m: [35m##### OPTIONS /api/v1/petitions #####[39m
+2024-05-17 15:47:40:4740 [35mhttp[39m: [35m##### POST /api/v1/petitions #####[39m
+2024-05-17 15:48:07:487 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:48:07:487 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:48:07:487 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:48:07:487 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:48:15:4815 [35mhttp[39m: [35m##### OPTIONS /api/v1/petitions #####[39m
+2024-05-17 15:48:15:4815 [35mhttp[39m: [35m##### POST /api/v1/petitions #####[39m
+2024-05-17 15:49:04:494 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:49:04:494 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:49:04:494 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:49:04:494 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:49:04:494 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/image #####[39m
+2024-05-17 15:49:04:494 [35mhttp[39m: [35m##### GET /api/v1/users/3/image #####[39m
+2024-05-17 15:49:04:494 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/image #####[39m
+2024-05-17 15:49:04:494 [35mhttp[39m: [35m##### GET /api/v1/users/2/image #####[39m
+2024-05-17 15:49:04:494 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/image #####[39m
+2024-05-17 15:49:04:494 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-17 15:49:04:494 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/image #####[39m
+2024-05-17 15:49:04:494 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-17 15:49:04:494 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/image #####[39m
+2024-05-17 15:49:04:494 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/image #####[39m
+2024-05-17 15:49:04:494 [35mhttp[39m: [35m##### GET /api/v1/users/5/image #####[39m
+2024-05-17 15:49:04:494 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/image #####[39m
+2024-05-17 15:49:04:494 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-17 15:49:04:494 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/image #####[39m
+2024-05-17 15:49:04:494 [35mhttp[39m: [35m##### GET /api/v1/users/9/image #####[39m
+2024-05-17 15:49:04:494 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/image #####[39m
+2024-05-17 15:49:04:494 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-17 15:49:04:494 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-17 15:49:14:4914 [35mhttp[39m: [35m##### OPTIONS /api/v1/users/login #####[39m
+2024-05-17 15:49:14:4914 [35mhttp[39m: [35m##### POST /api/v1/users/login #####[39m
+2024-05-17 15:49:14:4914 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:49:14:4914 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:49:14:4914 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:49:14:4914 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:49:14:4914 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-17 15:49:14:4914 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-17 15:49:14:4914 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-17 15:49:14:4914 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-17 15:49:14:4914 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-17 15:49:16:4916 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:49:16:4916 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:49:16:4916 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-17 15:49:16:4916 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-17 15:49:23:4923 [35mhttp[39m: [35m##### OPTIONS /api/v1/petitions #####[39m
+2024-05-17 15:49:23:4923 [35mhttp[39m: [35m##### POST /api/v1/petitions #####[39m

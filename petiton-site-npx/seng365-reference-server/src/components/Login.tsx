@@ -28,15 +28,18 @@ const Login = () => {
         event.preventDefault();
         axios.post('http://localhost:4941/api/v1/users/login', { "email": email, "password": password })
             .then((response) => {
-                console.log("Logged in successfully", response.data)
-                navigate('/')
+                console.log("Logged in successfully", response.data);
+                localStorage.setItem('authToken', response.data.token);
+                localStorage.setItem('userId', response.data.userId);
+                navigate('/');
             }, (error) => {
-                console.error('Log in failed', error.response)
+                console.error('Log in failed', error.response);
                 setErrorFlag(true);
-                setErrorMessage(error.response.data.error || "Log in failed")
+                setErrorMessage(error.response.data.error || "Log in failed");
             }
-        )
-    }
+        );
+    };
+    
 
     const handleClickShowPassword = () => {
         setShowPassword(!showPassword);

@@ -37,6 +37,7 @@ function getStyles(name: string, selectedNames: readonly string[], theme: Theme)
 const Create = () => {
     const navigate = useNavigate();
     const theme = useTheme();
+    const creationDate = new Date()
 
     const [errorFlag, setErrorFlag] = React.useState(false)
     const [errorMessage, setErrorMessage] = React.useState(" ")
@@ -46,7 +47,8 @@ const Create = () => {
     const [title, setTitle]= React.useState("")
     const [description, setDescription] = React.useState("")
     const [categoryId, setCategoryId] = React.useState("")
-    const [supportTier, setSupportTier] = React.useState("")
+    const [numSupportTiers, setNumSupportTiers] = React.useState(0);
+    const [supportTiers, setSupportTiers] = React.useState<Array<{ title: string; description: string; cost: number }>>([]);
     const [image, setImage] = React.useState("")
 
     const [titleError, setTitleError]= React.useState("")
@@ -102,9 +104,9 @@ const Create = () => {
 
     const validateDescription = () => {
         if (description.trim() === "") {
-            setDescription("Description is required.");
+            setDescriptionError("Description is required.");
         } else {
-            setDescription("");
+            setDescriptionError("");
         }
     };
 
@@ -113,21 +115,45 @@ const Create = () => {
         validateTitle();
         validateDescription();
        
-        if (titleError || description ) {
+        if (titleError || descriptionError) {
             return;
         }
+    
+        const token = localStorage.getItem('authToken'); 
+        const userId = localStorage.getItem('userId');
+    
+        if (!token) {
+            setErrorFlag(true);
+            setErrorMessage("User is not authenticated.");
+            return;
+        }
+    
+        const petitionData = {
+            'ownerId': Number(userId),
+            'title': title,
+            'description': description,
+            'categoryId': selectedCategory,
+            'creationDate': creationDate.toISOString(),
+            'supportTiers': supportTiers
+        };
 
-        axios.post('http://localhost:4941/api/v1/petitions', { "title": title, "description": description, "categoryId " : selectedCategory })
-            .then((response) => {
-                console.log("Petition posted successfully", response.data)
-                navigate("/")
-            }, (error) => {
-                console.error('Petition failed to post', error.response)
-                setErrorFlag(true);
-                setErrorMessage(error.response.data.error || "Failed to register")
+        console.log("Sending petition data:", petitionData);
+    
+        axios.post('http://localhost:4941/api/v1/petitions', petitionData, {
+            headers: {
+                'X-Authorization': token
             }
-        )
+        })
+        .then((response) => {
+            console.log("Petition posted successfully", response.data)
+            navigate("/")
+        }, (error) => {
+            console.error('Petition failed to post', error.response)
+            setErrorFlag(true);
+            setErrorMessage(error.response.data.error || "Failed to post petition")
+        });
     }
+    
 
     const handleCategoryChange = (event: SelectChangeEvent<string>) => {
         const {
@@ -146,86 +172,154 @@ const Create = () => {
         );
     }
 
-    return (
-        <div>
+    if (errorFlag) {
+        return (
             <div>
-                <h2> Create your own petition </h2>
-                <Box
-                    component="form"
-                    sx={{
-                        '& .MuiTextField-root': { m: 1, width: '25ch' },
-                    }}
-                    noValidate
-                    autoComplete="off"
-                    onSubmit={handleSubmit}
-                >
-                <div>
-                <TextField
-                    error={titleTouched && !!titleError}
-                    id="outlined-title"
-                    label="Title"
-                    multiline
-                    maxRows={4}
-                    helperText={titleTouched ? titleError : ""}
-                    onChange={(e) => setTitle(e.target.value)}
-                    onBlur={() => {
-                        setTitleTouched(true);
-                        validateTitle();
-                    }}
-                    />
-                    <FormControl sx={{ m: 1, width: 300 }}>
-                    <InputLabel id="category-chip-label">Category</InputLabel>
-                    <Select
-                        labelId='category-chip-label'
-                        id='category-chip'
-                        value={selectedCategory?.toString() || ''}
-                        onChange={handleCategoryChange}
-                        input={<OutlinedInput id='select-chip' label='Category' />}
-                        renderValue={(selected) => (
-                            <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5 }}>
-                                <Chip key={selected} label={categories.find(c => c.categoryId.toString() === selected)?.name} />
-                            </Box>
-                        )}
-                        MenuProps={MenuProps}
-                    >
-                        {categories.map((category: Category) => (
-                            <MenuItem
-                                key={category.categoryId}
-                                value={category.categoryId.toString()}
-                                style={getStyles(category.name, [selectedCategory?.toString() || ''], theme)}
-                            >
-                                {category.name}
-                            </MenuItem>
-                        ))}
-                    </Select>
-                </FormControl>
+                <h1>Petition</h1>
+                <div style={{ color:"red" }}>
+                    {errorMessage}
                 </div>
-                <div>
-                <TextField
-                    error={descriptionTouched && !!descriptionError}
-                    id="outlined-description"
-                    label="Description"
-                    multiline
-                    maxRows={10}
-                    helperText={descriptionTouched ? descriptionError : ""}
-                    onChange={(e) => setDescription(e.target.value)}
-                        onBlur={() => {
-                            setDescriptionTouched(true);
-                            validateDescription();
-                        }}
-                    />
-                </div>
-                <div>
-                    <h6> Add your petitiion image: </h6>
-                    <Stack alignItems="center">
-                        <PortraitIcon sx={{ color: pink[200], fontSize: 60 }} />
-                    </Stack>
-                </div>
-                <Button type="submit" variant="outlined">Sumbit</Button>
-                </Box>
+                <Link to={"/"}> Back to Petitions</Link>
             </div>
-        </div>
-    )
+        )
+    } else {
+        return (
+            <div>
+                <div>
+                    <h2> Create your own petition </h2>
+                    <Box
+                        component="form"
+                        sx={{
+                            '& .MuiTextField-root': { m: 1, width: '25ch' },
+                        }}
+                        noValidate
+                        autoComplete="off"
+                        onSubmit={handleSubmit}
+                    >
+                    <div>
+                    <TextField
+                        error={titleTouched && !!titleError}
+                        id="outlined-title"
+                        label="Title"
+                        multiline
+                        maxRows={4}
+                        helperText={titleTouched ? titleError : ""}
+                        onChange={(e) => setTitle(e.target.value)}
+                        onBlur={() => {
+                            setTitleTouched(true);
+                            validateTitle();
+                        }}
+                        />
+                        <FormControl sx={{ m: 1, width: 300 }}>
+                        <InputLabel id="category-chip-label">Category</InputLabel>
+                        <Select
+                            labelId='category-chip-label'
+                            id='category-chip'
+                            value={selectedCategory?.toString() || ''}
+                            onChange={handleCategoryChange}
+                            input={<OutlinedInput id='select-chip' label='Category' />}
+                            renderValue={(selected) => (
+                                <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5 }}>
+                                    <Chip key={selected} label={categories.find(c => c.categoryId.toString() === selected)?.name} />
+                                </Box>
+                            )}
+                            MenuProps={MenuProps}
+                        >
+                            {categories.map((category: Category) => (
+                                <MenuItem
+                                    key={category.categoryId}
+                                    value={category.categoryId.toString()}
+                                    style={getStyles(category.name, [selectedCategory?.toString() || ''], theme)}
+                                >
+                                    {category.name}
+                                </MenuItem>
+                            ))}
+                        </Select>
+                    </FormControl>
+                    </div>
+                    <div>
+                    <TextField
+                        error={descriptionTouched && !!descriptionError}
+                        id="outlined-description"
+                        label="Description"
+                        multiline
+                        maxRows={4}
+                        helperText={descriptionTouched ? descriptionError : ""}
+                        onChange={(e) => setDescription(e.target.value)}
+                            onBlur={() => {
+                                setDescriptionTouched(true);
+                                validateDescription();
+                            }}
+                        />
+                    </div>
+                    <div>
+                        <FormControl sx ={{ m: 1, width: 100 }}>
+                            <InputLabel id ="num-support-tiers-label">Support Tiers</InputLabel>
+                            <Select 
+                                labelId="num-support-tiers"
+                                value={numSupportTiers}
+                                onChange={(e) => {
+                                    const value = Number(e.target.value);
+                                    setNumSupportTiers(value);
+                                    setSupportTiers(Array(value).fill({ title: '', description: '', cost: 0 }));
+                                }}
+                                input={<OutlinedInput label="Support Tiers" />}
+                            >
+                                {[1, 2, 3].map((number) => (
+                                    <MenuItem key={number} value={number}>
+                                        {number}
+                                    </MenuItem>
+                                ))}
+                            </Select>
+                        </FormControl>
+                        <div>
+                            {supportTiers.map((tier, index) => (
+                                <Box key={index} sx={{ display: 'flex', flexDirection: 'column', gap: 1, m: 1 }}>
+                                    <h6>Information for support tier {index + 1} </h6>
+                                    <TextField
+                                        label={'Title'}
+                                        value={tier.title}
+                                        onChange={(e) => {
+                                            const newTiers = [...supportTiers];
+                                            newTiers[index].title = e.target.value;
+                                            setSupportTiers(newTiers);
+                                        }}
+                                    />
+                                    <TextField
+                                        label={'Description'}
+                                        value={tier.description}
+                                        onChange={(e) => {
+                                            const newTiers = [...supportTiers];
+                                            newTiers[index].description = e.target.value;
+                                            setSupportTiers(newTiers);
+                                        }}
+                                    />
+                                    <TextField
+                                        label={'Cost'}
+                                        value={tier.cost}
+                                        onChange={(e) => {
+                                            const newTiers = [...supportTiers];
+                                            newTiers[index].cost = Number(e.target.value);
+                                            setSupportTiers(newTiers);
+                                        }}
+                                    />
+                                </Box>
+                            ))}
+                        </div>
+                    </div>
+                    <div>
+                        <h6> Add your petition image: </h6>
+                        <Stack alignItems="center">
+                            <PortraitIcon sx={{ color: pink[200], fontSize: 60 }} />
+                        </Stack>
+                    </div>
+                    <Button type="submit" variant="outlined">Sumbit</Button>
+                    </Box>
+                </div>
+            </div>
+        )
+    }
+    
 }
 
 export default Create;

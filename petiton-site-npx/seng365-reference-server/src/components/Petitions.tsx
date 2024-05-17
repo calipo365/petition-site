@@ -55,6 +55,9 @@ const Petitions = () => {
     const navigate = useNavigate();
     const theme = useTheme();
 
+    const token = localStorage.getItem('authToken'); 
+    const userId = localStorage.getItem('userId');
+
     const [selectedCategories, setSelectedCategories] = React.useState<number[]>([]);
     const [categories, setCategories] = React.useState<Category[]>([]);
     const [sort, setSort] = React.useState("Petition name A-Z")
