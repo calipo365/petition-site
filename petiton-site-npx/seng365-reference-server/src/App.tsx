@@ -6,6 +6,7 @@ import Petition from "./components/Petition";
 import Register from "./components/Register";
 import Login from "./components/Login";
 import Create from "./components/Create";
+import Profile from "./components/Profile";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/users/register" element={<Register/>}/>
             <Route path="/users/login" element={<Login/>}/>
             <Route path="/create" element={<Create/>}/>
+            <Route path="/profile" element={<Profile/>}/>
           </Routes>
         </div>
       </Router>

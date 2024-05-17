@@ -10,17 +10,32 @@ type User = {
     /**
      * Users first name as entered when created
      */ 
-    first_name: string, 
+    firstName: string, 
     /**
      * Users last name as entered when created
      */
-    last_name: string,
+    lastName: string,
     /**
      * Users image filename as entered when created
      */
-    image_filename: string, 
+    imageFilename: string, 
     /**
      * Users password as entered when created
      */
-    password: string
+    password: string,
+    /**
+     * Users token as defined when logged in 
+     */
+    token: string
+}
+
+type UserName = {
+    /**
+         * Users first name as entered when created
+         */ 
+    firstName: string, 
+    /**
+     * Users last name as entered when created
+     */
+    lastName: string,
 }
