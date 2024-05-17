@@ -172,21 +172,6 @@ const Petitions = () => {
         ));
     };
 
-    const addPetition = (event: React.FormEvent<HTMLFormElement>) => { 
-        event.preventDefault(); 
-        if (title === "") { 
-            alert("Please enter a title!")
-        } else { 
-            axios.post('http://localhost:4941/api/v1/petitions', { "title": title }) 
-            .then((response) => {
-                navigate('/')
-            }, (error) => {
-                setErrorFlag(true)
-                setErrorMessage(error.toString())
-            })
-        }
-    }
-
     const signOut = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         axios.post('http://localhost:4941/api/v1/logout')
@@ -225,10 +210,6 @@ const Petitions = () => {
         const category = categories.find(cat => cat.categoryId === categoryId);
         return category ? category.name : 'Unknown';
     }
-
-    const updateTitleState = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setTitle(event.target.value);
-    };
 
     const handlePageChange = (event: React.ChangeEvent<unknown>, value: number) => {
         setCurrentPage(value);

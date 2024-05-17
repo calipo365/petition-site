@@ -8,7 +8,7 @@ const Profile = () => {
 
     const [errorFlag, setErrorFlag] = React.useState(false)
     const [errorMessage, setErrorMessage] = React.useState("")
-    const [userName, setUserName] = React.useState<UserName>({firstName: '', lastName: ''})
+    const [user, setUser] = React.useState<sentUser>({firstName: '', lastName: '', email: ''})
     const [image, setImage] = React.useState("")
     const token = localStorage.getItem('authToken'); 
     const userId = localStorage.getItem('userId');
@@ -17,18 +17,17 @@ const Profile = () => {
         getUser()
     }, [userId])
 
-
     const getUser = () => {
-        axios.get('http://localhost:4941/api/v1/users/' + userId)
+        axios.get(`http://localhost:4941/api/v1/users/${userId}`, {headers: { 'X-Authorization': token }})
             .then((response) => {
                 setErrorFlag(false)
                 setErrorMessage("")
-                setUserName(response.data)
+                setUser(response.data)
             }, (error) => {
                 setErrorFlag(true)
                 setErrorMessage(error.toString())
             })
-    }
+        }
 
     if (errorFlag) {
         return (
@@ -41,27 +40,31 @@ const Profile = () => {
             </div>
         )
     } else {
-            if (!token) {
+        if (!token) {
+            return (
                 <div>
-                    <h2>Profile</h2>
-                    <div style={{ color:"red" }}>
-                        {errorMessage}
-                    </div>
-                    <Link to={"/"}> Back to Homepage</Link>
-                    <Link to={"/users/register"}> Create an account</Link>
-                    <Link to={"/users/login"}> Login to an existing account</Link>
+                <h2>Profile</h2>
+                <div style={{ color:"red" }}>
+                    {errorMessage}
                 </div>
-            } else {
+                <Link to={"/"}> Back to Homepage</Link>
+                <Link to={"/users/register"}> Create an account</Link>
+                <Link to={"/users/login"}> Login to an existing account</Link>
+            </div>
+            )
+        } else {
+            return (
                 <div>
-                    <h2>Your Profile</h2>
-                    {userName.firstName}
-                    {userName.lastName}
-
-                    <img 
-                        src={`http://localhost:4941/api/v1/users/${userId}/image`}
-                    />
-                </div>
-            }
+                <h2>Your Profile</h2>
+                {user.firstName}
+                {user.lastName}
+                {user.email}
+                <img 
+                    src={`http://localhost:4941/api/v1/users/${userId}/image`}
+                />
+            </div>
+            )
+        }
     }
 }
 

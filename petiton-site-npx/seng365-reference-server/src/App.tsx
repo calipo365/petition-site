@@ -6,7 +6,7 @@ import Petition from "./components/Petition";
 import Register from "./components/Register";
 import Login from "./components/Login";
 import Create from "./components/Create";
-import Profile from "./components/Profile";
+import Profile from './components/Profile';
 
 function App() {
   return (

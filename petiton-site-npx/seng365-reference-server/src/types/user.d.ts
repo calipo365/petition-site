@@ -29,7 +29,7 @@ type User = {
     token: string
 }
 
-type UserName = {
+type sentUser = {
     /**
          * Users first name as entered when created
          */ 
@@ -38,4 +38,8 @@ type UserName = {
      * Users last name as entered when created
      */
     lastName: string,
+    /**
+     * Users email as entered when created
+     */
+    email: string
 }
