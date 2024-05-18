@@ -46,10 +46,13 @@ const Petition = () => {
 
     const list_of_support_tiers = () => {
         return petition.supportTiers.map((item: SupportTier) => (
-            <div key={item.supportTierId} className='tiers-details'>
-                <h5>{item.title}</h5>
-                    <p>{item.description}</p>
-                    <p>{item.cost}</p>
+            <div>
+                <div key={item.supportTierId} className='support-tier'>
+                    <p><strong>Title:</strong>{item.title}</p>
+                    <p><strong>Description:</strong>{item.description}</p>
+                    <p><strong>Cost:</strong>${item.cost}</p>
+                </div>
+                <button className="support-button">Support</button>
             </div>
         ));
     };
@@ -59,61 +62,25 @@ const Petition = () => {
             const tier = petition.supportTiers.find(tier => tier.supportTierId === item.supportTierId);
             const tierTitle = tier ? tier.title : 'Tier not found';
             return(
-                <div key={item.supportId}>
+                <div key={item.supportId} className='support-tier'>
+                    <p>{item.supporterFirstName} {item.supporterLastName}</p>
                     <p>{tierTitle}</p>
                     <p>{item.message}</p>
                     <p>{new Date(item.timestamp).toLocaleDateString()}</p>
                     {userImageFailed ? (
-                            <Avatar sx={{ bgcolor: deepOrange[500]}} className='supporter-img'>
-                                {petition.ownerFirstName[0]}{petition.ownerLastName[0]}
+                            <Avatar sx={{ bgcolor: deepOrange[500]}} className='owner-img'>
+                                {item.supporterFirstName[0]}{item.supporterLastName}
                             </Avatar>
                         ) : (
                             <img 
                                 src={`http://localhost:4941/api/v1/users/${item.supporterId}/image`}
-                                alt={petition.ownerFirstName} className='supporter-img'
+                                alt={petition.ownerFirstName} className='owner-img'
                             />
                         )}
                 </div>
             )
         })
     }
-
-    const updateTitleState = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setTitle(event.target.value);
-    }
-
-    const deletePetition = (petition: Petition) => {
-        axios.delete('http://localhost:4941/ap1/v1/petitions/' + petition.petitionId)
-            .then((response) => {
-                navigate('/petitions')
-            }, (error) => {
-                setErrorFlag(true)
-                setErrorMessage(error.toString())
-            })
-    }
-
-    const updatePetition = (event: React.FormEvent<HTMLFormElement>, petition: Petition) => {
-        event.preventDefault();
-        if (title === "") {
-            alert("Please enter a valid petition title!")
-        } else {
-            axios.put('http://localhost:4941/api/v1/petitions/' + petition.petitionId, { title })
-                .then((reponse) => {
-                    navigate('/petitions')
-                }, (error) => {
-                    setErrorFlag(true);
-                    setErrorMessage(error.toString())
-                });
-        }
-    }
-
-    const handleUserImageError = () => {
-        setUserImageFailed(true);
-    }
-
-    const getUserInitials = () => {
-        return `${petition.ownerFirstName[0]}${petition.ownerLastName[0]}`;
-    };
 
     if (errorFlag) {
         return (
@@ -127,35 +94,51 @@ const Petition = () => {
         )
     } else {
         return (
-            <div className='main-container'>
+            <body>
+                <header className="header">
+                    <div className="logo" onClick={() => navigate(`/`)}>Petition Pledge</div>
+                    <nav className="nav-links">
+                        <a href="/users/register">Register</a>
+                        <a href="/users/login">Login</a>
+                        <a href="/users/logout">Logout</a>
+                    </nav>
+                </header>
+            <div className="petition-container">
                 <h1 className='title'> {petition.title} </h1>
                 <body>
                     <img 
                         src={`http://localhost:4941/api/v1/petitions/${petition.ownerId}/image`}
-                        alt={petition.title} className='petition-img'
+                        alt="Petition Image" className='petition-image'
                     />
-                    <h6 className='owner-name'>{petition.ownerFirstName} {petition.ownerLastName}</h6>
-                    {userImageFailed ? (
-                        <Avatar sx={{ bgcolor: deepOrange[500]}} className='owner-img'>
-                            {petition.ownerFirstName[0]}{petition.ownerLastName[0]}
-                        </Avatar>
-                    ) : (
-                        <img 
-                            src={`http://localhost:4941/api/v1/users/${petition.ownerId}/image`}
-                            alt={petition.ownerFirstName} className='owner-img'
-                        />
-                    )}
-                    <h6>Created on: {new Date(petition.creationDate).toLocaleDateString()}</h6>
-                    {petition.description}
-                    <body>We have {petition.numberOfSupporters} supporters, who have helped us to raise ${petition.moneyRaised}!
-                    If you would like to become a supporter you can choose from one of our avaiable support tiers:</body>
-                    <body>
-                        {list_of_support_tiers()}
-                        {list_of_supporters()}
+                    <p><strong>Created on: </strong>{new Date(petition.creationDate).toLocaleDateString()}</p>
+                    <div className="petition-details">
+                        <p><strong>Owner:  </strong> 
+                        {petition.ownerFirstName} {petition.ownerLastName}{"     "}
+                            {userImageFailed ? (
+                            <Avatar sx={{ bgcolor: deepOrange[500]}} className='owner-img'>
+                                {petition.ownerFirstName[0]}{petition.ownerLastName[0]}
+                            </Avatar>
+                        ) : (
+                            <img 
+                                src={`http://localhost:4941/api/v1/users/${petition.ownerId}/image`}
+                                alt={petition.ownerFirstName} className='owner-img'
+                            />
+                        )}</p>
+                        <p><strong>Description:</strong> {petition.description}</p>
+                        </div>
                     </body>
-                </body>
-                <Link to={'/'}> Back to Petitions </Link>
+                <div className='support-container'>
+                        <h2>Support Us!</h2>
+                        <p><strong>Number of supporters: </strong>{petition.numberOfSupporters}</p>
+                        <p><strong>Money raised: </strong>${petition.moneyRaised}</p>
+                        {list_of_support_tiers()}
+                    </div>
+                <div className='support-container'>
+                        <h2>Our Supporters! </h2>
+                        {list_of_supporters()}
+                    </div>
             </div>
+        </body>
         )
     }
 

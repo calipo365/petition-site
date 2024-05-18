@@ -127,6 +127,9 @@ const Profile = () => {
                     </p>
                     <p>Lowest Cost: ${item.supportingCost}</p>
                 </div>
+                <button type='button' onClick={() => navigate('/petitions/' + item.petitionId + '/manage')}>
+                    Manage Petition
+                </button>
             </div>
         ));
     };
