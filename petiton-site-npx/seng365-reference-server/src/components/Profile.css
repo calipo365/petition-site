@@ -1,0 +1,60 @@
+.user img {
+    width: 200px;
+    height: auto;
+    float: left;
+    margin-left: 2em;
+    margin-top: -10em;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fedfda;
+    color: #172a2e;
+}
+
+.header .logo {
+    font-size: 1.5rem;
+}
+
+.header .nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.header .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #172a2e;
+    border-radius: 5px;
+}
+
+.header .nav-links button {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #172a2e;
+    border-radius: 5px;
+}
+
+.header .nav-links a:hover {
+    background-color: #0e171a;
+}
+
+.petition-container {
+    margin-top: 5vh;
+}
+
+.petition-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.your-petitions {
+    margin-top: 2em;
+
+}

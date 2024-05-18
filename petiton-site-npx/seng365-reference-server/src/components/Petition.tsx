@@ -15,6 +15,9 @@ const Petition = () => {
     const [userImageFailed, setUserImageFailed] = React.useState(false);
     const [title, setTitle] = React.useState("")
 
+    const token = localStorage.getItem('authToken'); 
+    const userId = localStorage.getItem('userId');
+
     React.useEffect(() => {
         getPetition()
         getSupporters()
@@ -82,6 +85,22 @@ const Petition = () => {
         })
     }
 
+    const signOut = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        axios.post('http://localhost:4941/api/v1/users/logout', {
+            headers: {
+                'X-Authorization': token
+            }
+        })
+        .then((response) => {
+            console.log("Response: ", response)
+        }, (error) => {
+            setErrorFlag(true);
+            setErrorMessage(error.toString())
+        });
+    }
+
+
     if (errorFlag) {
         return (
             <div>
@@ -100,7 +119,31 @@ const Petition = () => {
                     <nav className="nav-links">
                         <a href="/users/register">Register</a>
                         <a href="/users/login">Login</a>
-                        <a href="/users/logout">Logout</a>
+                        <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#signoutModal">
+                            Log out
+                        </button>
+                            <div className='modal fade' id='signoutModal' tabIndex={-1} role="dialog"
+                                aria-labelledby="signoutModalLabel" aria-hiddden="true">
+                                    <div className="modal-dialog" role="document">
+                                        <div className="modal-content">
+                                            <div className="modal-header">
+                                                <h5 className='modal-title' id='usignoutModalLabel'>Sign out</h5>
+                                                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div className='modal-footer'>
+                                                Are you sure you want to sign out?
+                                                <form onSubmit={(e) => signOut(e)}>
+                                                    <input type="submit" value="Submit" />
+                                                </form>
+                                                <button type="button" className="btn btn-secondary" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                     </nav>
                 </header>
             <div className="petition-container">

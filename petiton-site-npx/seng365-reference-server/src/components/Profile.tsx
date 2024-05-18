@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect } from 'react';
-import './User.css';
+import './Profile.css';
 import { Link, useNavigate } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
@@ -12,10 +12,10 @@ const Profile = () => {
 
     const [errorFlag, setErrorFlag] = React.useState(false);
     const [errorMessage, setErrorMessage] = React.useState("");
-    const [categories, setCategories] = React.useState([]);
+    const [categories, setCategories] = React.useState<Category[]>([]);
     const [user, setUser] = React.useState({ firstName: '', lastName: '', email: '' });
-    const [petitions, setPetitions] = React.useState([]);
-    const [myPetitions, setMyPetitions] = React.useState([]);
+    const [petitions, setPetitions] = React.useState<Petition[]>([]);
+    const [myPetitions, setMyPetitions] = React.useState<Petition[]>([]);
     const [mySupportedPetitions, setMySupportedPetitions] = React.useState<Petition[]>([]);
     const [image, setImage] = React.useState("");
     const token = localStorage.getItem('authToken'); 
@@ -255,6 +255,21 @@ const Profile = () => {
         return category ? category.name : 'Unknown';
     };
 
+    const signOut = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        axios.post('http://localhost:4941/api/v1/users/logout', {
+            headers: {
+                'X-Authorization': token
+            }
+        })
+        .then((response) => {
+            console.log("Response: ", response)
+        }, (error) => {
+            setErrorFlag(true);
+            setErrorMessage(error.toString())
+        });
+    }
+
     if (errorFlag) {
         return (
             <div>
@@ -281,6 +296,38 @@ const Profile = () => {
         } else {
             return (
                 <div>
+                    <header className="header">
+                    <div className="logo" onClick={() => navigate(`/`)}>Petition Pledge</div>
+                    <nav className="nav-links">
+                        <a href="/users/register">Register</a>
+                        <a href="/users/login">Login</a>
+                        <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#signoutModal">
+                            Log out
+                        </button>
+                            <div className='modal fade' id='signoutModal' tabIndex={-1} role="dialog"
+                                aria-labelledby="signoutModalLabel" aria-hiddden="true">
+                                    <div className="modal-dialog" role="document">
+                                        <div className="modal-content">
+                                            <div className="modal-header">
+                                                <h5 className='modal-title' id='usignoutModalLabel'>Sign out</h5>
+                                                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div className='modal-footer'>
+                                                Are you sure you want to sign out?
+                                                <form onSubmit={(e) => signOut(e)}>
+                                                    <input type="submit" value="Submit" />
+                                                </form>
+                                                <button type="button" className="btn btn-secondary" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    </nav>
+                </header>
                     <h2>Your Profile</h2>
                     <Box
                         component="form"
@@ -365,10 +412,14 @@ const Profile = () => {
                         />
                     </div>
                     <div>
-                        <h2>Your petitions</h2>
-                        {list_of_my_petitions()}
+                        <h2 className='your-petitions'>Your petitions</h2>
+                        <div className="petition-container">
+                        <div className="petition-grid">{list_of_my_petitions()}</div>
+                        </div>
                         <h2>Your Supported Petitions</h2>
-                        {list_of_my_supported_petitions()}
+                        <div className="petition-container">
+                        <div className="petition-grid">{list_of_my_supported_petitions()}</div>
+                        </div>
                     </div>
                 </div>
             );

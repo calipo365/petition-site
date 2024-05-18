@@ -14098,3 +14098,1382 @@
 2024-05-18 12:18:34:1834 [35mhttp[39m: [35m##### GET /api/v1/users/12/image #####[39m
 2024-05-18 12:18:34:1834 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/image #####[39m
 2024-05-18 12:18:34:1834 [35mhttp[39m: [35m##### GET /api/v1/users/18/image #####[39m
+2024-05-18 14:38:22:3822 [35mhttp[39m: [35m##### GET /api/v1/users/1/image #####[39m
+2024-05-18 14:38:22:3822 [35mhttp[39m: [35m##### OPTIONS /api/v1/users/1 #####[39m
+2024-05-18 14:38:22:3822 [35mhttp[39m: [35m##### OPTIONS /api/v1/users/1 #####[39m
+2024-05-18 14:38:22:3822 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 14:38:22:3822 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 14:38:22:3822 [35mhttp[39m: [35m##### GET /api/v1/users/1 #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/users/1 #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/image #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/supporters #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/image #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/users/8/image #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/image #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/image #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/users/9/image #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/image #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/users/12/image #####[39m
+2024-05-18 14:38:23:3823 [35mhttp[39m: [35m##### GET /api/v1/users/18/image #####[39m
+2024-05-18 14:38:28:3828 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 14:38:28:3828 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 14:38:29:3829 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 14:38:29:3829 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 14:38:29:3829 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/image #####[39m
+2024-05-18 14:38:29:3829 [35mhttp[39m: [35m##### GET /api/v1/users/2/image #####[39m
+2024-05-18 14:38:29:3829 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/image #####[39m
+2024-05-18 14:38:29:3829 [35mhttp[39m: [35m##### GET /api/v1/users/3/image #####[39m
+2024-05-18 14:38:29:3829 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/image #####[39m
+2024-05-18 14:38:29:3829 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/image #####[39m
+2024-05-18 14:38:29:3829 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/image #####[39m
+2024-05-18 14:38:29:3829 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/image #####[39m
+2024-05-18 14:38:29:3829 [35mhttp[39m: [35m##### GET /api/v1/users/5/image #####[39m
+2024-05-18 14:38:29:3829 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/image #####[39m
+2024-05-18 14:38:29:3829 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/image #####[39m
+2024-05-18 14:38:29:3829 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-18 14:38:29:3829 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-18 14:38:29:3829 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-18 14:38:29:3829 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-18 14:38:29:3829 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-18 14:38:33:3833 [35mhttp[39m: [35m##### GET /api/v1/users/12/image #####[39m
+2024-05-18 14:38:33:3833 [35mhttp[39m: [35m##### GET /api/v1/users/18/image #####[39m
+2024-05-18 14:38:33:3833 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/image #####[39m
+2024-05-18 14:38:33:3833 [35mhttp[39m: [35m##### GET /api/v1/users/16/image #####[39m
+2024-05-18 14:38:33:3833 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/image #####[39m
+2024-05-18 14:38:33:3833 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/image #####[39m
+2024-05-18 14:38:33:3833 [35mhttp[39m: [35m##### GET /api/v1/users/17/image #####[39m
+2024-05-18 14:38:33:3833 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/image #####[39m
+2024-05-18 14:38:33:3833 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/image #####[39m
+2024-05-18 14:38:33:3833 [35mhttp[39m: [35m##### GET /api/v1/users/10/image #####[39m
+2024-05-18 14:38:39:3839 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-18 14:38:39:3839 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-18 14:38:39:3839 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-18 14:38:39:3839 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-18 14:38:39:3839 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-18 14:43:17:4317 [35mhttp[39m: [35m##### OPTIONS /api/v1/users/1 #####[39m
+2024-05-18 14:43:17:4317 [35mhttp[39m: [35m##### OPTIONS /api/v1/users/1 #####[39m
+2024-05-18 14:43:17:4317 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 14:43:17:4317 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 14:43:17:4317 [35mhttp[39m: [35m##### GET /api/v1/users/1 #####[39m
+2024-05-18 14:43:17:4317 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 14:43:17:4317 [35mhttp[39m: [35m##### GET /api/v1/users/1 #####[39m
+2024-05-18 14:43:17:4317 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 14:43:17:4317 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 14:43:17:4317 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 14:43:17:4317 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/supporters #####[39m
+2024-05-18 14:43:17:4317 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/supporters #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/supporters #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/supporters #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/supporters #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/supporters #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/supporters #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/supporters #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/supporters #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/supporters #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/supporters #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/supporters #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/supporters #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/supporters #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/supporters #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/supporters #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/supporters #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/supporters #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/supporters #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/supporters #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/supporters #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/supporters #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/supporters #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/supporters #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/supporters #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/supporters #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/supporters #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/supporters #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/supporters #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/supporters #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/supporters #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/supporters #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/users/12/image #####[39m
+2024-05-18 14:43:18:4318 [35mhttp[39m: [35m##### GET /api/v1/users/18/image #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### OPTIONS /api/v1/users/1 #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### OPTIONS /api/v1/users/1 #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### GET /api/v1/users/1 #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### GET /api/v1/users/1 #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/supporters #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/supporters #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/supporters #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/supporters #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/supporters #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/supporters #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/supporters #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/supporters #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/supporters #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/supporters #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/supporters #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/supporters #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/supporters #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/supporters #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/supporters #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/supporters #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/supporters #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/supporters #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/supporters #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/supporters #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/supporters #####[39m
+2024-05-18 14:43:23:4323 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/supporters #####[39m
+2024-05-18 14:43:24:4324 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/supporters #####[39m
+2024-05-18 14:43:24:4324 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/supporters #####[39m
+2024-05-18 14:43:24:4324 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/supporters #####[39m
+2024-05-18 14:43:24:4324 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/supporters #####[39m
+2024-05-18 14:43:24:4324 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/supporters #####[39m
+2024-05-18 14:43:24:4324 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/supporters #####[39m
+2024-05-18 14:43:24:4324 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/supporters #####[39m
+2024-05-18 14:43:24:4324 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/supporters #####[39m
+2024-05-18 14:43:24:4324 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/supporters #####[39m
+2024-05-18 14:43:24:4324 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/supporters #####[39m
+2024-05-18 14:43:24:4324 [35mhttp[39m: [35m##### GET /api/v1/users/12/image #####[39m
+2024-05-18 14:43:24:4324 [35mhttp[39m: [35m##### GET /api/v1/users/18/image #####[39m
+2024-05-18 14:54:46:5446 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 14:54:46:5446 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 14:54:46:5446 [35mhttp[39m: [35m##### GET /api/v1/petitions/0/image #####[39m
+2024-05-18 14:54:46:5446 [35mhttp[39m: [35m##### GET /api/v1/users/0/image #####[39m
+2024-05-18 14:54:46:5446 [31merror[39m: [31mread ECONNRESET[39m
+2024-05-18 14:54:46:5446 [31merror[39m: [31mread ECONNRESET[39m
+2024-05-18 14:54:46:5446 [31merror[39m: [31mread ECONNRESET[39m
+2024-05-18 14:54:46:5446 [33mwarn[39m: [33mread ECONNRESET[39m
+2024-05-18 14:54:46:5446 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 14:54:46:5446 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 14:54:46:5446 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:104:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getOne (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:90:24)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:106:41[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-18 14:54:46:5446 [33mwarn[39m: [33mError[39m
+[33m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[33m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:104:44[39m
+[33m    at Generator.next (<anonymous>)[39m
+[33m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[33m    at new Promise (<anonymous>)[39m
+[33m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[33m    at Object.getOne (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:90:24)[39m
+[33m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.supporter.controller.js:52:41[39m
+[33m    at Generator.next (<anonymous>)[39m
+[33m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.supporter.controller.js:31:71 {[39m
+[33m  code: 'ECONNREFUSED',[39m
+[33m  errno: undefined,[39m
+[33m  sql: undefined,[39m
+[33m  sqlState: undefined,[39m
+[33m  sqlMessage: undefined[39m
+[33m}[39m
+2024-05-18 14:55:23:5523 [35mhttp[39m: [35m##### OPTIONS /api/v1/users/1 #####[39m
+2024-05-18 14:55:23:5523 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 14:55:23:5523 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 14:55:23:5523 [35mhttp[39m: [35m##### GET /api/v1/users/1 #####[39m
+2024-05-18 14:55:23:5523 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 14:55:23:5523 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 14:55:23:5523 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 14:55:23:5523 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/supporters #####[39m
+2024-05-18 14:55:23:5523 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/supporters #####[39m
+2024-05-18 14:55:24:5524 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/supporters #####[39m
+2024-05-18 14:55:24:5524 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/supporters #####[39m
+2024-05-18 14:55:24:5524 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/supporters #####[39m
+2024-05-18 14:55:24:5524 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/supporters #####[39m
+2024-05-18 14:55:24:5524 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/supporters #####[39m
+2024-05-18 14:55:24:5524 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/supporters #####[39m
+2024-05-18 14:55:24:5524 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/supporters #####[39m
+2024-05-18 14:55:24:5524 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/supporters #####[39m
+2024-05-18 14:55:24:5524 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/supporters #####[39m
+2024-05-18 14:55:24:5524 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/supporters #####[39m
+2024-05-18 14:55:24:5524 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/supporters #####[39m
+2024-05-18 14:55:24:5524 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/supporters #####[39m
+2024-05-18 14:55:24:5524 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/supporters #####[39m
+2024-05-18 14:55:24:5524 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/supporters #####[39m
+2024-05-18 14:55:24:5524 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 14:55:24:5524 [35mhttp[39m: [35m##### GET /api/v1/users/1 #####[39m
+2024-05-18 14:55:24:5524 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/supporters #####[39m
+2024-05-18 14:55:24:5524 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/supporters #####[39m
+2024-05-18 14:55:24:5524 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/supporters #####[39m
+2024-05-18 14:55:24:5524 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 14:55:24:5524 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 14:55:24:5524 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/supporters #####[39m
+2024-05-18 14:55:24:5524 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/supporters #####[39m
+2024-05-18 14:55:24:5524 [35mhttp[39m: [35m##### GET /api/v1/petitions/0/image #####[39m
+2024-05-18 14:55:24:5524 [35mhttp[39m: [35m##### GET /api/v1/users/0/image #####[39m
+2024-05-18 14:55:25:5525 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/supporters #####[39m
+2024-05-18 14:55:25:5525 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/supporters #####[39m
+2024-05-18 14:55:25:5525 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/supporters #####[39m
+2024-05-18 14:55:25:5525 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/supporters #####[39m
+2024-05-18 14:55:25:5525 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/supporters #####[39m
+2024-05-18 14:55:25:5525 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/supporters #####[39m
+2024-05-18 14:55:25:5525 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/supporters #####[39m
+2024-05-18 14:55:25:5525 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/supporters #####[39m
+2024-05-18 14:55:25:5525 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/supporters #####[39m
+2024-05-18 14:55:25:5525 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/supporters #####[39m
+2024-05-18 14:55:25:5525 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/supporters #####[39m
+2024-05-18 14:55:25:5525 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 14:55:25:5525 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 14:55:25:5525 [35mhttp[39m: [35m##### GET /api/v1/users/12/image #####[39m
+2024-05-18 14:55:25:5525 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 14:55:25:5525 [35mhttp[39m: [35m##### GET /api/v1/users/18/image #####[39m
+2024-05-18 14:55:25:5525 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 14:55:25:5525 [35mhttp[39m: [35m##### GET /api/v1/users/4/image #####[39m
+2024-05-18 14:55:26:5526 [35mhttp[39m: [35m##### GET /api/v1/users/1 #####[39m
+2024-05-18 14:55:26:5526 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 14:55:26:5526 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 14:55:26:5526 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 14:55:26:5526 [35mhttp[39m: [35m##### GET /api/v1/users/1 #####[39m
+2024-05-18 14:55:26:5526 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 14:55:26:5526 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 14:55:26:5526 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 14:55:26:5526 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/supporters #####[39m
+2024-05-18 14:55:26:5526 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/supporters #####[39m
+2024-05-18 14:55:26:5526 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/supporters #####[39m
+2024-05-18 14:55:26:5526 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/supporters #####[39m
+2024-05-18 14:55:26:5526 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/supporters #####[39m
+2024-05-18 14:55:26:5526 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/supporters #####[39m
+2024-05-18 14:55:26:5526 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/supporters #####[39m
+2024-05-18 14:55:26:5526 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/supporters #####[39m
+2024-05-18 14:55:26:5526 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/supporters #####[39m
+2024-05-18 14:55:26:5526 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/supporters #####[39m
+2024-05-18 14:55:26:5526 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/supporters #####[39m
+2024-05-18 14:55:26:5526 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/supporters #####[39m
+2024-05-18 14:55:26:5526 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/supporters #####[39m
+2024-05-18 14:55:26:5526 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/supporters #####[39m
+2024-05-18 14:55:27:5527 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/supporters #####[39m
+2024-05-18 14:55:27:5527 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/supporters #####[39m
+2024-05-18 14:55:27:5527 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 14:55:27:5527 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/supporters #####[39m
+2024-05-18 14:55:27:5527 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/supporters #####[39m
+2024-05-18 14:55:27:5527 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 14:55:27:5527 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/supporters #####[39m
+2024-05-18 14:55:27:5527 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/supporters #####[39m
+2024-05-18 14:55:27:5527 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/supporters #####[39m
+2024-05-18 14:55:27:5527 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/supporters #####[39m
+2024-05-18 14:55:27:5527 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/supporters #####[39m
+2024-05-18 14:55:27:5527 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/supporters #####[39m
+2024-05-18 14:55:27:5527 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/supporters #####[39m
+2024-05-18 14:55:27:5527 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/supporters #####[39m
+2024-05-18 14:55:27:5527 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/supporters #####[39m
+2024-05-18 14:55:27:5527 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/supporters #####[39m
+2024-05-18 14:55:27:5527 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/supporters #####[39m
+2024-05-18 14:55:27:5527 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/supporters #####[39m
+2024-05-18 14:55:27:5527 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/supporters #####[39m
+2024-05-18 14:55:27:5527 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/supporters #####[39m
+2024-05-18 14:55:27:5527 [35mhttp[39m: [35m##### GET /api/v1/users/12/image #####[39m
+2024-05-18 14:55:27:5527 [35mhttp[39m: [35m##### GET /api/v1/users/18/image #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### OPTIONS /api/v1/users/1 #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### OPTIONS /api/v1/users/1 #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/users/1 #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/supporters #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/supporters #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/supporters #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/supporters #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/supporters #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/supporters #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/supporters #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/supporters #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/supporters #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/supporters #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/supporters #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/supporters #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/supporters #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/supporters #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/supporters #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/supporters #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/users/1 #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/supporters #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/supporters #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/supporters #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/supporters #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/supporters #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/supporters #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/supporters #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/supporters #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/supporters #####[39m
+2024-05-18 14:55:43:5543 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/supporters #####[39m
+2024-05-18 14:55:44:5544 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/supporters #####[39m
+2024-05-18 14:55:44:5544 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/supporters #####[39m
+2024-05-18 14:55:44:5544 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/supporters #####[39m
+2024-05-18 14:55:44:5544 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/supporters #####[39m
+2024-05-18 14:55:44:5544 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/supporters #####[39m
+2024-05-18 14:55:44:5544 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/supporters #####[39m
+2024-05-18 14:55:44:5544 [35mhttp[39m: [35m##### GET /api/v1/users/12/image #####[39m
+2024-05-18 14:55:44:5544 [35mhttp[39m: [35m##### GET /api/v1/users/18/image #####[39m
+2024-05-18 14:55:56:5556 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 14:55:56:5556 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 14:55:56:5556 [35mhttp[39m: [35m##### GET /api/v1/petitions/0/image #####[39m
+2024-05-18 14:55:56:5556 [35mhttp[39m: [35m##### GET /api/v1/users/0/image #####[39m
+2024-05-18 14:55:56:5556 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 14:55:56:5556 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 14:55:57:5557 [35mhttp[39m: [35m##### OPTIONS /api/v1/users/1 #####[39m
+2024-05-18 14:55:57:5557 [35mhttp[39m: [35m##### OPTIONS /api/v1/users/1 #####[39m
+2024-05-18 14:55:57:5557 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 14:55:57:5557 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 14:55:57:5557 [35mhttp[39m: [35m##### GET /api/v1/users/1 #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/users/1 #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/supporters #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/users/12/image #####[39m
+2024-05-18 14:55:58:5558 [35mhttp[39m: [35m##### GET /api/v1/users/18/image #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/users/1 #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/users/1 #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/supporters #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/users/12/image #####[39m
+2024-05-18 14:56:00:560 [35mhttp[39m: [35m##### GET /api/v1/users/18/image #####[39m
+2024-05-18 14:56:15:5615 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 14:56:15:5615 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 14:56:15:5615 [35mhttp[39m: [35m##### GET /api/v1/petitions/0/image #####[39m
+2024-05-18 14:56:15:5615 [35mhttp[39m: [35m##### GET /api/v1/users/0/image #####[39m
+2024-05-18 14:56:16:5616 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 14:56:16:5616 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 14:56:16:5616 [35mhttp[39m: [35m##### GET /api/v1/users/4/image #####[39m
+2024-05-18 14:56:37:5637 [35mhttp[39m: [35m##### OPTIONS /api/v1/users/1 #####[39m
+2024-05-18 14:56:37:5637 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 14:56:37:5637 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 14:56:37:5637 [35mhttp[39m: [35m##### GET /api/v1/users/1 #####[39m
+2024-05-18 14:56:37:5637 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 14:56:37:5637 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 14:56:37:5637 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 14:56:37:5637 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 14:56:37:5637 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/supporters #####[39m
+2024-05-18 14:56:37:5637 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/supporters #####[39m
+2024-05-18 14:56:37:5637 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/supporters #####[39m
+2024-05-18 14:56:37:5637 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/supporters #####[39m
+2024-05-18 14:56:37:5637 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/supporters #####[39m
+2024-05-18 14:56:37:5637 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/supporters #####[39m
+2024-05-18 14:56:37:5637 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/supporters #####[39m
+2024-05-18 14:56:37:5637 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/supporters #####[39m
+2024-05-18 14:56:37:5637 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/supporters #####[39m
+2024-05-18 14:56:37:5637 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/supporters #####[39m
+2024-05-18 14:56:37:5637 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/supporters #####[39m
+2024-05-18 14:56:37:5637 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/supporters #####[39m
+2024-05-18 14:56:37:5637 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/supporters #####[39m
+2024-05-18 14:56:37:5637 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/supporters #####[39m
+2024-05-18 14:56:37:5637 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/supporters #####[39m
+2024-05-18 14:56:37:5637 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/supporters #####[39m
+2024-05-18 14:56:37:5637 [35mhttp[39m: [35m##### GET /api/v1/users/1 #####[39m
+2024-05-18 14:56:37:5637 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 14:56:37:5637 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/supporters #####[39m
+2024-05-18 14:56:38:5638 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 14:56:38:5638 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/supporters #####[39m
+2024-05-18 14:56:38:5638 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/supporters #####[39m
+2024-05-18 14:56:38:5638 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/supporters #####[39m
+2024-05-18 14:56:38:5638 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/supporters #####[39m
+2024-05-18 14:56:38:5638 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/supporters #####[39m
+2024-05-18 14:56:38:5638 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/supporters #####[39m
+2024-05-18 14:56:38:5638 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/supporters #####[39m
+2024-05-18 14:56:38:5638 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/supporters #####[39m
+2024-05-18 14:56:38:5638 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/supporters #####[39m
+2024-05-18 14:56:38:5638 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/supporters #####[39m
+2024-05-18 14:56:38:5638 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/supporters #####[39m
+2024-05-18 14:56:38:5638 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/supporters #####[39m
+2024-05-18 14:56:38:5638 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/supporters #####[39m
+2024-05-18 14:56:38:5638 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/supporters #####[39m
+2024-05-18 14:56:38:5638 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/supporters #####[39m
+2024-05-18 14:56:38:5638 [35mhttp[39m: [35m##### GET /api/v1/users/12/image #####[39m
+2024-05-18 14:56:38:5638 [35mhttp[39m: [35m##### GET /api/v1/users/18/image #####[39m
+2024-05-18 14:57:49:5749 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 14:57:49:5749 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 14:57:49:5749 [35mhttp[39m: [35m##### GET /api/v1/petitions/0/image #####[39m
+2024-05-18 14:57:49:5749 [35mhttp[39m: [35m##### GET /api/v1/users/0/image #####[39m
+2024-05-18 14:57:49:5749 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 14:57:49:5749 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 14:58:07:587 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 14:58:07:587 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 14:58:15:5815 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 14:58:15:5815 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:02:43:243 [35mhttp[39m: [35m##### OPTIONS /api/v1/users/1 #####[39m
+2024-05-18 15:02:43:243 [35mhttp[39m: [35m##### OPTIONS /api/v1/users/1 #####[39m
+2024-05-18 15:02:43:243 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 15:02:43:243 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 15:02:43:243 [35mhttp[39m: [35m##### GET /api/v1/users/1 #####[39m
+2024-05-18 15:02:43:243 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 15:02:43:243 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 15:02:43:243 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 15:02:43:243 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:02:43:243 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/supporters #####[39m
+2024-05-18 15:02:43:243 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/supporters #####[39m
+2024-05-18 15:02:43:243 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/supporters #####[39m
+2024-05-18 15:02:43:243 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/supporters #####[39m
+2024-05-18 15:02:43:243 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/supporters #####[39m
+2024-05-18 15:02:43:243 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/supporters #####[39m
+2024-05-18 15:02:43:243 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/supporters #####[39m
+2024-05-18 15:02:43:243 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/supporters #####[39m
+2024-05-18 15:02:43:243 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/supporters #####[39m
+2024-05-18 15:02:43:243 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/supporters #####[39m
+2024-05-18 15:02:43:243 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/supporters #####[39m
+2024-05-18 15:02:43:243 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/supporters #####[39m
+2024-05-18 15:02:44:244 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/supporters #####[39m
+2024-05-18 15:02:44:244 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/supporters #####[39m
+2024-05-18 15:02:44:244 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/supporters #####[39m
+2024-05-18 15:02:44:244 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/supporters #####[39m
+2024-05-18 15:02:44:244 [35mhttp[39m: [35m##### GET /api/v1/users/1 #####[39m
+2024-05-18 15:02:44:244 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/supporters #####[39m
+2024-05-18 15:02:44:244 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 15:02:44:244 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/supporters #####[39m
+2024-05-18 15:02:44:244 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:02:44:244 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/supporters #####[39m
+2024-05-18 15:02:44:244 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/supporters #####[39m
+2024-05-18 15:02:44:244 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/supporters #####[39m
+2024-05-18 15:02:44:244 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/supporters #####[39m
+2024-05-18 15:02:44:244 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/supporters #####[39m
+2024-05-18 15:02:44:244 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/supporters #####[39m
+2024-05-18 15:02:44:244 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/supporters #####[39m
+2024-05-18 15:02:44:244 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/supporters #####[39m
+2024-05-18 15:02:44:244 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/supporters #####[39m
+2024-05-18 15:02:44:244 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/supporters #####[39m
+2024-05-18 15:02:44:244 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/supporters #####[39m
+2024-05-18 15:02:44:244 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/supporters #####[39m
+2024-05-18 15:02:44:244 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/supporters #####[39m
+2024-05-18 15:02:44:244 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/supporters #####[39m
+2024-05-18 15:02:44:244 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 15:02:44:244 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 15:02:44:244 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 15:02:44:244 [35mhttp[39m: [35m##### GET /api/v1/users/12/image #####[39m
+2024-05-18 15:02:44:244 [35mhttp[39m: [35m##### GET /api/v1/users/18/image #####[39m
+2024-05-18 15:02:44:244 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 15:02:44:244 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-18 15:02:44:244 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-18 15:02:44:244 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-18 15:02:44:244 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-18 15:02:44:244 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-18 15:02:51:251 [35mhttp[39m: [35m##### OPTIONS /api/v1/users/1 #####[39m
+2024-05-18 15:02:51:251 [35mhttp[39m: [35m##### OPTIONS /api/v1/users/1 #####[39m
+2024-05-18 15:02:51:251 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 15:02:51:251 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 15:02:51:251 [35mhttp[39m: [35m##### GET /api/v1/users/1 #####[39m
+2024-05-18 15:02:51:251 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 15:02:51:251 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 15:02:51:251 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 15:02:51:251 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:02:51:251 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/users/1 #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/supporters #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/users/12/image #####[39m
+2024-05-18 15:02:52:252 [35mhttp[39m: [35m##### GET /api/v1/users/18/image #####[39m
+2024-05-18 15:02:57:257 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:02:57:257 [35mhttp[39m: [35m##### GET /api/v1/users/0/image #####[39m
+2024-05-18 15:02:57:257 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:02:57:257 [35mhttp[39m: [35m##### GET /api/v1/petitions/0/image #####[39m
+2024-05-18 15:02:57:257 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:02:57:257 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:02:59:259 [35mhttp[39m: [35m##### OPTIONS /api/v1/users/1 #####[39m
+2024-05-18 15:02:59:259 [35mhttp[39m: [35m##### OPTIONS /api/v1/users/1 #####[39m
+2024-05-18 15:02:59:259 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 15:02:59:259 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 15:02:59:259 [35mhttp[39m: [35m##### GET /api/v1/users/1 #####[39m
+2024-05-18 15:02:59:259 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 15:02:59:259 [35mhttp[39m: [35m##### GET /api/v1/users/1 #####[39m
+2024-05-18 15:02:59:259 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 15:02:59:259 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 15:02:59:259 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:02:59:259 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/supporters #####[39m
+2024-05-18 15:02:59:259 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/supporters #####[39m
+2024-05-18 15:03:00:30 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/supporters #####[39m
+2024-05-18 15:03:00:30 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/supporters #####[39m
+2024-05-18 15:03:00:30 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/supporters #####[39m
+2024-05-18 15:03:00:30 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/supporters #####[39m
+2024-05-18 15:03:00:30 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/supporters #####[39m
+2024-05-18 15:03:00:30 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/supporters #####[39m
+2024-05-18 15:03:00:30 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/supporters #####[39m
+2024-05-18 15:03:00:30 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/supporters #####[39m
+2024-05-18 15:03:00:30 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/supporters #####[39m
+2024-05-18 15:03:00:30 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/supporters #####[39m
+2024-05-18 15:03:00:30 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/supporters #####[39m
+2024-05-18 15:03:00:30 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/supporters #####[39m
+2024-05-18 15:03:00:30 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/supporters #####[39m
+2024-05-18 15:03:00:30 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/supporters #####[39m
+2024-05-18 15:03:00:30 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 15:03:00:30 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:03:00:30 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/supporters #####[39m
+2024-05-18 15:03:00:30 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/supporters #####[39m
+2024-05-18 15:03:00:30 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/supporters #####[39m
+2024-05-18 15:03:00:30 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/supporters #####[39m
+2024-05-18 15:03:00:30 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/supporters #####[39m
+2024-05-18 15:03:00:30 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/supporters #####[39m
+2024-05-18 15:03:00:30 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/supporters #####[39m
+2024-05-18 15:03:00:30 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/supporters #####[39m
+2024-05-18 15:03:00:30 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/supporters #####[39m
+2024-05-18 15:03:00:30 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/supporters #####[39m
+2024-05-18 15:03:00:30 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/supporters #####[39m
+2024-05-18 15:03:00:30 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/supporters #####[39m
+2024-05-18 15:03:00:30 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/supporters #####[39m
+2024-05-18 15:03:00:30 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/supporters #####[39m
+2024-05-18 15:03:00:30 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/supporters #####[39m
+2024-05-18 15:03:00:30 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/supporters #####[39m
+2024-05-18 15:03:01:31 [35mhttp[39m: [35m##### GET /api/v1/users/12/image #####[39m
+2024-05-18 15:03:01:31 [35mhttp[39m: [35m##### GET /api/v1/users/18/image #####[39m
+2024-05-18 15:03:01:31 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:03:01:31 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:03:01:31 [35mhttp[39m: [35m##### GET /api/v1/petitions/0/image #####[39m
+2024-05-18 15:03:01:31 [35mhttp[39m: [35m##### GET /api/v1/users/0/image #####[39m
+2024-05-18 15:03:01:31 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:03:01:31 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:03:01:31 [35mhttp[39m: [35m##### GET /api/v1/users/4/image #####[39m
+2024-05-18 15:22:14:2214 [35mhttp[39m: [35m##### GET /api/v1/petitions/0/image #####[39m
+2024-05-18 15:22:14:2214 [35mhttp[39m: [35m##### GET /api/v1/users/0/image #####[39m
+2024-05-18 15:22:14:2214 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:22:14:2214 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:22:14:2214 [33mwarn[39m: [33mread ECONNRESET[39m
+2024-05-18 15:22:14:2214 [31merror[39m: [31mread ECONNRESET[39m
+2024-05-18 15:22:14:2214 [31merror[39m: [31mread ECONNRESET[39m
+2024-05-18 15:22:14:2214 [31merror[39m: [31mread ECONNRESET[39m
+2024-05-18 15:22:14:2214 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:22:14:2214 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:22:14:2214 [33mwarn[39m: [33mError[39m
+[33m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[33m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:104:44[39m
+[33m    at Generator.next (<anonymous>)[39m
+[33m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[33m    at new Promise (<anonymous>)[39m
+[33m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[33m    at Object.getOne (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:90:24)[39m
+[33m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.supporter.controller.js:52:41[39m
+[33m    at Generator.next (<anonymous>)[39m
+[33m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.supporter.controller.js:31:71 {[39m
+[33m  code: 'ECONNREFUSED',[39m
+[33m  errno: undefined,[39m
+[33m  sql: undefined,[39m
+[33m  sqlState: undefined,[39m
+[33m  sqlMessage: undefined[39m
+[33m}[39m
+2024-05-18 15:22:14:2214 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:104:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getOne (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:90:24)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:106:41[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-18 15:22:53:2253 [35mhttp[39m: [35m##### GET /api/v1/users/0/image #####[39m
+2024-05-18 15:22:53:2253 [35mhttp[39m: [35m##### GET /api/v1/petitions/0/image #####[39m
+2024-05-18 15:22:53:2253 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\user.model.js:65:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\user.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\user.model.js:4:12)[39m
+[31m    at Object.getImageFilename (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\user.model.js:63:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\user.image.controller.js:51:38[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\user.image.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-18 15:22:53:2253 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:148:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getImageFilename (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:146:34)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.image.controller.js:51:42[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.image.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-18 15:22:53:2253 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:22:53:2253 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:22:53:2253 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:104:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getOne (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:90:24)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:106:41[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-18 15:22:53:2253 [33mwarn[39m: [33mError[39m
+[33m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[33m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:104:44[39m
+[33m    at Generator.next (<anonymous>)[39m
+[33m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[33m    at new Promise (<anonymous>)[39m
+[33m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[33m    at Object.getOne (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:90:24)[39m
+[33m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.supporter.controller.js:52:41[39m
+[33m    at Generator.next (<anonymous>)[39m
+[33m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.supporter.controller.js:31:71 {[39m
+[33m  code: 'ECONNREFUSED',[39m
+[33m  errno: undefined,[39m
+[33m  sql: undefined,[39m
+[33m  sqlState: undefined,[39m
+[33m  sqlMessage: undefined[39m
+[33m}[39m
+2024-05-18 15:22:53:2253 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:22:53:2253 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:22:53:2253 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:104:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getOne (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:90:24)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:106:41[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-18 15:22:53:2253 [33mwarn[39m: [33mError[39m
+[33m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[33m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:104:44[39m
+[33m    at Generator.next (<anonymous>)[39m
+[33m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[33m    at new Promise (<anonymous>)[39m
+[33m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[33m    at Object.getOne (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:90:24)[39m
+[33m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.supporter.controller.js:52:41[39m
+[33m    at Generator.next (<anonymous>)[39m
+[33m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.supporter.controller.js:31:71 {[39m
+[33m  code: 'ECONNREFUSED',[39m
+[33m  errno: undefined,[39m
+[33m  sql: undefined,[39m
+[33m  sqlState: undefined,[39m
+[33m  sqlMessage: undefined[39m
+[33m}[39m
+2024-05-18 15:23:16:2316 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:23:16:2316 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:23:16:2316 [35mhttp[39m: [35m##### GET /api/v1/petitions/0/image #####[39m
+2024-05-18 15:23:16:2316 [35mhttp[39m: [35m##### GET /api/v1/users/0/image #####[39m
+2024-05-18 15:23:16:2316 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:23:16:2316 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/image #####[39m
+2024-05-18 15:23:16:2316 [35mhttp[39m: [35m##### GET /api/v1/users/1/image #####[39m
+2024-05-18 15:23:16:2316 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:23:16:2316 [35mhttp[39m: [35m##### GET /api/v1/users/4/image #####[39m
+2024-05-18 15:23:16:2316 [35mhttp[39m: [35m##### GET /api/v1/users/3/image #####[39m
+2024-05-18 15:23:16:2316 [35mhttp[39m: [35m##### GET /api/v1/users/2/image #####[39m
+2024-05-18 15:34:51:3451 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:34:51:3451 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:34:51:3451 [31merror[39m: [31mread ECONNRESET[39m
+2024-05-18 15:34:51:3451 [33mwarn[39m: [33mread ECONNRESET[39m
+2024-05-18 15:36:13:3613 [35mhttp[39m: [35m##### GET /api/v1/petitions/0/image #####[39m
+2024-05-18 15:36:13:3613 [35mhttp[39m: [35m##### GET /api/v1/users/0/image #####[39m
+2024-05-18 15:36:13:3613 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:36:13:3613 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:36:13:3613 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:36:13:3613 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/image #####[39m
+2024-05-18 15:36:13:3613 [35mhttp[39m: [35m##### GET /api/v1/users/1/image #####[39m
+2024-05-18 15:36:13:3613 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:36:13:3613 [35mhttp[39m: [35m##### GET /api/v1/users/4/image #####[39m
+2024-05-18 15:36:13:3613 [35mhttp[39m: [35m##### GET /api/v1/users/3/image #####[39m
+2024-05-18 15:36:13:3613 [35mhttp[39m: [35m##### GET /api/v1/users/2/image #####[39m
+2024-05-18 15:37:36:3736 [35mhttp[39m: [35m##### GET /api/v1/petitions/0/image #####[39m
+2024-05-18 15:37:36:3736 [35mhttp[39m: [35m##### GET /api/v1/users/0/image #####[39m
+2024-05-18 15:37:36:3736 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:37:36:3736 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:37:37:3737 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:37:37:3737 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/image #####[39m
+2024-05-18 15:37:37:3737 [35mhttp[39m: [35m##### GET /api/v1/users/1/image #####[39m
+2024-05-18 15:37:37:3737 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:37:37:3737 [35mhttp[39m: [35m##### GET /api/v1/users/4/image #####[39m
+2024-05-18 15:37:37:3737 [35mhttp[39m: [35m##### GET /api/v1/users/3/image #####[39m
+2024-05-18 15:37:37:3737 [35mhttp[39m: [35m##### GET /api/v1/users/2/image #####[39m
+2024-05-18 15:39:00:390 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:39:00:390 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:40:00:400 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:40:00:400 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:44:44:4444 [35mhttp[39m: [35m##### GET /api/v1/users/4/image #####[39m
+2024-05-18 15:44:44:4444 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/image #####[39m
+2024-05-18 15:44:44:4444 [35mhttp[39m: [35m##### GET /api/v1/users/1/image #####[39m
+2024-05-18 15:44:44:4444 [35mhttp[39m: [35m##### GET /api/v1/users/3/image #####[39m
+2024-05-18 15:44:44:4444 [35mhttp[39m: [35m##### GET /api/v1/users/2/image #####[39m
+2024-05-18 15:50:30:5030 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:50:30:5030 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:50:30:5030 [31merror[39m: [31mread ECONNRESET[39m
+2024-05-18 15:50:30:5030 [33mwarn[39m: [33mread ECONNRESET[39m
+2024-05-18 15:51:49:5149 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:51:49:5149 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:51:49:5149 [33mwarn[39m: [33mError[39m
+[33m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[33m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:104:44[39m
+[33m    at Generator.next (<anonymous>)[39m
+[33m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[33m    at new Promise (<anonymous>)[39m
+[33m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[33m    at Object.getOne (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:90:24)[39m
+[33m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.supporter.controller.js:52:41[39m
+[33m    at Generator.next (<anonymous>)[39m
+[33m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.supporter.controller.js:31:71 {[39m
+[33m  code: 'ECONNREFUSED',[39m
+[33m  errno: undefined,[39m
+[33m  sql: undefined,[39m
+[33m  sqlState: undefined,[39m
+[33m  sqlMessage: undefined[39m
+[33m}[39m
+2024-05-18 15:51:49:5149 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:104:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getOne (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:90:24)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:106:41[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-18 15:52:01:521 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:52:01:521 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:52:01:521 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:104:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getOne (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:90:24)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:106:41[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-18 15:52:01:521 [33mwarn[39m: [33mError[39m
+[33m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[33m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:104:44[39m
+[33m    at Generator.next (<anonymous>)[39m
+[33m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[33m    at new Promise (<anonymous>)[39m
+[33m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[33m    at Object.getOne (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:90:24)[39m
+[33m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.supporter.controller.js:52:41[39m
+[33m    at Generator.next (<anonymous>)[39m
+[33m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.supporter.controller.js:31:71 {[39m
+[33m  code: 'ECONNREFUSED',[39m
+[33m  errno: undefined,[39m
+[33m  sql: undefined,[39m
+[33m  sqlState: undefined,[39m
+[33m  sqlMessage: undefined[39m
+[33m}[39m
+2024-05-18 15:52:25:5225 [35mhttp[39m: [35m##### GET /api/v1/users/0/image #####[39m
+2024-05-18 15:52:25:5225 [35mhttp[39m: [35m##### GET /api/v1/petitions/0/image #####[39m
+2024-05-18 15:52:25:5225 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:52:25:5225 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:52:25:5225 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:52:25:5225 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/image #####[39m
+2024-05-18 15:52:25:5225 [35mhttp[39m: [35m##### GET /api/v1/users/1/image #####[39m
+2024-05-18 15:52:25:5225 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:53:09:539 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:53:09:539 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:54:07:547 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:54:07:547 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:54:32:5432 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:54:32:5432 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:54:44:5444 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:54:44:5444 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:54:52:5452 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:54:52:5452 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:54:55:5455 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:54:55:5455 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:54:59:5459 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:54:59:5459 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:55:33:5533 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:55:33:5533 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:57:29:5729 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:57:29:5729 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:57:31:5731 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 15:57:31:5731 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 15:57:31:5731 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 15:57:31:5731 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 15:57:31:5731 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/image #####[39m
+2024-05-18 15:57:31:5731 [35mhttp[39m: [35m##### GET /api/v1/users/3/image #####[39m
+2024-05-18 15:57:31:5731 [35mhttp[39m: [35m##### GET /api/v1/users/2/image #####[39m
+2024-05-18 15:57:31:5731 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/image #####[39m
+2024-05-18 15:57:31:5731 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/image #####[39m
+2024-05-18 15:57:31:5731 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/image #####[39m
+2024-05-18 15:57:31:5731 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/image #####[39m
+2024-05-18 15:57:31:5731 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/image #####[39m
+2024-05-18 15:57:31:5731 [35mhttp[39m: [35m##### GET /api/v1/users/5/image #####[39m
+2024-05-18 15:57:32:5732 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/image #####[39m
+2024-05-18 15:57:32:5732 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/image #####[39m
+2024-05-18 15:57:32:5732 [35mhttp[39m: [35m##### GET /api/v1/users/9/image #####[39m
+2024-05-18 15:57:32:5732 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/image #####[39m
+2024-05-18 15:57:32:5732 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-18 15:57:32:5732 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-18 15:57:32:5732 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-18 15:57:32:5732 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-18 15:57:32:5732 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-18 15:57:33:5733 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:57:33:5733 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:57:33:5733 [35mhttp[39m: [35m##### GET /api/v1/petitions/0/image #####[39m
+2024-05-18 15:57:33:5733 [35mhttp[39m: [35m##### GET /api/v1/users/0/image #####[39m
+2024-05-18 15:57:33:5733 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:57:33:5733 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:57:40:5740 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 15:57:40:5740 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 15:57:40:5740 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 15:57:40:5740 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 15:57:40:5740 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-18 15:57:40:5740 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-18 15:57:40:5740 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-18 15:57:40:5740 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-18 15:57:40:5740 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-18 15:57:41:5741 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:57:41:5741 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:57:41:5741 [35mhttp[39m: [35m##### GET /api/v1/petitions/0/image #####[39m
+2024-05-18 15:57:41:5741 [35mhttp[39m: [35m##### GET /api/v1/users/0/image #####[39m
+2024-05-18 15:57:41:5741 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:57:41:5741 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:57:47:5747 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:57:47:5747 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:57:51:5751 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 15:57:51:5751 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 15:57:51:5751 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 15:57:51:5751 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 15:57:51:5751 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-18 15:57:51:5751 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-18 15:57:51:5751 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-18 15:57:51:5751 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-18 15:57:51:5751 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### OPTIONS /api/v1/users/1 #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### OPTIONS /api/v1/users/1 #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/users/1 #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/users/1 #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/supporters #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/supporters #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/supporters #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/supporters #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/supporters #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/supporters #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/supporters #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/supporters #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/supporters #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/supporters #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/supporters #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/supporters #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/supporters #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/supporters #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/supporters #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/supporters #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/supporters #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/supporters #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/supporters #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/supporters #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/supporters #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/supporters #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/supporters #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/supporters #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/supporters #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/supporters #####[39m
+2024-05-18 15:58:04:584 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/supporters #####[39m
+2024-05-18 15:58:05:585 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/supporters #####[39m
+2024-05-18 15:58:05:585 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/supporters #####[39m
+2024-05-18 15:58:05:585 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/supporters #####[39m
+2024-05-18 15:58:05:585 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/supporters #####[39m
+2024-05-18 15:58:05:585 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/supporters #####[39m
+2024-05-18 15:58:05:585 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/image #####[39m
+2024-05-18 15:58:05:585 [35mhttp[39m: [35m##### GET /api/v1/users/8/image #####[39m
+2024-05-18 15:58:05:585 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/image #####[39m
+2024-05-18 15:58:05:585 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/image #####[39m
+2024-05-18 15:58:05:585 [35mhttp[39m: [35m##### GET /api/v1/users/12/image #####[39m
+2024-05-18 15:58:05:585 [35mhttp[39m: [35m##### GET /api/v1/users/18/image #####[39m
+2024-05-18 15:58:06:586 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:58:06:586 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:58:06:586 [35mhttp[39m: [35m##### GET /api/v1/petitions/0/image #####[39m
+2024-05-18 15:58:06:586 [35mhttp[39m: [35m##### GET /api/v1/users/0/image #####[39m
+2024-05-18 15:58:06:586 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:58:06:586 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:58:10:5810 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 15:58:10:5810 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 15:58:10:5810 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 15:58:10:5810 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 15:58:10:5810 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-18 15:58:10:5810 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-18 15:58:10:5810 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-18 15:58:10:5810 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-18 15:58:10:5810 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-18 15:58:11:5811 [35mhttp[39m: [35m##### GET /api/v1/petitions/6 #####[39m
+2024-05-18 15:58:11:5811 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 15:58:11:5811 [35mhttp[39m: [35m##### GET /api/v1/petitions/0/image #####[39m
+2024-05-18 15:58:11:5811 [35mhttp[39m: [35m##### GET /api/v1/users/0/image #####[39m
+2024-05-18 15:58:11:5811 [35mhttp[39m: [35m##### GET /api/v1/petitions/6 #####[39m
+2024-05-18 15:58:11:5811 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/image #####[39m
+2024-05-18 15:58:11:5811 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 15:58:15:5815 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 15:58:15:5815 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 15:58:15:5815 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 15:58:15:5815 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 15:58:15:5815 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-18 15:58:15:5815 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-18 15:58:15:5815 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-18 15:58:15:5815 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-18 15:58:15:5815 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-18 15:58:17:5817 [35mhttp[39m: [35m##### GET /api/v1/petitions/11 #####[39m
+2024-05-18 15:58:17:5817 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/supporters #####[39m
+2024-05-18 15:58:17:5817 [35mhttp[39m: [35m##### GET /api/v1/petitions/0/image #####[39m
+2024-05-18 15:58:17:5817 [35mhttp[39m: [35m##### GET /api/v1/users/0/image #####[39m
+2024-05-18 15:58:17:5817 [35mhttp[39m: [35m##### GET /api/v1/petitions/11 #####[39m
+2024-05-18 15:58:17:5817 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-18 15:58:17:5817 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/supporters #####[39m
+2024-05-18 15:58:23:5823 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 15:58:23:5823 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 15:58:23:5823 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 15:58:23:5823 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 15:58:23:5823 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-18 15:58:23:5823 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-18 15:58:23:5823 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-18 15:58:23:5823 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-18 15:58:23:5823 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-18 15:58:29:5829 [35mhttp[39m: [35m##### GET /api/v1/petitions/9 #####[39m
+2024-05-18 15:58:29:5829 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/supporters #####[39m
+2024-05-18 15:58:29:5829 [35mhttp[39m: [35m##### GET /api/v1/petitions/0/image #####[39m
+2024-05-18 15:58:29:5829 [35mhttp[39m: [35m##### GET /api/v1/users/0/image #####[39m
+2024-05-18 15:58:29:5829 [35mhttp[39m: [35m##### GET /api/v1/petitions/9 #####[39m
+2024-05-18 15:58:29:5829 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/image #####[39m
+2024-05-18 15:58:29:5829 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-18 15:58:29:5829 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/supporters #####[39m
+2024-05-18 15:58:43:5843 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 15:58:43:5843 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 15:58:43:5843 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 15:58:43:5843 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 15:58:43:5843 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-18 15:58:43:5843 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-18 15:58:43:5843 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-18 15:58:43:5843 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-18 15:58:43:5843 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### OPTIONS /api/v1/users/1 #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### OPTIONS /api/v1/users/1 #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/users/1 #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/users/1 #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/supporters #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/users/12/image #####[39m
+2024-05-18 15:58:53:5853 [35mhttp[39m: [35m##### GET /api/v1/users/18/image #####[39m
+2024-05-18 15:58:57:5857 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:58:57:5857 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 15:58:57:5857 [35mhttp[39m: [35m##### GET /api/v1/petitions/0/image #####[39m
+2024-05-18 15:58:57:5857 [35mhttp[39m: [35m##### GET /api/v1/users/0/image #####[39m
+2024-05-18 15:58:57:5857 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 15:58:57:5857 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 16:02:08:28 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/image #####[39m
+2024-05-18 16:02:08:28 [35mhttp[39m: [35m##### GET /api/v1/users/1/image #####[39m
+2024-05-18 16:02:13:213 [35mhttp[39m: [35m##### OPTIONS /api/v1/users/1 #####[39m
+2024-05-18 16:02:13:213 [35mhttp[39m: [35m##### OPTIONS /api/v1/users/1 #####[39m
+2024-05-18 16:02:13:213 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 16:02:13:213 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 16:02:13:213 [35mhttp[39m: [35m##### GET /api/v1/users/1 #####[39m
+2024-05-18 16:02:13:213 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 16:02:13:213 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 16:02:13:213 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 16:02:13:213 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 16:02:13:213 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/supporters #####[39m
+2024-05-18 16:02:13:213 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/supporters #####[39m
+2024-05-18 16:02:13:213 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/supporters #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/supporters #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/supporters #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/supporters #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/supporters #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/supporters #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/supporters #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/supporters #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/supporters #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/supporters #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/supporters #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/supporters #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/supporters #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/supporters #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/users/1 #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/supporters #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/supporters #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/8/supporters #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/supporters #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/supporters #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/supporters #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/supporters #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/supporters #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/12/supporters #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/supporters #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/supporters #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/14/supporters #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/supporters #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/16/supporters #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/supporters #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/supporters #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/4/image #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/users/8/image #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/10/image #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/5/image #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/users/9/image #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/petitions/17/image #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/users/12/image #####[39m
+2024-05-18 16:02:14:214 [35mhttp[39m: [35m##### GET /api/v1/users/18/image #####[39m
+2024-05-18 16:02:16:216 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 16:02:16:216 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 16:02:17:217 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 16:02:17:217 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 16:02:17:217 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/image #####[39m
+2024-05-18 16:02:17:217 [35mhttp[39m: [35m##### GET /api/v1/users/3/image #####[39m
+2024-05-18 16:02:17:217 [35mhttp[39m: [35m##### GET /api/v1/petitions/2/image #####[39m
+2024-05-18 16:02:17:217 [35mhttp[39m: [35m##### GET /api/v1/users/2/image #####[39m
+2024-05-18 16:02:17:217 [35mhttp[39m: [35m##### GET /api/v1/petitions/11/image #####[39m
+2024-05-18 16:02:17:217 [35mhttp[39m: [35m##### GET /api/v1/petitions/9/image #####[39m
+2024-05-18 16:02:17:217 [35mhttp[39m: [35m##### GET /api/v1/petitions/15/image #####[39m
+2024-05-18 16:02:17:217 [35mhttp[39m: [35m##### GET /api/v1/petitions/7/image #####[39m
+2024-05-18 16:02:17:217 [35mhttp[39m: [35m##### GET /api/v1/users/5/image #####[39m
+2024-05-18 16:02:17:217 [35mhttp[39m: [35m##### GET /api/v1/petitions/18/image #####[39m
+2024-05-18 16:02:17:217 [35mhttp[39m: [35m##### GET /api/v1/petitions/13/image #####[39m
+2024-05-18 16:02:17:217 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-18 16:02:17:217 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-18 16:02:17:217 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-18 16:02:17:217 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-18 16:02:17:217 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-18 16:02:20:220 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 16:02:20:220 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 16:02:20:220 [35mhttp[39m: [35m##### GET /api/v1/petitions/categories #####[39m
+2024-05-18 16:02:20:220 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 16:02:20:220 [35mhttp[39m: [35m##### GET /api/v1/users/13/image #####[39m
+2024-05-18 16:02:20:220 [35mhttp[39m: [35m##### GET /api/v1/users/14/image #####[39m
+2024-05-18 16:02:20:220 [35mhttp[39m: [35m##### GET /api/v1/users/11/image #####[39m
+2024-05-18 16:02:20:220 [35mhttp[39m: [35m##### GET /api/v1/users/15/image #####[39m
+2024-05-18 16:02:20:220 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-18 16:02:31:231 [35mhttp[39m: [35m##### GET /api/v1/petitions/6 #####[39m
+2024-05-18 16:02:31:231 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 16:02:31:231 [35mhttp[39m: [35m##### GET /api/v1/petitions/0/image #####[39m
+2024-05-18 16:02:31:231 [35mhttp[39m: [35m##### GET /api/v1/users/0/image #####[39m
+2024-05-18 16:02:31:231 [35mhttp[39m: [35m##### GET /api/v1/petitions/6 #####[39m
+2024-05-18 16:02:31:231 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/image #####[39m
+2024-05-18 16:02:31:231 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 16:02:35:235 [35mhttp[39m: [35m##### GET /api/v1/users/3/image #####[39m
+2024-05-18 16:02:35:235 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/image #####[39m
+2024-05-18 16:04:07:47 [35mhttp[39m: [35m##### GET /api/v1/petitions/6 #####[39m
+2024-05-18 16:04:07:47 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 16:06:10:610 [35mhttp[39m: [35m##### GET /api/v1/users/2/image #####[39m
+2024-05-18 16:06:10:610 [35mhttp[39m: [35m##### GET /api/v1/petitions/6 #####[39m
+2024-05-18 16:06:10:610 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 16:06:22:622 [35mhttp[39m: [35m##### GET /api/v1/petitions/6 #####[39m
+2024-05-18 16:06:22:622 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 16:07:40:740 [35mhttp[39m: [35m##### GET /api/v1/petitions/6 #####[39m
+2024-05-18 16:07:40:740 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 16:08:23:823 [35mhttp[39m: [35m##### GET /api/v1/petitions #####[39m
+2024-05-18 16:08:24:824 [35mhttp[39m: [35m##### GET /api/v1/petitions/1 #####[39m
+2024-05-18 16:08:25:825 [35mhttp[39m: [35m##### GET /api/v1/petitions/1/supporters #####[39m
+2024-05-18 16:09:02:92 [35mhttp[39m: [35m##### GET /api/v1/petitions/6 #####[39m
+2024-05-18 16:09:02:92 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 16:09:09:99 [35mhttp[39m: [35m##### GET /api/v1/petitions/6 #####[39m
+2024-05-18 16:09:09:99 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 16:14:48:1448 [35mhttp[39m: [35m##### GET /api/v1/petitions/0/image #####[39m
+2024-05-18 16:14:48:1448 [35mhttp[39m: [35m##### GET /api/v1/users/0/image #####[39m
+2024-05-18 16:14:48:1448 [35mhttp[39m: [35m##### GET /api/v1/petitions/6 #####[39m
+2024-05-18 16:14:48:1448 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 16:14:48:1448 [33mwarn[39m: [33mread ECONNRESET[39m
+2024-05-18 16:14:48:1448 [31merror[39m: [31mread ECONNRESET[39m
+2024-05-18 16:14:48:1448 [31merror[39m: [31mread ECONNRESET[39m
+2024-05-18 16:14:48:1448 [31merror[39m: [31mread ECONNRESET[39m
+2024-05-18 16:14:48:1448 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 16:14:48:1448 [35mhttp[39m: [35m##### GET /api/v1/petitions/6 #####[39m
+2024-05-18 16:14:48:1448 [33mwarn[39m: [33mError[39m
+[33m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[33m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:104:44[39m
+[33m    at Generator.next (<anonymous>)[39m
+[33m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[33m    at new Promise (<anonymous>)[39m
+[33m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[33m    at Object.getOne (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:90:24)[39m
+[33m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.supporter.controller.js:52:41[39m
+[33m    at Generator.next (<anonymous>)[39m
+[33m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.supporter.controller.js:31:71 {[39m
+[33m  code: 'ECONNREFUSED',[39m
+[33m  errno: undefined,[39m
+[33m  sql: undefined,[39m
+[33m  sqlState: undefined,[39m
+[33m  sqlMessage: undefined[39m
+[33m}[39m
+2024-05-18 16:14:48:1448 [31merror[39m: [31mError[39m
+[31m    at PromisePool.query (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\node_modules\mysql2\promise.js:341:22)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:104:44[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:8:71[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at __awaiter (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:4:12)[39m
+[31m    at Object.getOne (C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\models\petition.model.js:90:24)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:106:41[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\dist\app\controllers\petition.controller.js:31:71 {[39m
+[31m  code: 'ECONNREFUSED',[39m
+[31m  errno: undefined,[39m
+[31m  sql: undefined,[39m
+[31m  sqlState: undefined,[39m
+[31m  sqlMessage: undefined[39m
+[31m}[39m
+2024-05-18 16:15:24:1524 [35mhttp[39m: [35m##### GET /api/v1/petitions/0/image #####[39m
+2024-05-18 16:15:24:1524 [35mhttp[39m: [35m##### GET /api/v1/users/0/image #####[39m
+2024-05-18 16:15:24:1524 [35mhttp[39m: [35m##### GET /api/v1/petitions/6 #####[39m
+2024-05-18 16:15:24:1524 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 16:15:24:1524 [35mhttp[39m: [35m##### GET /api/v1/petitions/6 #####[39m
+2024-05-18 16:15:24:1524 [35mhttp[39m: [35m##### GET /api/v1/users/3/image #####[39m
+2024-05-18 16:15:24:1524 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/image #####[39m
+2024-05-18 16:15:24:1524 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 16:15:24:1524 [35mhttp[39m: [35m##### GET /api/v1/users/2/image #####[39m
+2024-05-18 16:21:57:2157 [35mhttp[39m: [35m##### GET /api/v1/petitions/6 #####[39m
+2024-05-18 16:21:57:2157 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 16:21:58:2158 [31merror[39m: [31mread ECONNRESET[39m
+2024-05-18 16:21:58:2158 [33mwarn[39m: [33mread ECONNRESET[39m
+2024-05-18 16:22:26:2226 [35mhttp[39m: [35m##### GET /api/v1/petitions/0/image #####[39m
+2024-05-18 16:22:26:2226 [35mhttp[39m: [35m##### GET /api/v1/users/0/image #####[39m
+2024-05-18 16:22:26:2226 [35mhttp[39m: [35m##### GET /api/v1/petitions/6 #####[39m
+2024-05-18 16:22:26:2226 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 16:22:26:2226 [35mhttp[39m: [35m##### GET /api/v1/petitions/6 #####[39m
+2024-05-18 16:22:26:2226 [35mhttp[39m: [35m##### GET /api/v1/users/3/image #####[39m
+2024-05-18 16:22:26:2226 [35mhttp[39m: [35m##### GET /api/v1/petitions/3/image #####[39m
+2024-05-18 16:22:26:2226 [35mhttp[39m: [35m##### GET /api/v1/petitions/6/supporters #####[39m
+2024-05-18 16:22:26:2226 [35mhttp[39m: [35m##### GET /api/v1/users/2/image #####[39m

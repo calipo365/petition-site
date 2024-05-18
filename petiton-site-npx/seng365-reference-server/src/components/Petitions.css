@@ -1,3 +1,33 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fedfda;
+    color: #172a2e;
+}
+
+.header .logo {
+    font-size: 1.5rem;
+}
+
+.header .nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.header .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #172a2e;
+    border-radius: 5px;
+}
+
+.header .nav-links a:hover {
+    background-color: #0e171a;
+}
+
 .make-petition-container {
     margin-top: 15vh;
 }
