@@ -16,6 +16,7 @@ const Profile = () => {
     const [user, setUser] = React.useState({ firstName: '', lastName: '', email: '' });
     const [petitions, setPetitions] = React.useState([]);
     const [myPetitions, setMyPetitions] = React.useState([]);
+    const [mySupportedPetitions, setMySupportedPetitions] = React.useState<Petition[]>([]);
     const [image, setImage] = React.useState("");
     const token = localStorage.getItem('authToken'); 
     const userId = localStorage.getItem('userId');
@@ -42,6 +43,7 @@ const Profile = () => {
         if (petitions.length > 0) {
             const filteredPetitions = petitions.filter(petition => petition.ownerId === Number(userId));
             setMyPetitions(filteredPetitions);
+            getSupportedPetitions();
         }
     }, [petitions, userId]);
 
@@ -84,8 +86,54 @@ const Profile = () => {
             });
     };
 
+    const getSupportedPetitions = async () => {
+        const supportedPetitions: Petition[] = [];
+    
+        const fetchSupporters = petitions.map(async (petition) => {
+            try {
+                const response = await axios.get(`http://localhost:4941/api/v1/petitions/${petition.petitionId}/supporters`);
+                const supporters: Supporter[] = response.data;
+                const userIsSupporter = supporters.some(supporter => supporter.supporterId === Number(userId));
+                if (userIsSupporter) {
+                    supportedPetitions.push(petition);
+                }
+            } catch (error) {
+                console.error(`Error fetching supporters for petition ${petition.petitionId}:`, error);
+            }
+        });
+    
+        await Promise.all(fetchSupporters);
+        setMySupportedPetitions(supportedPetitions);
+    };
+    
+
     const list_of_my_petitions = () => {
         return myPetitions.map((item: Petition) => (
+            <div key={item.petitionId} className="petition">
+                <img 
+                    src={`http://localhost:4941/api/v1/petitions/${item.petitionId}/image`}
+                    alt={item.title}
+                    onClick={() => navigate(`/petitions/${item.petitionId}`)}
+                />
+                <div className="petition-details">
+                    <h4>{item.title}</h4>
+                    <p>Date: {new Date(item.creationDate).toLocaleDateString()}</p>
+                    <p>Category: {getCategoryNameById(item.categoryId)}</p>
+                    <p>Owner: {item.ownerFirstName} {item.ownerLastName}
+                        <img 
+                            src={`http://localhost:4941/api/v1/users/${item.ownerId}/image`}
+                            alt={item.title} className='small-image'
+                        />
+                    </p>
+                    <p>Lowest Cost: ${item.supportingCost}</p>
+                </div>
+            </div>
+        ));
+    };
+
+    const list_of_my_supported_petitions = () => {
+        console.log("My supported petitions: ", mySupportedPetitions)
+        return mySupportedPetitions.map((item: Petition) => (
             <div key={item.petitionId} className="petition">
                 <img 
                     src={`http://localhost:4941/api/v1/petitions/${item.petitionId}/image`}
@@ -316,6 +364,8 @@ const Profile = () => {
                     <div>
                         <h2>Your petitions</h2>
                         {list_of_my_petitions()}
+                        <h2>Your Supported Petitions</h2>
+                        {list_of_my_supported_petitions()}
                     </div>
                 </div>
             );

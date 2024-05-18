@@ -102,8 +102,6 @@ const Petitions = () => {
         )
     }
 
-
-
     const filterByCostGroup = (lowestCost: number) => {
         if (lowestCost < 0) return false;
         return selectedCostGroups.some((groupLabel) => {
