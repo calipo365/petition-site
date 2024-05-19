@@ -69,6 +69,14 @@ body {
     margin-bottom: 10px;
 }
 
+.petition-img {
+    width: 200px;
+    height: auto;
+    float: left;
+    margin-left: 2em;
+    margin-top: -12em;
+}
+
 .petition-container .petition-details {
     display: flex;
     flex-direction: column;

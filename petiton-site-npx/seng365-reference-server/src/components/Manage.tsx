@@ -3,21 +3,48 @@ import React from 'react';
 import {Link, useNavigate, useParams} from 'react-router-dom';
 import Avatar from '@mui/material/Avatar';
 import { deepOrange } from '@mui/material/colors';
+import { Box, Theme, useTheme } from '@mui/system';
+import { Button, Chip, FormControl, InputLabel, MenuItem, OutlinedInput, Select, SelectChangeEvent, TextField } from '@mui/material';
+import { Description } from '@mui/icons-material';
+
+const ITEM_HEIGHT = 48;
+const ITEM_PADDING_TOP = 8;
+const MenuProps = {
+    PaperProps: {
+        style: {
+            maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
+            width: 250,
+        },
+    },
+};
 
 const Manage = () => {
     const {id} = useParams();
     const navigate = useNavigate();
+    const theme = useTheme();
+
+    const token = localStorage.getItem('authToken'); 
+    const userId = localStorage.getItem('userId');
 
     const [errorFlag, setErrorFlag] = React.useState(false)
     const [errorMessage, setErrorMessage] = React.useState("")
     const [petition, setPetition] = React.useState<Petition>({petitionId: 0, title: "", description: "", creationDate: new Date(), image_filename: "",ownerId: 0, ownerFirstName: "", numberOfSupporters: 0, moneyRaised: 0, ownerLastName: "", categoryId: 0, supportingCost: 0, supportTiers: []})
     const [supporters, setSupporters] = React.useState<Supporter[]>([]);
     const [userImageFailed, setUserImageFailed] = React.useState(false);
+    
     const [title, setTitle] = React.useState("")
+    const [description, setDescription] = React.useState("")
+
+    const [titleError, setTitleError] = React.useState("")
+    const [descriptionError, setDescriptionError] = React.useState("")
+
+    const [selectedCategory, setSelectedCategory] = React.useState<number | null>(null);
+    const [categories, setCategories] = React.useState<Category[]>([]);
 
     React.useEffect(() => {
         getPetition()
         getSupporters()
+        getCategories()
     }, [id])
 
     const getPetition = () => {
@@ -30,6 +57,19 @@ const Manage = () => {
                 setErrorFlag(true)
                 setErrorMessage(error.toString())
             })
+    }
+
+    const getCategories = () => {
+        axios.get('http://localhost:4941/api/v1/petitions/categories')
+            .then((response) => {
+                setErrorFlag(false)
+                setErrorMessage(" ")
+                setCategories(response.data);
+            }, (error) => {
+                setErrorFlag(true)
+                setErrorMessage(error.toString())
+            }
+        )
     }
 
     const getSupporters = () => {
@@ -82,37 +122,97 @@ const Manage = () => {
         setTitle(event.target.value);
     }
 
-    const deletePetition = (petition: Petition) => {
-        axios.delete('http://localhost:4941/ap1/v1/petitions/' + petition.petitionId)
-            .then((response) => {
-                navigate('/petitions')
-            }, (error) => {
-                setErrorFlag(true)
-                setErrorMessage(error.toString())
-            })
-    }
-
-    const updatePetition = (event: React.FormEvent<HTMLFormElement>, petition: Petition) => {
-        event.preventDefault();
-        if (title === "") {
-            alert("Please enter a valid petition title!")
+    const deletePetition = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+        if (supporters.length > 0) {
+            
         } else {
-            axios.put('http://localhost:4941/api/v1/petitions/' + petition.petitionId, { title })
-                .then((reponse) => {
+            event.preventDefault();
+            axios.delete('http://localhost:4941/ap1/v1/petitions/' + petition.petitionId, {
+                headers: {
+                    'X-Authorization': token
+                }
+            })
+                .then((response) => {
                     navigate('/petitions')
                 }, (error) => {
-                    setErrorFlag(true);
+                    setErrorFlag(true)
                     setErrorMessage(error.toString())
-                });
+                })
+            }
         }
+
+    const handleCategoryChange = (event: SelectChangeEvent<string>) => {
+        const {
+            target: { value },
+        } = event;
+        const selectedNumber = Number(value);
+        setSelectedCategory(selectedNumber);
+    };
+
+    const signOut = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        axios.post('http://localhost:4941/api/v1/users/logout', {
+            headers: {
+                'X-Authorization': token
+            }
+        })
+        .then((response) => {
+            console.log("Response: ", response)
+        }, (error) => {
+            setErrorFlag(true);
+            setErrorMessage(error.toString())
+        });
     }
 
-    const handleUserImageError = () => {
-        setUserImageFailed(true);
-    }
+    const validateTitle = () => {
+        if (title.trim() === "") {
+            setTitleError("First name is required.");
+        } else {
+            setTitleError("");
+        }
+    };
 
-    const getUserInitials = () => {
-        return `${petition.ownerFirstName[0]}${petition.ownerLastName[0]}`;
+    const validateDescription = () => {
+        if (description.trim() === "") {
+            setDescriptionError("Last name is required.");
+        } else {
+            setDescriptionError("");
+        }
+    };
+
+    const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        validateTitle();
+        validateDescription();
+
+        if ( titleError || descriptionError ) {
+            return;
+        }
+
+        if (!token) {
+            setErrorFlag(true);
+            setErrorMessage("User is not authenticated.");
+            return;
+        }
+
+        const PetitionData = {
+            title,
+            description
+        };
+
+        axios.patch(`http://localhost:4941/api/v1/petition/${id}`, PetitionData, {
+            headers: {
+                'X-Authorization': token
+            }
+        })
+        .then((response) => {
+            console.log("User updated successfully", response.data);
+            navigate("/");
+        }, (error) => {
+            console.error('User failed to update', error.response);
+            setErrorFlag(true);
+            setErrorMessage(error.response.data.error || "User failed to post update");
+        });
     };
 
     if (errorFlag) {
@@ -128,34 +228,102 @@ const Manage = () => {
     } else {
         return (
             <div>
-                <h1 className='title'> {petition.title} </h1>
-                <body>
-                    <img 
-                        src={`http://localhost:4941/api/v1/petitions/${petition.ownerId}/image`}
-                        alt={petition.title} className='petition-img'
-                    />
-                    <h6 className='owner-name'>{petition.ownerFirstName} {petition.ownerLastName}</h6>
-                    {userImageFailed ? (
-                        <Avatar sx={{ bgcolor: deepOrange[500]}} className='owner-img'>
-                            {petition.ownerFirstName[0]}{petition.ownerLastName[0]}
-                        </Avatar>
-                    ) : (
-                        <img 
-                            src={`http://localhost:4941/api/v1/users/${petition.ownerId}/image`}
-                            alt={petition.ownerFirstName} className='owner-img'
-                        />
-                    )}
-                    <h6>Created on: {new Date(petition.creationDate).toLocaleDateString()}</h6>
-                    {petition.description}
-                    <body>Number of supporters: {petition.numberOfSupporters}</body>
-                    <body>Money raised: {petition.moneyRaised}</body>
-                    <body>Support tiers:</body>
+                <div>
+                    <header className="header">
+                    <div className="logo" onClick={() => navigate(`/`)}>Petition Pledge</div>
+                    <nav className="nav-links">
+                        <a href="/users/register">Register</a>
+                        <a href="/users/login">Login</a>
+                        <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#signoutModal">
+                            Log out
+                        </button>
+                            <div className='modal fade' id='signoutModal' tabIndex={-1} role="dialog"
+                                aria-labelledby="signoutModalLabel" aria-hiddden="true">
+                                    <div className="modal-dialog" role="document">
+                                        <div className="modal-content">
+                                            <div className="modal-header">
+                                                <h5 className='modal-title' id='usignoutModalLabel'>Sign out</h5>
+                                                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div className='modal-footer'>
+                                                Are you sure you want to sign out?
+                                                <form onSubmit={(e) => signOut(e)}>
+                                                    <input type="submit" value="Submit" />
+                                                </form>
+                                                <button type="button" className="btn btn-secondary" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </nav>
+                    </header>
+                        <h2>Your Petition</h2>
+                        <Box
+                            component="form"
+                            sx={{
+                                '& .MuiTextField-root': { m: 1, width: '25ch' },
+                            }}
+                            noValidate
+                            autoComplete="off"
+                            onSubmit={handleSubmit}
+                        >
+                            <div>
+                                <TextField
+                                    id="outlined-controlled"
+                                    label="Title"
+                                    value={title}
+                                    onChange={(event) => setTitle(event.target.value)}
+                                />
+                                <FormControl sx={{ m: 1, width: 300 }}>
+                                    <InputLabel id="category-chip-label">Category</InputLabel>
+                                    <Select
+                                        labelId='category-chip-label'
+                                        id='category-chip'
+                                        value={selectedCategory?.toString() || ''}
+                                        onChange={handleCategoryChange}
+                                        input={<OutlinedInput id='select-chip' label='Category' />}
+                                        renderValue={(selected) => (
+                                            <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5 }}>
+                                                <Chip key={selected} label={categories.find(c => c.categoryId.toString() === selected)?.name} />
+                                            </Box>
+                                        )}
+                                        MenuProps={MenuProps}
+                                    >
+                                        {categories.map((category: Category) => (
+                                            <MenuItem
+                                                key={category.categoryId}
+                                                value={category.categoryId.toString()}
+                                            >
+                                                {category.name}
+                                            </MenuItem>
+                                        ))}
+                                    </Select>
+                                </FormControl>
+                                <div>
+                                    <TextField
+                                        id="outlined-multiline-flexible"
+                                        label="Description"
+                                        multiline
+                                        maxRows={4}
+                                        value={description}
+                                        onChange={(event) => setDescription(event.target.value)}
+                                    />
+                                </div>
+                            </div>  
+                            <Button type="submit" variant="outlined">Update Petition</Button> 
+                        </Box>
                     <body>
-                        {list_of_support_tiers()}
-                        {list_of_supporters()}
+                        <img 
+                            src={`http://localhost:4941/api/v1/petitions/${petition.petitionId}/image`}
+                            alt={petition.title} className='petition-img'
+                        />
                     </body>
-                </body>
-                <Link to={'/'}> Back to Petitions </Link>
+                    <button type="button" onClick={(event) => deletePetition(event)}>Delete Petition</button>
+                </div>
             </div>
         )
     }

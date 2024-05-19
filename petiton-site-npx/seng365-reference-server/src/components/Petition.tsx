@@ -9,6 +9,8 @@ const Petition = () => {
     const {id} = useParams();
     const navigate = useNavigate();
     const [petition, setPetition] = React.useState<Petition>({petitionId: 0, title: "", description: "", creationDate: new Date(), image_filename: "",ownerId: 0, ownerFirstName: "", numberOfSupporters: 0, moneyRaised: 0, ownerLastName: "", categoryId: 0, supportingCost: 0, supportTiers: []})
+    const [petitions, setPetitions] = React.useState<Petition[]>([])
+    const [categories, setCategories] = React.useState<Category[]>([]);
     const [supporters, setSupporters] = React.useState<Supporter[]>([]);
     const [errorFlag, setErrorFlag] = React.useState(false)
     const [errorMessage, setErrorMessage] = React.useState("")
@@ -21,6 +23,8 @@ const Petition = () => {
     React.useEffect(() => {
         getPetition()
         getSupporters()
+        getPetitions()
+        getCategories()
     }, [id])
 
     const getPetition = () => {
@@ -33,6 +37,32 @@ const Petition = () => {
                 setErrorFlag(true)
                 setErrorMessage(error.toString())
             })
+    }
+
+    const getPetitions = () => {
+        axios.get('http://localhost:4941/api/v1/petitions')
+            .then((response) => {
+                setErrorFlag(false)
+                setErrorMessage(" ")
+                setPetitions(response.data.petitions)
+            }, (error) => {
+                setErrorFlag(true)
+                setErrorMessage(error.toString())
+            }
+        )
+    }
+
+    const getCategories = () => {
+        axios.get('http://localhost:4941/api/v1/petitions/categories')
+            .then((response) => {
+                setErrorFlag(false)
+                setErrorMessage(" ")
+                setCategories(response.data);
+            }, (error) => {
+                setErrorFlag(true)
+                setErrorMessage(error.toString())
+            }
+        )
     }
 
     const getSupporters = () => {
@@ -98,6 +128,36 @@ const Petition = () => {
             setErrorFlag(true);
             setErrorMessage(error.toString())
         });
+    }
+
+    const similarPetitions = () => {
+        const similar = petitions.filter(p => (p.categoryId === petition.categoryId || p.ownerId === petition.ownerId) && p.petitionId !== petition.petitionId);
+        return similar.map((item: Petition) => (
+            <div key={item.petitionId} className="petition">
+                <img 
+                    src={`http://localhost:4941/api/v1/petitions/${item.petitionId}/image`}
+                    alt={item.title}
+                    onClick={() => navigate(`/petitions/${item.petitionId}`)}
+                />
+                <div className="petition-details">
+                    <h4>{item.title}</h4>
+                    <p>Date: {new Date(item.creationDate).toLocaleDateString()}</p>
+                    <p>Category: {getCategoryNameById(item.categoryId)}</p>
+                    <p>Owner: {item.ownerFirstName} {item.ownerLastName}
+                        <img 
+                            src={`http://localhost:4941/api/v1/users/${item.ownerId}/image`}
+                            alt={item.title} className='small-image'
+                        />
+                    </p>
+                    <p>Lowest Cost: ${item.supportingCost}</p>
+                </div>
+            </div>
+        ))
+    }
+
+    const getCategoryNameById = (categoryId: number) => {
+        const category = categories.find(cat => cat.categoryId === categoryId);
+        return category ? category.name : 'Unknown';
     }
 
 
@@ -180,6 +240,8 @@ const Petition = () => {
                         <h2>Our Supporters! </h2>
                         {list_of_supporters()}
                     </div>
+                    <h2>Similar Petitions</h2>
+                <div className="petition-grid">{similarPetitions()}</div>
             </div>
         </body>
         )
