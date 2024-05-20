@@ -28,8 +28,30 @@
     background-color: #0e171a;
 }
 
-.make-petition-container {
-    margin-top: 15vh;
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 50px;
+    
+}
+
+.body .nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.body .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #172a2e;
+    border-radius: 5px;
+}
+
+.body .nav-links a:hover {
+    background-color: #0e171a;
 }
 
 .petition-container {
@@ -61,10 +83,9 @@
 
 
 .make-button {
-    background-color: #fbd7fd;
+    background-color: #172a2e;
     border-color: #eb6bb6;
-    color: #ee76bc;
-    padding: 15px 32px;
+    color: white;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -72,7 +93,7 @@
   }
 
 .filter-container {
-    margin-top: 125px;
+    margin-top: 75px;
     margin-left: 1050px;
 }
 
@@ -93,4 +114,10 @@
     inset: 0;
     width: 100%;
     z-index: 999999;
+}
+
+.owner-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }

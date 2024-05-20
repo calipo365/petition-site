@@ -28,7 +28,6 @@ const Login = () => {
         event.preventDefault();
         axios.post('http://localhost:4941/api/v1/users/login', { "email": email, "password": password })
             .then((response) => {
-                console.log("Logged in successfully", response.data);
                 localStorage.setItem('authToken', response.data.token);
                 localStorage.setItem('userId', response.data.userId);
                 navigate('/');

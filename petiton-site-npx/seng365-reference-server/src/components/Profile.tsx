@@ -5,9 +5,62 @@ import { Link, useNavigate } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import { Button } from '@mui/material';
+import Avatar from '@mui/material/Avatar';
+import { pink } from '@mui/material/colors';
+
+interface OwnerImageOrAvatarProps {
+    ownerId: number;
+    ownerFirstName: string;
+    ownerLastName: string;
+}
+
+const SmallOwnerImageOrAvatar: React.FC<OwnerImageOrAvatarProps> = ({ ownerId, ownerFirstName, ownerLastName }) => {
+    const [imageFailed, setImageFailed] = React.useState(false);
+
+    const handleImageError = () => {
+        setImageFailed(true);
+    };
+
+    return (
+        imageFailed ? (
+            <Avatar sx={{ bgcolor: pink[500] }}>
+                {ownerFirstName[0]}{ownerLastName[0]}
+            </Avatar>
+        ) : (
+            <img
+                src={`http://localhost:4941/api/v1/users/${ownerId}/image`}
+                alt={`${ownerFirstName} ${ownerLastName}`}
+                className='small-image'
+                onError={handleImageError}
+            />
+        )
+    );
+};
+
+const LargeOwnerImageOrAvatar: React.FC<OwnerImageOrAvatarProps> = ({ ownerId, ownerFirstName, ownerLastName }) => {
+    const [imageFailed, setImageFailed] = React.useState(false);
+
+    const handleImageError = () => {
+        setImageFailed(true);
+    };
+
+    return (
+        imageFailed ? (
+            <Avatar sx={{ bgcolor: pink[500] }}>
+                {ownerFirstName[0]}{ownerLastName[0]}
+            </Avatar>
+        ) : (
+            <img
+                src={`http://localhost:4941/api/v1/users/${ownerId}/image`}
+                alt={`${ownerFirstName} ${ownerLastName}`}
+                className='user-img'
+                onError={handleImageError}
+            />
+        )
+    );
+};
 
 const Profile = () => {
-
     const navigate = useNavigate();
 
     const [errorFlag, setErrorFlag] = React.useState(false);
@@ -119,11 +172,9 @@ const Profile = () => {
                     <h4>{item.title}</h4>
                     <p>Date: {new Date(item.creationDate).toLocaleDateString()}</p>
                     <p>Category: {getCategoryNameById(item.categoryId)}</p>
-                    <p>Owner: {item.ownerFirstName} {item.ownerLastName}
-                        <img 
-                            src={`http://localhost:4941/api/v1/users/${item.ownerId}/image`}
-                            alt={item.title} className='small-image'
-                        />
+                    <p className='owner-info'>
+                        Owner: {item.ownerFirstName} {item.ownerLastName}
+                        <SmallOwnerImageOrAvatar ownerId={item.ownerId} ownerFirstName={item.ownerFirstName} ownerLastName={item.ownerLastName} />
                     </p>
                     <p>Lowest Cost: ${item.supportingCost}</p>
                 </div>
@@ -147,11 +198,9 @@ const Profile = () => {
                     <h4>{item.title}</h4>
                     <p>Date: {new Date(item.creationDate).toLocaleDateString()}</p>
                     <p>Category: {getCategoryNameById(item.categoryId)}</p>
-                    <p>Owner: {item.ownerFirstName} {item.ownerLastName}
-                        <img 
-                            src={`http://localhost:4941/api/v1/users/${item.ownerId}/image`}
-                            alt={item.title} className='small-image'
-                        />
+                    <p className='owner-info'>
+                        Owner: {item.ownerFirstName} {item.ownerLastName}
+                        <SmallOwnerImageOrAvatar ownerId={item.ownerId} ownerFirstName={item.ownerFirstName} ownerLastName={item.ownerLastName} />
                     </p>
                     <p>Lowest Cost: ${item.supportingCost}</p>
                 </div>
@@ -257,13 +306,18 @@ const Profile = () => {
 
     const signOut = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        axios.post('http://localhost:4941/api/v1/users/logout', {
+        axios.post('http://localhost:4941/api/v1/users/logout', {}, {
             headers: {
                 'X-Authorization': token
             }
         })
         .then((response) => {
-            console.log("Response: ", response)
+            console.log("Reponse: ", response)
+            if (response.status === 200) {
+                localStorage.removeItem('authToken');
+                localStorage.removeItem('userId');
+                navigate('/');
+            }
         }, (error) => {
             setErrorFlag(true);
             setErrorMessage(error.toString())
@@ -405,12 +459,9 @@ const Profile = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='user'>
-                        <img 
-                            src={`http://localhost:4941/api/v1/users/${userId}/image`}
-                            alt='User profile'
-                        />
-                    </div>
+                    <p className='owner-info'>
+                        <LargeOwnerImageOrAvatar ownerId={Number(userId)} ownerFirstName={firstName} ownerLastName={lastName} />
+                    </p>
                     <div>
                         <h2 className='your-petitions'>Your petitions</h2>
                         <div className="petition-container">

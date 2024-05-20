@@ -118,22 +118,18 @@ const Manage = () => {
         })
     }
 
-    const updateTitleState = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setTitle(event.target.value);
-    }
-
-    const deletePetition = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    const deletePetition = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>, petition: Petition) => {
         if (supporters.length > 0) {
-            
+            console.log("Cannot delete there are supporters")
         } else {
             event.preventDefault();
-            axios.delete('http://localhost:4941/ap1/v1/petitions/' + petition.petitionId, {
+            axios.delete('http://localhost:4941/api/v1/petitions/' + petition.petitionId, {
                 headers: {
                     'X-Authorization': token
                 }
             })
                 .then((response) => {
-                    navigate('/petitions')
+                    navigate('/profile')
                 }, (error) => {
                     setErrorFlag(true)
                     setErrorMessage(error.toString())
@@ -151,13 +147,18 @@ const Manage = () => {
 
     const signOut = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        axios.post('http://localhost:4941/api/v1/users/logout', {
+        axios.post('http://localhost:4941/api/v1/users/logout', {}, {
             headers: {
                 'X-Authorization': token
             }
         })
         .then((response) => {
-            console.log("Response: ", response)
+            console.log("Reponse: ", response)
+            if (response.status === 200) {
+                localStorage.removeItem('authToken');
+                localStorage.removeItem('userId');
+                navigate('/');
+            }
         }, (error) => {
             setErrorFlag(true);
             setErrorMessage(error.toString())
@@ -322,7 +323,7 @@ const Manage = () => {
                             alt={petition.title} className='petition-img'
                         />
                     </body>
-                    <button type="button" onClick={(event) => deletePetition(event)}>Delete Petition</button>
+                    <button type="button" onClick={(event) => deletePetition(event, petition)}>Delete Petition</button>
                 </div>
             </div>
         )

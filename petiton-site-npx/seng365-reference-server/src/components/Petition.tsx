@@ -2,8 +2,39 @@ import axios from 'axios';
 import React from 'react';
 import {Link, useNavigate, useParams} from 'react-router-dom';
 import './Petition.css';
+import './Petitions.css';
 import Avatar from '@mui/material/Avatar';
-import { deepOrange } from '@mui/material/colors';
+import { pink } from '@mui/material/colors';
+
+interface OwnerImageOrAvatarProps {
+    ownerId: number;
+    ownerFirstName: string;
+    ownerLastName: string;
+}
+
+const OwnerImageOrAvatar: React.FC<OwnerImageOrAvatarProps> = ({ ownerId, ownerFirstName, ownerLastName }) => {
+    const [imageFailed, setImageFailed] = React.useState(false);
+
+    const handleImageError = () => {
+        setImageFailed(true);
+    };
+
+    return (
+        imageFailed ? (
+            <Avatar sx={{ bgcolor: pink[500] }}>
+                {ownerFirstName[0]}{ownerLastName[0]}
+            </Avatar>
+        ) : (
+            <img
+                src={`http://localhost:4941/api/v1/users/${ownerId}/image`}
+                alt={`${ownerFirstName} ${ownerLastName}`}
+                className='small-image'
+                onError={handleImageError}
+            />
+        )
+    );
+};
+
 
 const Petition = () => {
     const {id} = useParams();
@@ -100,16 +131,9 @@ const Petition = () => {
                     <p>{tierTitle}</p>
                     <p>{item.message}</p>
                     <p>{new Date(item.timestamp).toLocaleDateString()}</p>
-                    {userImageFailed ? (
-                            <Avatar sx={{ bgcolor: deepOrange[500]}} className='owner-img'>
-                                {item.supporterFirstName[0]}{item.supporterLastName}
-                            </Avatar>
-                        ) : (
-                            <img 
-                                src={`http://localhost:4941/api/v1/users/${item.supporterId}/image`}
-                                alt={petition.ownerFirstName} className='owner-img'
-                            />
-                        )}
+                    <p className='owner-info'>
+                        <OwnerImageOrAvatar ownerId={item.supporterId} ownerFirstName={item.supporterFirstName} ownerLastName={item.supporterLastName} />
+                    </p>
                 </div>
             )
         })
@@ -117,13 +141,18 @@ const Petition = () => {
 
     const signOut = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        axios.post('http://localhost:4941/api/v1/users/logout', {
+        axios.post('http://localhost:4941/api/v1/users/logout', {}, {
             headers: {
                 'X-Authorization': token
             }
         })
         .then((response) => {
-            console.log("Response: ", response)
+            console.log("Reponse: ", response)
+            if (response.status === 200) {
+                localStorage.removeItem('authToken');
+                localStorage.removeItem('userId');
+                navigate('/');
+            }
         }, (error) => {
             setErrorFlag(true);
             setErrorMessage(error.toString())
@@ -143,11 +172,9 @@ const Petition = () => {
                     <h4>{item.title}</h4>
                     <p>Date: {new Date(item.creationDate).toLocaleDateString()}</p>
                     <p>Category: {getCategoryNameById(item.categoryId)}</p>
-                    <p>Owner: {item.ownerFirstName} {item.ownerLastName}
-                        <img 
-                            src={`http://localhost:4941/api/v1/users/${item.ownerId}/image`}
-                            alt={item.title} className='small-image'
-                        />
+                    <p className='owner-info'>
+                        Owner: {item.ownerFirstName} {item.ownerLastName}
+                        <OwnerImageOrAvatar ownerId={item.ownerId} ownerFirstName={item.ownerFirstName} ownerLastName={item.ownerLastName} />
                     </p>
                     <p>Lowest Cost: ${item.supportingCost}</p>
                 </div>
@@ -210,23 +237,16 @@ const Petition = () => {
                 <h1 className='title'> {petition.title} </h1>
                 <body>
                     <img 
-                        src={`http://localhost:4941/api/v1/petitions/${petition.ownerId}/image`}
+                        src={`http://localhost:4941/api/v1/petitions/${petition.petitionId}/image`}
                         alt="Petition Image" className='petition-image'
                     />
                     <p><strong>Created on: </strong>{new Date(petition.creationDate).toLocaleDateString()}</p>
                     <div className="petition-details">
-                        <p><strong>Owner:  </strong> 
-                        {petition.ownerFirstName} {petition.ownerLastName}{"     "}
-                            {userImageFailed ? (
-                            <Avatar sx={{ bgcolor: deepOrange[500]}} className='owner-img'>
-                                {petition.ownerFirstName[0]}{petition.ownerLastName[0]}
-                            </Avatar>
-                        ) : (
-                            <img 
-                                src={`http://localhost:4941/api/v1/users/${petition.ownerId}/image`}
-                                alt={petition.ownerFirstName} className='owner-img'
-                            />
-                        )}</p>
+                        <p className='owner-info'>
+                            <strong>Owner:  </strong> 
+                            {petition.ownerFirstName} {petition.ownerLastName}
+                            <OwnerImageOrAvatar ownerId={petition.ownerId} ownerFirstName={petition.ownerFirstName} ownerLastName={petition.ownerLastName} />
+                        </p>
                         <p><strong>Description:</strong> {petition.description}</p>
                         </div>
                     </body>

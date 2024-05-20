@@ -13,6 +13,11 @@ import Chip from '@mui/material/Chip';
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 import SvgIcon, { SvgIconProps } from '@mui/material/SvgIcon';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import Avatar from '@mui/material/Avatar';
+import { pink } from '@mui/material/colors';
+
 
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
@@ -50,6 +55,35 @@ const SortGroups = [
     { label: "Oldest posted" },
     { label: "Newest posted" }
 ]
+
+interface OwnerImageOrAvatarProps {
+    ownerId: number;
+    ownerFirstName: string;
+    ownerLastName: string;
+}
+
+const OwnerImageOrAvatar: React.FC<OwnerImageOrAvatarProps> = ({ ownerId, ownerFirstName, ownerLastName }) => {
+    const [imageFailed, setImageFailed] = React.useState(false);
+
+    const handleImageError = () => {
+        setImageFailed(true);
+    };
+
+    return (
+        imageFailed ? (
+            <Avatar sx={{ bgcolor: pink[500] }}>
+                {ownerFirstName[0]}{ownerLastName[0]}
+            </Avatar>
+        ) : (
+            <img
+                src={`http://localhost:4941/api/v1/users/${ownerId}/image`}
+                alt={`${ownerFirstName} ${ownerLastName}`}
+                className='small-image'
+                onError={handleImageError}
+            />
+        )
+    );
+};
 
 const Petitions = () => {
     const navigate = useNavigate();
@@ -158,11 +192,9 @@ const Petitions = () => {
                     <h4>{item.title}</h4>
                     <p>Date: {new Date(item.creationDate).toLocaleDateString()}</p>
                     <p>Category: {getCategoryNameById(item.categoryId)}</p>
-                    <p>Owner: {item.ownerFirstName} {item.ownerLastName}
-                        <img 
-                            src={`http://localhost:4941/api/v1/users/${item.ownerId}/image`}
-                            alt={item.title} className='small-image'
-                        />
+                    <p className='owner-info'>
+                        Owner: {item.ownerFirstName} {item.ownerLastName}
+                        <OwnerImageOrAvatar ownerId={item.ownerId} ownerFirstName={item.ownerFirstName} ownerLastName={item.ownerLastName} />
                     </p>
                     <p>Lowest Cost: ${item.supportingCost}</p>
                 </div>
@@ -172,13 +204,18 @@ const Petitions = () => {
 
     const signOut = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        axios.post('http://localhost:4941/api/v1/users/logout', {
+        axios.post('http://localhost:4941/api/v1/users/logout', {}, {
             headers: {
                 'X-Authorization': token
             }
         })
         .then((response) => {
-            console.log("Response: ", response)
+            console.log("Reponse: ", response)
+            if (response.status === 200) {
+                localStorage.removeItem('authToken');
+                localStorage.removeItem('userId');
+                navigate('/');
+            }
         }, (error) => {
             setErrorFlag(true);
             setErrorMessage(error.toString())
@@ -225,23 +262,23 @@ const Petitions = () => {
         );
     }
 
-    if (errorFlag) {
-        return (
-            <div>
-                <h2> Petiton Pledge </h2>
-                <div style={{ color: "red" }}>
-                    {errorMessage}
-                </div>
-            </div>
-        )
-    } else {
-        return (
-            <div>
-            <header className="header">
+    const status = () => {
+        if (!token) {
+            return (
+                <header className="header">
                     <div className="logo" onClick={() => navigate(`/`)}>Petition Pledge</div>
                     <nav className="nav-links">
                         <a href="/users/register">Register</a>
                         <a href="/users/login">Login</a>
+                    </nav>
+                </header>
+            )
+        } else {
+            return(
+                <header className="header">
+                    <div className="logo" onClick={() => navigate(`/`)}>Petition Pledge</div>
+                    <nav className="nav-links">
+                        <a href="/profile">Profile</a>
                         <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#signoutModal">
                             Log out
                         </button>
@@ -269,15 +306,28 @@ const Petitions = () => {
                                 </div>
                     </nav>
                 </header>
-                <Stack>
-                        <PortraitIcon sx={{ fontSize: 60 }} onClick={() => navigate(`/profile`)}/>
-                        <body>Profile</body>
-                </Stack>
-                <div className="make-petition-container">
-                    <button type="button" onClick={() => navigate(`/create`)}>
-                        Make your own petition!
-                    </button>
+            )
+        }
+    }
+
+    if (errorFlag) {
+        return (
+            <div>
+                <h2> Petiton Pledge </h2>
+                <div style={{ color: "red" }}>
+                    {errorMessage}
                 </div>
+            </div>
+        )
+    } else {
+        return (
+            <div>
+                {status()}
+                <header className='body'>
+                    <nav className="nav-links">
+                        <a href="/create">Make your own petition!</a>
+                    </nav>
+                </header>
                     <div className="filter-container">
                         <FormControl sx={{ m: 1, width: 300}}>
                             <InputLabel id="category-multiple-chip-label">Categories</InputLabel>
