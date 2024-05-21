@@ -7825,3 +7825,16 @@
 [31m  sqlMessage: undefined[39m
 [31m}[39m
 2024-05-20 21:49:35:4935 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-22 10:07:32:732 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-22 10:07:32:732 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-22 10:07:53:753 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-22 10:07:53:753 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-22 10:08:18:818 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-22 10:08:18:818 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-22 10:08:29:829 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-22 10:08:29:829 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-22 10:08:46:846 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-22 10:09:03:93 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-22 10:09:39:939 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-22 10:09:54:954 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m
+2024-05-22 10:11:04:114 [31merror[39m: [31mENOENT: no such file or directory, open './storage/images/user_11.jpg'[39m

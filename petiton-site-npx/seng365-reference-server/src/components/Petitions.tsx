@@ -13,8 +13,6 @@ import Chip from '@mui/material/Chip';
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 import SvgIcon, { SvgIconProps } from '@mui/material/SvgIcon';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
 import Avatar from '@mui/material/Avatar';
 import { pink } from '@mui/material/colors';
 
