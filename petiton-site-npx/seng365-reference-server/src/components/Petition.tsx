@@ -187,25 +187,23 @@ const Petition = () => {
         return category ? category.name : 'Unknown';
     }
 
-
-    if (errorFlag) {
-        return (
-            <div>
-                <h1>Petition</h1>
-                <div style={{ color:"red" }}>
-                    {errorMessage}
-                </div>
-                <Link to={"/"}> Back to Petitions</Link>
-            </div>
-        )
-    } else {
-        return (
-            <body>
+    const status = () => {
+        if (!token) {
+            return (
                 <header className="header">
                     <div className="logo" onClick={() => navigate(`/`)}>Petition Pledge</div>
                     <nav className="nav-links">
                         <a href="/users/register">Register</a>
                         <a href="/users/login">Login</a>
+                    </nav>
+                </header>
+            )
+        } else {
+            return(
+                <header className="header">
+                    <div className="logo" onClick={() => navigate(`/`)}>Petition Pledge</div>
+                    <nav className="nav-links">
+                        <a href="/profile">Profile</a>
                         <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#signoutModal">
                             Log out
                         </button>
@@ -233,6 +231,25 @@ const Petition = () => {
                                 </div>
                     </nav>
                 </header>
+            )
+        }
+    }
+
+
+    if (errorFlag) {
+        return (
+            <div>
+                <h1>Petition</h1>
+                <div style={{ color:"red" }}>
+                    {errorMessage}
+                </div>
+                <Link to={"/"}> Back to Petitions</Link>
+            </div>
+        )
+    } else {
+        return (
+            <body>
+                {status()}
             <div className="petition-container">
                 <h1 className='title'> {petition.title} </h1>
                 <body>

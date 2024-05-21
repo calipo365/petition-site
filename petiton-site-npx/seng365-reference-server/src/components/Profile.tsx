@@ -186,7 +186,6 @@ const Profile = () => {
     };
 
     const list_of_my_supported_petitions = () => {
-        console.log("My supported petitions: ", mySupportedPetitions)
         return mySupportedPetitions.map((item: Petition) => (
             <div key={item.petitionId} className="petition">
                 <img 
@@ -305,6 +304,7 @@ const Profile = () => {
     };
 
     const signOut = (event: React.FormEvent<HTMLFormElement>) => {
+        console.log("Token: ", token)
         event.preventDefault();
         axios.post('http://localhost:4941/api/v1/users/logout', {}, {
             headers: {
@@ -312,7 +312,6 @@ const Profile = () => {
             }
         })
         .then((response) => {
-            console.log("Reponse: ", response)
             if (response.status === 200) {
                 localStorage.removeItem('authToken');
                 localStorage.removeItem('userId');
@@ -324,37 +323,23 @@ const Profile = () => {
         });
     }
 
-    if (errorFlag) {
-        return (
-            <div>
-                <h1>Profile</h1>
-                <div style={{ color: "red" }}>
-                    {errorMessage}
-                </div>
-                <Link to={"/"}> Back to Homepage</Link>
-            </div>
-        );
-    } else {
+    const status = () => {
         if (!token) {
             return (
-                <div>
-                    <h2>Profile</h2>
-                    <div style={{ color: "red" }}>
-                        {errorMessage}
-                    </div>
-                    <Link to={"/"}> Back to Homepage</Link>
-                    <Link to={"/users/register"}> Create an account</Link>
-                    <Link to={"/users/login"}> Login to an existing account</Link>
-                </div>
-            );
-        } else {
-            return (
-                <div>
-                    <header className="header">
+                <header className="header">
                     <div className="logo" onClick={() => navigate(`/`)}>Petition Pledge</div>
                     <nav className="nav-links">
                         <a href="/users/register">Register</a>
                         <a href="/users/login">Login</a>
+                    </nav>
+                </header>
+            )
+        } else {
+            return(
+                <header className="header">
+                    <div className="logo" onClick={() => navigate(`/`)}>Petition Pledge</div>
+                    <nav className="nav-links">
+                        <a href="/profile">Profile</a>
                         <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#signoutModal">
                             Log out
                         </button>
@@ -382,6 +367,38 @@ const Profile = () => {
                                 </div>
                     </nav>
                 </header>
+            )
+        }
+    }
+
+
+    if (errorFlag) {
+        return (
+            <div>
+                <h1>Profile</h1>
+                <div style={{ color: "red" }}>
+                    {errorMessage}
+                </div>
+                <Link to={"/"}> Back to Homepage</Link>
+            </div>
+        );
+    } else {
+        if (!token) {
+            return (
+                <div>
+                    <h2>Profile</h2>
+                    <div style={{ color: "red" }}>
+                        {errorMessage}
+                    </div>
+                    <Link to={"/"}> Back to Homepage</Link>
+                    <Link to={"/users/register"}> Create an account</Link>
+                    <Link to={"/users/login"}> Login to an existing account</Link>
+                </div>
+            );
+        } else {
+            return (
+                <div>
+                    {status()}
                     <h2>Your Profile</h2>
                     <Box
                         component="form"

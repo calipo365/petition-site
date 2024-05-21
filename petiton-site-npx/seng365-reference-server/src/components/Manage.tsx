@@ -216,25 +216,23 @@ const Manage = () => {
         });
     };
 
-    if (errorFlag) {
-        return (
-            <div>
-                <h1>Manage your petition</h1>
-                <div style={{ color:"red" }}>
-                    {errorMessage}
-                </div>
-                <Link to={"/profile"}> Back to Profile</Link>
-            </div>
-        )
-    } else {
-        return (
-            <div>
-                <div>
-                    <header className="header">
+    const status = () => {
+        if (!token) {
+            return (
+                <header className="header">
                     <div className="logo" onClick={() => navigate(`/`)}>Petition Pledge</div>
                     <nav className="nav-links">
                         <a href="/users/register">Register</a>
                         <a href="/users/login">Login</a>
+                    </nav>
+                </header>
+            )
+        } else {
+            return(
+                <header className="header">
+                    <div className="logo" onClick={() => navigate(`/`)}>Petition Pledge</div>
+                    <nav className="nav-links">
+                        <a href="/profile">Profile</a>
                         <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#signoutModal">
                             Log out
                         </button>
@@ -260,8 +258,27 @@ const Manage = () => {
                                         </div>
                                     </div>
                                 </div>
-                        </nav>
-                    </header>
+                    </nav>
+                </header>
+            )
+        }
+    }
+
+    if (errorFlag) {
+        return (
+            <div>
+                <h1>Manage your petition</h1>
+                <div style={{ color:"red" }}>
+                    {errorMessage}
+                </div>
+                <Link to={"/profile"}> Back to Profile</Link>
+            </div>
+        )
+    } else {
+        return (
+            <div>
+                {status()}
+                <div>
                         <h2>Your Petition</h2>
                         <Box
                             component="form"
