@@ -9464,3 +9464,5 @@
 2024-05-22 21:07:44:744 [31merror[39m: [31mconnect ETIMEDOUT[39m
 2024-05-22 21:07:44:744 [31merror[39m: [31mconnect ETIMEDOUT[39m
 2024-05-22 21:07:44:744 [31merror[39m: [31mconnect ETIMEDOUT[39m
+2024-05-22 21:10:39:1039 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m
+2024-05-22 21:27:45:2745 [31merror[39m: [31mENOENT: no such file or directory, open 'C:\Users\ninac\courses\SENG365\petition-site\seng365-reference-server\storage\images\user_11.jpg'[39m

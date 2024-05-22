@@ -289,7 +289,7 @@ const Profile = () => {
 
         console.group("Password data: ", passwordData)
 
-        axios.patch(`http://localhost:4941/api/v1/users/${userId}/password`, passwordData, {
+        axios.patch(`http://localhost:4941/api/v1/users/${userId}`, passwordData, {
             headers: {
                 'X-Authorization': token
             }
