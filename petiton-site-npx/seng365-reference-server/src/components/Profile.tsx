@@ -82,8 +82,8 @@ const Profile = () => {
     const [lastNameError, setLastNameError] = React.useState("");
     const [emailError, setEmailError] = React.useState("");
 
-    const [oldPassword, setOldPassword] = React.useState("");
-    const [newPassword, setNewPassword] = React.useState("");
+    const [currentPassword, setCurrentPassword] = React.useState("");
+    const [password, setPassword] = React.useState("");
     const [passwordError, setPasswordError] = React.useState("");
 
     useEffect(() => {
@@ -271,14 +271,14 @@ const Profile = () => {
     const changePassword = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
 
-        if (!oldPassword || !newPassword) {
+        if (!currentPassword || !password) {
             setPasswordError("Both fields are required.");
             return;
         }
 
         const passwordData = {
-            oldPassword,
-            newPassword
+            currentPassword,
+            password
         };
 
         axios.patch(`http://localhost:4941/api/v1/users/${userId}/password`, passwordData, {
@@ -288,8 +288,8 @@ const Profile = () => {
         })
         .then((response) => {
             console.log("Password changed successfully", response.data);
-            setOldPassword("");
-            setNewPassword("");
+            setCurrentPassword("");
+            setPassword("");
             setPasswordError("");
             navigate("/");
         }, (error) => {
@@ -450,8 +450,8 @@ const Profile = () => {
                                             id="oldPassword"
                                             label="Old Password"
                                             type='password'
-                                            value={oldPassword}
-                                            onChange={(event) => setOldPassword(event.target.value)}
+                                            value={currentPassword}
+                                            onChange={(event) => setCurrentPassword(event.target.value)}
                                             fullWidth
                                             margin='normal'
                                         />
@@ -459,8 +459,8 @@ const Profile = () => {
                                             id="newPassword"
                                             label="New Password"
                                             type='password'
-                                            value={newPassword}
-                                            onChange={(event) => setNewPassword(event.target.value)}
+                                            value={password}
+                                            onChange={(event) => setPassword(event.target.value)}
                                             fullWidth
                                             margin='normal'
                                         />
