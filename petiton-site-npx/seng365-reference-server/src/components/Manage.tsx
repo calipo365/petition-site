@@ -245,7 +245,7 @@ const Manage = () => {
         })
         .then((response) => {
             console.log("Petition support tier added successfully", response.data);
-            navigate("/");
+            navigate(`/profile`);
         }, (error) => {
             console.error('Petition support tier failed to be added', error.response);
             setErrorFlag(true);
@@ -263,7 +263,7 @@ const Manage = () => {
         })
         .then((response) => {
             console.log("Petition support tier added successfully", response.data);
-            navigate("/");
+            navigate(`/profile`);
         }, (error) => {
             console.error('Petition support tier failed to be added', error.response);
             setErrorFlag(true);
@@ -280,7 +280,7 @@ const Manage = () => {
         })
         .then((response) => {
             console.log("Petition support tier deleted successfully", response.data);
-            navigate("/");
+            navigate(`/profile`);
         }, (error) => {
             console.error('Petition support tier failed to be deleted', error.response);
             setErrorFlag(true);
