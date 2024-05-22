@@ -109,6 +109,8 @@ const Profile = () => {
                 setFirstName(response.data.firstName);
                 setLastName(response.data.lastName);
                 setEmail(response.data.email);
+                console.log("Reponse: ", response)
+                console.log("Email: ", email)
             }, (error) => {
                 setErrorFlag(true);
                 setErrorMessage(error.toString());
@@ -208,7 +210,8 @@ const Profile = () => {
     };
 
     const validateFirstName = () => {
-        if (firstName.trim() === "") {
+        console.log("First name: ", firstName)
+        if (firstName === "") {
             setFirstNameError("First name is required.");
         } else {
             setFirstNameError("");
@@ -216,7 +219,8 @@ const Profile = () => {
     };
 
     const validateLastName = () => {
-        if (lastName.trim() === "") {
+        console.log("Last name: ", lastName)
+        if (lastName === "") {
             setLastNameError("Last name is required.");
         } else {
             setLastNameError("");
@@ -224,7 +228,8 @@ const Profile = () => {
     };
 
     const validateEmail = () => {
-        if (email.trim() === "") {
+        console.log("Email: ", email)
+        if (email === "") {
             setEmailError("Email is required.");
         } else {
             setEmailError("");
@@ -248,9 +253,9 @@ const Profile = () => {
         }
 
         const UserData = {
+            email,
             firstName,
-            lastName,
-            email
+            lastName
         };
 
         axios.patch(`http://localhost:4941/api/v1/users/${userId}`, UserData, {
@@ -275,11 +280,14 @@ const Profile = () => {
             setPasswordError("Both fields are required.");
             return;
         }
+        console.log("Checked for both elements")
 
         const passwordData = {
             currentPassword,
             password
         };
+
+        console.group("Password data: ", passwordData)
 
         axios.patch(`http://localhost:4941/api/v1/users/${userId}/password`, passwordData, {
             headers: {
@@ -431,6 +439,7 @@ const Profile = () => {
                         </div>  
                         <Button type="submit" variant="outlined">Update Profile</Button> 
                     </Box>
+                    <h2></h2>
                     <button type='button' className='btn btn-primary' data-toggle='modal' data-target='#changePasswordModal'>
                         Change password
                     </button>

@@ -41,6 +41,15 @@ const Manage = () => {
     const [selectedCategory, setSelectedCategory] = React.useState<number | null>(null);
     const [categories, setCategories] = React.useState<Category[]>([]);
 
+    const [titleTouched, setTitleTouched]= React.useState(false);
+    const [descriptionTouched, setDescriptionTouched] = React.useState(false)
+    const [categoryIdTouched, setCategoryIdTouched] = React.useState(false)
+    const [supportTierTouched, setSupportTierTouched] =React.useState(false)
+    const [imageTouched, setImageTouched] = React.useState(false)
+
+    const [supportTier, setSupportTier] = React.useState<{ supportTierId: number, title: string, description: string, cost: number }>({ supportTierId: 0, title: '', description: '', cost: 0 });
+
+
     React.useEffect(() => {
         getPetition()
         getSupporters()
@@ -53,6 +62,8 @@ const Manage = () => {
                 setErrorFlag(false)
                 setErrorMessage("")
                 setPetition(response.data)
+                setTitle(response.data.title)
+                 setDescription(response.data.description)
             }, (error) => {
                 setErrorFlag(true)
                 setErrorMessage(error.toString())
@@ -167,7 +178,7 @@ const Manage = () => {
 
     const validateTitle = () => {
         if (title.trim() === "") {
-            setTitleError("First name is required.");
+            setTitleError("Title is required.");
         } else {
             setTitleError("");
         }
@@ -175,7 +186,7 @@ const Manage = () => {
 
     const validateDescription = () => {
         if (description.trim() === "") {
-            setDescriptionError("Last name is required.");
+            setDescriptionError("Description is required.");
         } else {
             setDescriptionError("");
         }
@@ -215,6 +226,67 @@ const Manage = () => {
             setErrorMessage(error.response.data.error || "User failed to post update");
         });
     };
+
+    const addSupportTier = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+        event.preventDefault();
+
+        if (petition.supportTiers.length >= 3) {
+            setErrorFlag(true)
+            setErrorMessage("You cannot add more than three support tiers")
+            return;
+        }
+
+        console.log("Support tier: ", supportTier)
+
+        axios.put(`http://localhost:4941/api/v1/petitions/${id}/supportTiers`, supportTier, {
+            headers: {
+                'X-Authorization': token
+            }
+        })
+        .then((response) => {
+            console.log("Petition support tier added successfully", response.data);
+            navigate("/");
+        }, (error) => {
+            console.error('Petition support tier failed to be added', error.response);
+            setErrorFlag(true);
+            setErrorMessage(error.response.data.error || "Petition support tier failed to be added");
+        });
+    }
+
+    const editSupportTier = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>, supportTierId: number) => {
+        event.preventDefault();
+        const supportTierToEdit = petition.supportTiers.find(t => t.supportTierId === supportTierId);
+        axios.patch(`http://localhost:4941/api/v1/petitions/${id}/supportTiers/${supportTierId}`, supportTierToEdit, {
+            headers: {
+                'X-Authorization': token
+            }
+        })
+        .then((response) => {
+            console.log("Petition support tier added successfully", response.data);
+            navigate("/");
+        }, (error) => {
+            console.error('Petition support tier failed to be added', error.response);
+            setErrorFlag(true);
+            setErrorMessage(error.response.data.error || "Petition support tier failed to be added");
+        });
+    }
+
+    const deleteSupportTier = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>, supportTierId: number) => {
+        event.preventDefault();
+        axios.delete(`http://localhost:4941/api/v1/petitions/${id}/supportTiers/${supportTierId}`, {
+            headers: {
+                'X-Authorization': token
+            }
+        })
+        .then((response) => {
+            console.log("Petition support tier deleted successfully", response.data);
+            navigate("/");
+        }, (error) => {
+            console.error('Petition support tier failed to be deleted', error.response);
+            setErrorFlag(true);
+            setErrorMessage(error.response.data.error || "Petition support tier failed to be adddeleteded");
+        });
+    }
 
     const status = () => {
         if (!token) {
@@ -264,6 +336,54 @@ const Manage = () => {
         }
     }
 
+    const displaySupportTiers = () => {
+        return petition.supportTiers.map((tier) => {
+            const tierHasSupporters = supporters.some(supporter => supporter.supportTierId === tier.supportTierId);
+            return (
+                <div key={tier.supportTierId} className='tier-details'>
+                    <h5>Support Tier</h5>
+                    <Box sx={{ display: 'flex', gap: 1, m: 1 }}>
+                        <TextField
+                            label="Title"
+                            value={tier.title}
+                            disabled={tierHasSupporters}
+                            onChange={(e) => {
+                                const newTiers = petition.supportTiers.map(t => t.supportTierId === tier.supportTierId ? { ...t, title: e.target.value } : t);
+                                setPetition({ ...petition, supportTiers: newTiers });
+                            }}
+                        />
+                        <TextField
+                            label="Description"
+                            value={tier.description}
+                            disabled={tierHasSupporters}
+                            onChange={(e) => {
+                                const newTiers = petition.supportTiers.map(t => t.supportTierId === tier.supportTierId ? { ...t, description: e.target.value } : t);
+                                setPetition({ ...petition, supportTiers: newTiers });
+                            }}
+                        />
+                        <TextField
+                            label="Cost"
+                            type="number"
+                            value={tier.cost}
+                            disabled={tierHasSupporters}
+                            onChange={(e) => {
+                                const newTiers = petition.supportTiers.map(t => t.supportTierId === tier.supportTierId ? { ...t, cost: Number(e.target.value) } : t);
+                                setPetition({ ...petition, supportTiers: newTiers });
+                            }}
+                        />
+                        <Button
+                            type="button"
+                            onClick={(event) => editSupportTier(event, tier.supportTierId)}
+                        >
+                            {"Update tier"}
+                        </Button>
+                        <Button type="button" onClick={(event) => deleteSupportTier(event, tier.supportTierId)}>Delete Tier</Button>
+                    </Box>
+                </div>
+            )
+        })
+    }
+
     if (errorFlag) {
         return (
             <div>
@@ -279,59 +399,73 @@ const Manage = () => {
             <div>
                 {status()}
                 <div>
-                        <h2>Your Petition</h2>
-                        <Box
-                            component="form"
-                            sx={{
-                                '& .MuiTextField-root': { m: 1, width: '25ch' },
-                            }}
-                            noValidate
-                            autoComplete="off"
-                            onSubmit={handleSubmit}
-                        >
-                            <div>
-                                <TextField
-                                    id="outlined-controlled"
-                                    label="Title"
-                                    value={title}
-                                    onChange={(event) => setTitle(event.target.value)}
-                                />
-                                <FormControl sx={{ m: 1, width: 300 }}>
-                                    <InputLabel id="category-chip-label">Category</InputLabel>
-                                    <Select
-                                        labelId='category-chip-label'
-                                        id='category-chip'
-                                        value={selectedCategory?.toString() || ''}
-                                        onChange={handleCategoryChange}
-                                        input={<OutlinedInput id='select-chip' label='Category' />}
-                                        renderValue={(selected) => (
-                                            <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5 }}>
-                                                <Chip key={selected} label={categories.find(c => c.categoryId.toString() === selected)?.name} />
-                                            </Box>
-                                        )}
-                                        MenuProps={MenuProps}
+                <h2>Your Petition</h2>
+                <Box
+                component="form"
+                sx={{
+                    '& .MuiTextField-root': { m: 1, width: '25ch' },
+                }}
+                noValidate
+                autoComplete="off"
+                onSubmit={handleSubmit}
+                    >
+                    <div>
+                    <TextField
+                        error={titleTouched && !!titleError}
+                        id="outlined-controlled"
+                        label="Title"
+                        value = {title}
+                        multiline
+                        maxRows={4}
+                        helperText={titleTouched ? titleError : ""}
+                        onChange={(e) => setTitle(e.target.value)}
+                        onBlur={() => {
+                            setTitleTouched(true);
+                            validateTitle();
+                        }}
+                        />
+                        <FormControl sx={{ m: 1, width: 300 }}>
+                            <InputLabel id="category-chip-label">Category</InputLabel>
+                            <Select
+                                labelId='category-chip-label'
+                                id='category-chip'
+                                value={selectedCategory?.toString() || ''}
+                                onChange={handleCategoryChange}
+                                input={<OutlinedInput id='select-chip' label='Category' />}
+                                renderValue={(selected) => (
+                                    <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5 }}>
+                                        <Chip key={selected} label={categories.find(c => c.categoryId.toString() === selected)?.name} />
+                                    </Box>
+                                )}
+                                MenuProps={MenuProps}
+                            >
+                                {categories.map((category: Category) => (
+                                    <MenuItem
+                                        key={category.categoryId}
+                                        value={category.categoryId.toString()}
                                     >
-                                        {categories.map((category: Category) => (
-                                            <MenuItem
-                                                key={category.categoryId}
-                                                value={category.categoryId.toString()}
-                                            >
-                                                {category.name}
-                                            </MenuItem>
-                                        ))}
-                                    </Select>
-                                </FormControl>
-                                <div>
-                                    <TextField
-                                        id="outlined-multiline-flexible"
-                                        label="Description"
-                                        multiline
-                                        maxRows={4}
-                                        value={description}
-                                        onChange={(event) => setDescription(event.target.value)}
-                                    />
-                                </div>
-                            </div>  
+                                        {category.name}
+                                    </MenuItem>
+                                ))}
+                            </Select>
+                        </FormControl>
+                        <div>
+                        <TextField
+                            error={descriptionTouched && !!descriptionError}
+                            id="outlined-description"
+                            label="Description"
+                            value={description}
+                            multiline
+                            rows={4}
+                            helperText={descriptionTouched ? descriptionError : ""}
+                            onChange={(e) => setDescription(e.target.value)}
+                                onBlur={() => {
+                                    setDescriptionTouched(true);
+                                    validateDescription();
+                                }}
+                            />
+                        </div>
+                        </div>  
                             <Button type="submit" variant="outlined">Update Petition</Button> 
                         </Box>
                     <body>
@@ -340,7 +474,41 @@ const Manage = () => {
                             alt={petition.title} className='petition-img'
                         />
                     </body>
-                    <button type="button" onClick={(event) => deletePetition(event, petition)}>Delete Petition</button>
+                    <Button type="button" onClick={(event) => deletePetition(event, petition)}>Delete Petition</Button>
+                </div>
+                <div className='support-container'>
+                    <h4>Your support Tiers: </h4>
+                    <body>*Tiers with supporters cannot be edited</body>
+                    <h4></h4>
+                    {displaySupportTiers()}
+                </div>
+                <div className='support-container'>
+                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1, m: 1 }}>
+                        <h6>Information for support tier</h6>
+                        <TextField
+                            label={'Title'}
+                            value={supportTier.title}
+                            onChange={(e) => setSupportTier({ ...supportTier, title: e.target.value })}
+                        />
+                        <TextField
+                            label={'Description'}
+                            value={supportTier.description}
+                            onChange={(e) => setSupportTier({ ...supportTier, description: e.target.value })}
+                        />
+                        <TextField
+                            label={'Cost'}
+                            type="number"
+                            value={supportTier.cost}
+                            onChange={(e) => setSupportTier({ ...supportTier, cost: Number(e.target.value) })}
+                        />
+                        <Button
+                                type="button"
+                                onClick={(event) => addSupportTier(event)}
+                                disabled={petition.supportTiers.length >= 3}
+                            >
+                                {petition.supportTiers.length >= 3 ? "Cannot add more tiers" : "Add Tier"}
+                            </Button>
+                    </Box>
                 </div>
             </div>
         )
