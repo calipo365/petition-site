@@ -109,8 +109,6 @@ const Profile = () => {
                 setFirstName(response.data.firstName);
                 setLastName(response.data.lastName);
                 setEmail(response.data.email);
-                console.log("Reponse: ", response)
-                console.log("Email: ", email)
             }, (error) => {
                 setErrorFlag(true);
                 setErrorMessage(error.toString());
@@ -210,7 +208,6 @@ const Profile = () => {
     };
 
     const validateFirstName = () => {
-        console.log("First name: ", firstName)
         if (firstName === "") {
             setFirstNameError("First name is required.");
         } else {
@@ -219,7 +216,6 @@ const Profile = () => {
     };
 
     const validateLastName = () => {
-        console.log("Last name: ", lastName)
         if (lastName === "") {
             setLastNameError("Last name is required.");
         } else {
@@ -228,7 +224,6 @@ const Profile = () => {
     };
 
     const validateEmail = () => {
-        console.log("Email: ", email)
         if (email === "") {
             setEmailError("Email is required.");
         } else {
@@ -280,7 +275,6 @@ const Profile = () => {
             setPasswordError("Both fields are required.");
             return;
         }
-        console.log("Checked for both elements")
 
         const passwordData = {
             currentPassword,
@@ -312,7 +306,6 @@ const Profile = () => {
     };
 
     const signOut = (event: React.FormEvent<HTMLFormElement>) => {
-        console.log("Token: ", token)
         event.preventDefault();
         axios.post('http://localhost:4941/api/v1/users/logout', {}, {
             headers: {

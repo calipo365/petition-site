@@ -63,7 +63,8 @@ const Manage = () => {
                 setErrorMessage("")
                 setPetition(response.data)
                 setTitle(response.data.title)
-                 setDescription(response.data.description)
+                setDescription(response.data.description)
+                setSelectedCategory(response.data.categoryId)
             }, (error) => {
                 setErrorFlag(true)
                 setErrorMessage(error.toString())
@@ -196,7 +197,7 @@ const Manage = () => {
         event.preventDefault();
         validateTitle();
         validateDescription();
-
+        
         if ( titleError || descriptionError ) {
             return;
         }
@@ -207,12 +208,15 @@ const Manage = () => {
             return;
         }
 
+        const categoryId = selectedCategory
+
         const PetitionData = {
             title,
-            description
+            description, 
+            categoryId
         };
 
-        axios.patch(`http://localhost:4941/api/v1/petition/${id}`, PetitionData, {
+        axios.patch(`http://localhost:4941/api/v1/petitions/${id}`, PetitionData, {
             headers: {
                 'X-Authorization': token
             }
