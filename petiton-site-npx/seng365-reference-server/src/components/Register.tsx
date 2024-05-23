@@ -83,8 +83,10 @@ const Register = () => {
         axios.post('http://localhost:4941/api/v1/users/register', { "firstName": firstName, "lastName": lastName, "email": email, "password": password })
             .then((response) => {
                 axios.post('http://localhost:4941/api/v1/users/login', { "email": email, "password": password })
-                localStorage.setItem('authToken', response.data.token);
-                localStorage.setItem('userId', response.data.userId);
+                .then((response2) => {
+                    localStorage.setItem('authToken', response2.data.token);
+                    localStorage.setItem('userId', response2.data.userId);
+                })
                 navigate("/")
             }, (error) => {
                 console.error('Registration failed', error.response)
