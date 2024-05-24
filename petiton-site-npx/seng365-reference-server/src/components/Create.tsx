@@ -230,7 +230,7 @@ const Create = () => {
     const status = () => {
         if (!token) {
             return (
-                <header className="header">
+                    <header className="header">
                     <div className="logo" onClick={() => navigate(`/`)}>Petition Pledge</div>
                     <nav className="nav-links">
                         <a href="/users/register">Register</a>
@@ -285,143 +285,157 @@ const Create = () => {
                 <Link to={"/"}> Back to Petitions</Link>
             </div>
         )
-    } else {
-        return (
-            <div>
-                {status()}
-                <div>
-                    <h2> Create your own petition </h2>
-                    <Box
-                        component="form"
-                        sx={{
-                            '& .MuiTextField-root': { m: 1, width: '25ch' },
-                        }}
-                        noValidate
-                        autoComplete="off"
-                        onSubmit={handleSubmit}
-                    >
+        } else {
+            if (!token) {
+                return (
                     <div>
-                    <TextField
-                        error={titleTouched && !!titleError}
-                        id="outlined-title"
-                        label="Title"
-                        multiline
-                        maxRows={4}
-                        helperText={titleTouched ? titleError : ""}
-                        onChange={(e) => setTitle(e.target.value)}
-                        onBlur={() => {
-                            setTitleTouched(true);
-                            validateTitle();
-                        }}
-                        />
-                        <FormControl sx={{ m: 1, width: 300 }}>
-                        <InputLabel id="category-chip-label">Category</InputLabel>
-                        <Select
-                            labelId='category-chip-label'
-                            id='category-chip'
-                            value={selectedCategory?.toString() || ''}
-                            onChange={handleCategoryChange}
-                            input={<OutlinedInput id='select-chip' label='Category' />}
-                            renderValue={(selected) => (
-                                <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5 }}>
-                                    <Chip key={selected} label={categories.find(c => c.categoryId.toString() === selected)?.name} />
-                                </Box>
-                            )}
-                            MenuProps={MenuProps}
-                        >
-                            {categories.map((category: Category) => (
-                                <MenuItem
-                                    key={category.categoryId}
-                                    value={category.categoryId.toString()}
-                                    style={getStyles(category.name, [selectedCategory?.toString() || ''], theme)}
-                                >
-                                    {category.name}
-                                </MenuItem>
-                            ))}
-                        </Select>
-                    </FormControl>
-                    </div>
-                    <div>
-                    <TextField
-                        error={descriptionTouched && !!descriptionError}
-                        id="outlined-description"
-                        label="Description"
-                        multiline
-                        maxRows={4}
-                        helperText={descriptionTouched ? descriptionError : ""}
-                        onChange={(e) => setDescription(e.target.value)}
-                            onBlur={() => {
-                                setDescriptionTouched(true);
-                                validateDescription();
-                            }}
-                        />
-                    </div>
-                    <div>
-                        <FormControl sx ={{ m: 1, width: 100 }}>
-                            <InputLabel id ="num-support-tiers-label">Support Tiers</InputLabel>
-                            <Select 
-                                labelId="num-support-tiers"
-                                value={numSupportTiers}
-                                onChange={(e) => {
-                                    const value = Number(e.target.value);
-                                    setNumSupportTiers(value);
-                                    setSupportTiers(Array(value).fill({ title: '', description: '', cost: 0 }));
-                                }}
-                                input={<OutlinedInput label="Support Tiers" />}
-                            >
-                                {[1, 2, 3].map((number) => (
-                                    <MenuItem key={number} value={number}>
-                                        {number}
-                                    </MenuItem>
-                                ))}
-                            </Select>
-                        </FormControl>
+                        {status()}
                         <div>
-                            {supportTiers.map((tier, index) => (
-                                <Box key={index} sx={{ display: 'flex', flexDirection: 'column', gap: 1, m: 1 }}>
-                                    <h6>Information for support tier {index + 1} </h6>
-                                    <TextField
-                                        label={'Title'}
-                                        value={tier.title}
+                            <h2> Cannot make petition</h2>
+                                <h6>You must be signed into an account to create a petition</h6>
+                                <Link to={'/users/login'}>Login here</Link> or 
+                                <Link to={'/users/register'}> Register here</Link>
+                            </div>
+                    </div>
+                )
+            } else {
+                return (
+                    <div>
+                        {status()}
+                        <div>
+                            <h2> Create your own petition </h2>
+                            <Box
+                                component="form"
+                                sx={{
+                                    '& .MuiTextField-root': { m: 1, width: '25ch' },
+                                }}
+                                noValidate
+                                autoComplete="off"
+                                onSubmit={handleSubmit}
+                            >
+                            <div>
+                            <TextField
+                                error={titleTouched && !!titleError}
+                                id="outlined-title"
+                                label="Title"
+                                multiline
+                                maxRows={4}
+                                helperText={titleTouched ? titleError : ""}
+                                onChange={(e) => setTitle(e.target.value)}
+                                onBlur={() => {
+                                    setTitleTouched(true);
+                                    validateTitle();
+                                }}
+                                />
+                                <FormControl sx={{ m: 1, width: 300 }}>
+                                <InputLabel id="category-chip-label">Category</InputLabel>
+                                <Select
+                                    labelId='category-chip-label'
+                                    id='category-chip'
+                                    value={selectedCategory?.toString() || ''}
+                                    onChange={handleCategoryChange}
+                                    input={<OutlinedInput id='select-chip' label='Category' />}
+                                    renderValue={(selected) => (
+                                        <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5 }}>
+                                            <Chip key={selected} label={categories.find(c => c.categoryId.toString() === selected)?.name} />
+                                        </Box>
+                                    )}
+                                    MenuProps={MenuProps}
+                                >
+                                    {categories.map((category: Category) => (
+                                        <MenuItem
+                                            key={category.categoryId}
+                                            value={category.categoryId.toString()}
+                                            style={getStyles(category.name, [selectedCategory?.toString() || ''], theme)}
+                                        >
+                                            {category.name}
+                                        </MenuItem>
+                                    ))}
+                                </Select>
+                            </FormControl>
+                            </div>
+                            <div>
+                            <TextField
+                                error={descriptionTouched && !!descriptionError}
+                                id="outlined-description"
+                                label="Description"
+                                multiline
+                                maxRows={4}
+                                helperText={descriptionTouched ? descriptionError : ""}
+                                onChange={(e) => setDescription(e.target.value)}
+                                    onBlur={() => {
+                                        setDescriptionTouched(true);
+                                        validateDescription();
+                                    }}
+                                />
+                            </div>
+                            <div>
+                                <FormControl sx ={{ m: 1, width: 100 }}>
+                                    <InputLabel id ="num-support-tiers-label">Support Tiers</InputLabel>
+                                    <Select 
+                                        labelId="num-support-tiers"
+                                        value={numSupportTiers}
                                         onChange={(e) => {
-                                            const newTiers = [...supportTiers];
-                                            newTiers[index].title = e.target.value;
-                                            setSupportTiers(newTiers);
+                                            const value = Number(e.target.value);
+                                            setNumSupportTiers(value);
+                                            setSupportTiers(Array(value).fill({ title: '', description: '', cost: 0 }));
                                         }}
-                                    />
-                                    <TextField
-                                        label={'Description'}
-                                        value={tier.description}
-                                        onChange={(e) => {
-                                            const newTiers = [...supportTiers];
-                                            newTiers[index].description = e.target.value;
-                                            setSupportTiers(newTiers);
-                                        }}
-                                    />
-                                    <TextField
-                                        label={'Cost'}
-                                        value={tier.cost}
-                                        onChange={(e) => {
-                                            const newTiers = [...supportTiers];
-                                            newTiers[index].cost = Number(e.target.value);
-                                            setSupportTiers(newTiers);
-                                        }}
-                                    />
-                                </Box>
-                            ))}
+                                        input={<OutlinedInput label="Support Tiers" />}
+                                    >
+                                        {[1, 2, 3].map((number) => (
+                                            <MenuItem key={number} value={number}>
+                                                {number}
+                                            </MenuItem>
+                                        ))}
+                                    </Select>
+                                </FormControl>
+                                <div>
+                                    {supportTiers.map((tier, index) => (
+                                        <Box key={index} sx={{ display: 'flex', flexDirection: 'column', gap: 1, m: 1 }}>
+                                            <h6>Information for support tier {index + 1} </h6>
+                                            <TextField
+                                                label={'Title'}
+                                                value={tier.title}
+                                                onChange={(e) => {
+                                                    const newTiers = [...supportTiers];
+                                                    newTiers[index].title = e.target.value;
+                                                    setSupportTiers(newTiers);
+                                                }}
+                                            />
+                                            <TextField
+                                                label={'Description'}
+                                                value={tier.description}
+                                                onChange={(e) => {
+                                                    const newTiers = [...supportTiers];
+                                                    newTiers[index].description = e.target.value;
+                                                    setSupportTiers(newTiers);
+                                                }}
+                                            />
+                                            <TextField
+                                                label={'Cost'}
+                                                value={tier.cost}
+                                                onChange={(e) => {
+                                                    const newTiers = [...supportTiers];
+                                                    newTiers[index].cost = Number(e.target.value);
+                                                    setSupportTiers(newTiers);
+                                                }}
+                                            />
+                                        </Box>
+                                    ))}
+                                </div>
+                            </div>
+                            <div>
+                                <h6> Add your petition image: </h6>
+                                Update or delete your profile picture:
+                                <input type="file" onChange={handleImageChange}/>
+                            </div>
+                            <Button type="submit" variant="outlined">Sumbit</Button>
+                            </Box>
                         </div>
                     </div>
-                    <div>
-                        <h6> Add your petition image: </h6>
-                        Update or delete your profile picture:
-                        <input type="file" onChange={handleImageChange}/>
-                    </div>
-                    <Button type="submit" variant="outlined">Sumbit</Button>
-                    </Box>
-                </div>
-            </div>
-        )
-    }
+                )
+            }
+        }
     
 }
 
