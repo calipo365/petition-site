@@ -88,74 +88,6 @@ const Login = () => {
         window.location.reload(); 
     }
 
-    const signOut = (event: React.FormEvent<HTMLFormElement>) => {
-        event.preventDefault();
-        axios.post('http://localhost:4941/api/v1/users/logout', {}, {
-            headers: {
-                'X-Authorization': token
-            }
-        })
-        .then((response) => {
-            console.log("Reponse: ", response)
-            if (response.status === 200) {
-                localStorage.removeItem('authToken');
-                localStorage.removeItem('userId');
-                navigate('/');
-            }
-        }, (error) => {
-            setErrorFlag(true);
-            setErrorMessage(error.toString())
-        });
-    }
-
-    const status = () => {
-        if (!token) {
-            return (
-                <header className="header">
-                    <div className="logo" onClick={() => navigate(`/`)}>Petition Pledge</div>
-                    <nav className="nav-links">
-                        <a href="/users/register">Register</a>
-                        <a href="/users/login">Login</a>
-                    </nav>
-                </header>
-            )
-        } else {
-            return(
-                <header className="header">
-                    <div className="logo" onClick={() => navigate(`/`)}>Petition Pledge</div>
-                    <nav className="nav-links">
-                        <a href="/profile">Profile</a>
-                        <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#signoutModal">
-                            Log out
-                        </button>
-                            <div className='modal fade' id='signoutModal' tabIndex={-1} role="dialog"
-                                aria-labelledby="signoutModalLabel" aria-hiddden="true">
-                                    <div className="modal-dialog" role="document">
-                                        <div className="modal-content">
-                                            <div className="modal-header">
-                                                <h5 className='modal-title' id='usignoutModalLabel'>Sign out</h5>
-                                                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div className='modal-footer'>
-                                                Are you sure you want to sign out?
-                                                <form onSubmit={(e) => signOut(e)} onClick={ refreshPage }>
-                                                    <input type="submit" value="Submit" />
-                                                </form>
-                                                <button type="button" className="btn btn-secondary" data-dismiss="modal">
-                                                    Close
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                    </nav>
-                </header>
-            )
-        }
-    }
-
     if (errorFlag) {
         return (
             <div>
@@ -170,7 +102,13 @@ const Login = () => {
     } else {
         return (
             <div>
-                {status()}
+                <header className="header">
+                    <div className="logo" onClick={() => navigate(`/`)}>Petition Pledge</div>
+                    <nav className="nav-links">
+                        <a href="/users/register">Register</a>
+                        <a href="/users/login">Login</a>
+                    </nav>
+                </header>
                 <h2> Log in </h2>
                 <h6> Don't have an account? <Link to={'/users/register'}>Register here.</Link></h6>
                 <Box

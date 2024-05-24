@@ -214,6 +214,7 @@ const Petitions = () => {
                 localStorage.removeItem('authToken');
                 localStorage.removeItem('userId');
                 navigate('/');
+                refreshPage()
             }
         }, (error) => {
             setErrorFlag(true);
@@ -297,7 +298,7 @@ const Petitions = () => {
                                             </div>
                                             <div className='modal-footer'>
                                                 Are you sure you want to sign out?
-                                                <form onSubmit={(e) => signOut(e)} onClick={ refreshPage }>
+                                                <form onSubmit={(e) => signOut(e)}>
                                                     <input type="submit" value="Submit" />
                                                 </form>
                                                 <button type="button" className="btn btn-secondary" data-dismiss="modal">

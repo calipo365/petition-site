@@ -2,7 +2,6 @@ import axios from 'axios';
 import React from 'react';
 import {Link, useNavigate, useParams} from 'react-router-dom';
 import './Petition.css';
-import './Petitions.css';
 import Avatar from '@mui/material/Avatar';
 import { pink } from '@mui/material/colors';
 import { Button, TextField } from '@mui/material';
@@ -165,7 +164,7 @@ const Petition = () => {
                     <p>{tierTitle}</p>
                     <p>{item.message}</p>
                     <p>{new Date(item.timestamp).toLocaleDateString()}</p>
-                    <p className='owner-info'>
+                    <p className='owner-image'>
                         <OwnerImageOrAvatar ownerId={item.supporterId} ownerFirstName={item.supporterFirstName} ownerLastName={item.supporterLastName} />
                     </p>
                 </div>
@@ -246,11 +245,10 @@ const Petition = () => {
         })
         .then((response) => {
             console.log("Reponse: ", response)
-            if (response.status === 200) {
-                localStorage.removeItem('authToken');
-                localStorage.removeItem('userId');
-                navigate('/');
-            }
+            localStorage.removeItem('authToken');
+            localStorage.removeItem('userId');
+            navigate('/');
+            refreshPage()
         }, (error) => {
             setErrorFlag(true);
             setErrorMessage(error.toString())
@@ -321,7 +319,7 @@ const Petition = () => {
                                             </div>
                                             <div className='modal-footer'>
                                                 Are you sure you want to sign out?
-                                                <form onSubmit={(e) => signOut(e)} onClick={ refreshPage }>
+                                                <form onSubmit={(e) => signOut(e)} >
                                                     <input type="submit" value="Submit" />
                                                 </form>
                                                 <button type="button" className="btn btn-secondary" data-dismiss="modal">
