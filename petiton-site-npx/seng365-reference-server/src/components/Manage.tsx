@@ -292,6 +292,10 @@ const Manage = () => {
         });
     }
 
+    function refreshPage(){ 
+        window.location.reload(); 
+    }
+
     const status = () => {
         if (!token) {
             return (
@@ -324,7 +328,7 @@ const Manage = () => {
                                             </div>
                                             <div className='modal-footer'>
                                                 Are you sure you want to sign out?
-                                                <form onSubmit={(e) => signOut(e)}>
+                                                <form onSubmit={(e) => signOut(e)} onClick={ refreshPage }>
                                                     <input type="submit" value="Submit" />
                                                 </form>
                                                 <button type="button" className="btn btn-secondary" data-dismiss="modal">
