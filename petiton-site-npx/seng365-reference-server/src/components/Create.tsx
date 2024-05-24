@@ -42,7 +42,7 @@ const Create = () => {
 
     const [errorFlag, setErrorFlag] = React.useState(false)
     const [errorMessage, setErrorMessage] = React.useState(" ")
-    const [petition, setPetition] = React.useState<Petition>({petitionId: 0, title: "", description: "", creationDate: new Date(), image_filename: "",ownerId: 0, ownerFirstName: "", numberOfSupporters: 0, moneyRaised: 0, ownerLastName: "", categoryId: 0, supportingCost: 0, supportTiers: []})
+    const [petitionId, setPetitionId] = React.useState(0)
     const [petitions, setPetitions] = React.useState<Petition[]>([]);
     const [categories, setCategories] = React.useState<Category[]>([]);
     const [selectedCategory, setSelectedCategory] = React.useState<number | null>(null);
@@ -52,6 +52,7 @@ const Create = () => {
     const [numSupportTiers, setNumSupportTiers] = React.useState(0);
     const [supportTiers, setSupportTiers] = React.useState<Array<{ title: string; description: string; cost: number }>>([]);
     const [image, setImage] = React.useState("")
+    const [file, setFile] = React.useState<File | null>(null);
 
     const [titleError, setTitleError]= React.useState("")
     const [descriptionError, setDescriptionError] = React.useState("")
@@ -152,7 +153,27 @@ const Create = () => {
         .then((response) => {
             console.log("Petition posted successfully", response.data)
             navigate("/")
-            setPetition(response.data)
+            setPetitionId(response.data.petitionId)
+            console.log("Response Id: ", response.data.petitionId)
+            if (file != null) {
+                console.log("Yes file!")
+                console.log("Id: ", petitionId)
+                axios.put(`http://localhost:4941/api/v1/petitions/${response.data.petitionId}/image`, file, {
+                    headers: {
+                        'X-Authorization': token,
+                        'Content-Type': file.type
+                    }
+                })
+                .then((response) => {
+                    console.log("Added image")
+                    refreshPage()
+                }, (error) => {
+                    setErrorFlag(true);
+                    setErrorMessage(error.toString())
+                    console.log("Error: ", error.toString())
+                    console.log("Failed to add/update picture")
+                })
+            }
         }, (error) => {
             console.error('Petition failed to post', error.response)
             setErrorFlag(true);
@@ -179,22 +200,9 @@ const Create = () => {
     }
 
     const handleImageChange: React.ChangeEventHandler<HTMLInputElement> = async (event) => {
-        const file = event.target.files ? event.target.files[0] : null;
-        if (file) {
-            await axios.put(`http://localhost:4941/api/v1/petitions/${petition.petitionId}/image`, file, {
-                headers: {
-                    'X-Authorization': token,
-                    'Content-Type': file.type
-                }
-            })
-            .then((response) => {
-            }, (error) => {
-                setErrorFlag(true);
-                setErrorMessage(error.toString())
-                console.log("Error: ", error.toString())
-                console.log("Failed to add/update picture")
-            });
-        }
+        const fileHere = event.target.files ? event.target.files[0] : null;
+        console.log('File: ', fileHere)
+        setFile(fileHere)
     }
 
     const signOut = (event: React.FormEvent<HTMLFormElement>) => {
@@ -409,7 +417,7 @@ const Create = () => {
                     <div>
                         <h6> Add your petition image: </h6>
                         Update or delete your profile picture:
-                        <input type="file" onSubmit={handleImageChange}/>
+                        <input type="file" onChange={handleImageChange}/>
                     </div>
                     <Button type="submit" variant="outlined">Sumbit</Button>
                     </Box>

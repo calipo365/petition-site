@@ -55,7 +55,7 @@ const Register = () => {
     const validateEmail = () => {
         const emailRegex = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
         if (!emailRegex.test(email)) {
-            setEmailError("Invalid email format.");
+            setEmailError("Invalid email format. (Capitals also not accepted)");
         } else {
             setEmailError("");
         }
