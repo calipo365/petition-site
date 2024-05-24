@@ -13,6 +13,7 @@ import InputLabel from '@mui/material/InputLabel';
 import Stack from '@mui/material/Stack';
 import { pink } from '@mui/material/colors';
 import SvgIcon, { SvgIconProps } from '@mui/material/SvgIcon';
+import Petition from './Petition';
 
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
@@ -41,6 +42,7 @@ const Create = () => {
 
     const [errorFlag, setErrorFlag] = React.useState(false)
     const [errorMessage, setErrorMessage] = React.useState(" ")
+    const [petition, setPetition] = React.useState<Petition>({petitionId: 0, title: "", description: "", creationDate: new Date(), image_filename: "",ownerId: 0, ownerFirstName: "", numberOfSupporters: 0, moneyRaised: 0, ownerLastName: "", categoryId: 0, supportingCost: 0, supportTiers: []})
     const [petitions, setPetitions] = React.useState<Petition[]>([]);
     const [categories, setCategories] = React.useState<Category[]>([]);
     const [selectedCategory, setSelectedCategory] = React.useState<number | null>(null);
@@ -150,6 +152,7 @@ const Create = () => {
         .then((response) => {
             console.log("Petition posted successfully", response.data)
             navigate("/")
+            setPetition(response.data)
         }, (error) => {
             console.error('Petition failed to post', error.response)
             setErrorFlag(true);
@@ -173,6 +176,25 @@ const Create = () => {
             <path d="M12 12.25c1.24 0 2.25-1.01 2.25-2.25S13.24 7.75 12 7.75 9.75 8.76 9.75 10s1.01 2.25 2.25 2.25m4.5 4c0-1.5-3-2.25-4.5-2.25s-4.5.75-4.5 2.25V17h9zM19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m0 16H5V5h14z" />
           </SvgIcon>
         );
+    }
+
+    const handleImageChange: React.ChangeEventHandler<HTMLInputElement> = async (event) => {
+        const file = event.target.files ? event.target.files[0] : null;
+        if (file) {
+            await axios.put(`http://localhost:4941/api/v1/petitions/${petition.petitionId}/image`, file, {
+                headers: {
+                    'X-Authorization': token,
+                    'Content-Type': file.type
+                }
+            })
+            .then((response) => {
+            }, (error) => {
+                setErrorFlag(true);
+                setErrorMessage(error.toString())
+                console.log("Error: ", error.toString())
+                console.log("Failed to add/update picture")
+            });
+        }
     }
 
     const signOut = (event: React.FormEvent<HTMLFormElement>) => {
@@ -381,9 +403,8 @@ const Create = () => {
                     </div>
                     <div>
                         <h6> Add your petition image: </h6>
-                        <Stack alignItems="center">
-                            <PortraitIcon sx={{ color: pink[200], fontSize: 60 }} />
-                        </Stack>
+                        Update or delete your profile picture:
+                        <input type="file" onSubmit={handleImageChange}/>
                     </div>
                     <Button type="submit" variant="outlined">Sumbit</Button>
                     </Box>

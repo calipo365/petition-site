@@ -84,6 +84,10 @@ const Login = () => {
         );
     }
 
+    function refreshPage(){ 
+        window.location.reload(); 
+    }
+
     const signOut = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         axios.post('http://localhost:4941/api/v1/users/logout', {}, {
@@ -158,6 +162,8 @@ const Login = () => {
                 <h2> Log in </h2>
                 <div style={{ color: "red" }}>
                     {errorMessage}
+                    <h1></h1>
+                    <Link to={'/users/login'} onClick={ refreshPage }>Try again</Link>
                 </div>
             </div>
         )

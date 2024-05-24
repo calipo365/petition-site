@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useEffect } from 'react';
+import React, { ChangeEventHandler, useEffect } from 'react';
 import './Profile.css';
 import { Link, useNavigate } from 'react-router-dom';
 import Box from '@mui/material/Box';
@@ -70,7 +70,6 @@ const Profile = () => {
     const [petitions, setPetitions] = React.useState<Petition[]>([]);
     const [myPetitions, setMyPetitions] = React.useState<Petition[]>([]);
     const [mySupportedPetitions, setMySupportedPetitions] = React.useState<Petition[]>([]);
-    const [image, setImage] = React.useState("");
     const token = localStorage.getItem('authToken'); 
     const userId = localStorage.getItem('userId');
 
@@ -324,6 +323,41 @@ const Profile = () => {
         });
     }
 
+    const handleImageChange: React.ChangeEventHandler<HTMLInputElement> = async (event) => {
+        const file = event.target.files ? event.target.files[0] : null;
+        if (file) {
+            await axios.put(`http://localhost:4941/api/v1/users/${userId}/image`, file, {
+                headers: {
+                    'X-Authorization': token,
+                    'Content-Type': file.type
+                }
+            })
+            .then((response) => {
+                navigate('/')
+            }, (error) => {
+                setErrorFlag(true);
+                setErrorMessage(error.toString())
+                console.log("Error: ", error.toString())
+                console.log("Failed to update picture")
+            });
+        }
+    }
+
+    const deleteImage = async () => {
+        await axios.delete(`http://localhost:4941/api/v1/users/${userId}/image`, {
+                headers: {
+                    'X-Authorization': token,
+                }
+            })
+            .then((response) => {
+                navigate('/')
+            }, (error) => {
+                setErrorFlag(true);
+                setErrorMessage(error.toString())
+                console.log("Failed to delete picture")
+            });
+    }
+
     const status = () => {
         if (!token) {
             return (
@@ -481,6 +515,9 @@ const Profile = () => {
                     <p className='owner-info'>
                         <LargeOwnerImageOrAvatar ownerId={Number(userId)} ownerFirstName={firstName} ownerLastName={lastName} />
                     </p>
+                    Update or delete your profile picture:
+                    <input type="file" onChange={handleImageChange} />
+                    <button type="button" onClick={() => deleteImage()}>Delete Profile Picture</button>
                     <div>
                         <h2 className='your-petitions'>Your petitions</h2>
                         <div className="petition-container">
