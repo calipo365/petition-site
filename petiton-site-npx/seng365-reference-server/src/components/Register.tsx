@@ -6,9 +6,6 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { FormControl, IconButton, InputAdornment, OutlinedInput } from '@mui/material';
 import InputLabel from '@mui/material/InputLabel';
-import PortraitIcon from '@mui/icons-material/Portrait';
-import Stack from '@mui/material/Stack';
-import { pink } from '@mui/material/colors';
 import SvgIcon, { SvgIconProps } from '@mui/material/SvgIcon';
 
 
@@ -82,9 +79,9 @@ const Register = () => {
         }
 
         axios.post('http://localhost:4941/api/v1/users/register', { "firstName": firstName, "lastName": lastName, "email": email, "password": password })
-            .then((response) => {
+            .then((response: any) => {
                 axios.post('http://localhost:4941/api/v1/users/login', { "email": email, "password": password })
-                .then((response2) => {
+                .then((response2: any) => {
                     localStorage.setItem('authToken', response2.data.token);
                     console.log("Set token: ", response2.data.token)
                     localStorage.setItem('userId', response2.data.userId);
@@ -95,10 +92,10 @@ const Register = () => {
                                 'Content-Type': file.type
                             }
                         })
-                        .then((response) => {
+                        .then((response: any) => {
                             console.log("Added image")
                             refreshPage()
-                        }, (error) => {
+                        }, (error: any) => {
                             setErrorFlag(true);
                             setErrorMessage(error.toString())
                             console.log("Error: ", error.toString())
@@ -108,7 +105,7 @@ const Register = () => {
                 })
                 navigate("/")
 
-            }, (error) => {
+            }, (error: any) => {
                 console.error('Registration failed', error.response)
                 setErrorFlag(true);
                 setErrorMessage(error.response.data.error || "Failed to register")

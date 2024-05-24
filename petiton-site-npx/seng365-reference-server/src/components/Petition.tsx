@@ -46,7 +46,7 @@ const OwnerImageOrAvatar: React.FC<OwnerImageOrAvatarProps> = ({ ownerId, ownerF
             <img
                 src={`http://localhost:4941/api/v1/users/${ownerId}/image`}
                 alt={`${ownerFirstName} ${ownerLastName}`}
-                className='small-image'
+                className='owner-img'
                 onError={handleImageError}
             />
         )
