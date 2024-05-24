@@ -154,10 +154,7 @@ const Create = () => {
             console.log("Petition posted successfully", response.data)
             navigate("/")
             setPetitionId(response.data.petitionId)
-            console.log("Response Id: ", response.data.petitionId)
             if (file != null) {
-                console.log("Yes file!")
-                console.log("Id: ", petitionId)
                 axios.put(`http://localhost:4941/api/v1/petitions/${response.data.petitionId}/image`, file, {
                     headers: {
                         'X-Authorization': token,
