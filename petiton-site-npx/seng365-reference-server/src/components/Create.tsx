@@ -13,6 +13,7 @@ import InputLabel from '@mui/material/InputLabel';
 import Stack from '@mui/material/Stack';
 import { pink } from '@mui/material/colors';
 import SvgIcon, { SvgIconProps } from '@mui/material/SvgIcon';
+import Petition from './Petition';
 
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
@@ -41,6 +42,7 @@ const Create = () => {
 
     const [errorFlag, setErrorFlag] = React.useState(false)
     const [errorMessage, setErrorMessage] = React.useState(" ")
+    const [petitionId, setPetitionId] = React.useState(0)
     const [petitions, setPetitions] = React.useState<Petition[]>([]);
     const [categories, setCategories] = React.useState<Category[]>([]);
     const [selectedCategory, setSelectedCategory] = React.useState<number | null>(null);
@@ -50,6 +52,7 @@ const Create = () => {
     const [numSupportTiers, setNumSupportTiers] = React.useState(0);
     const [supportTiers, setSupportTiers] = React.useState<Array<{ title: string; description: string; cost: number }>>([]);
     const [image, setImage] = React.useState("")
+    const [file, setFile] = React.useState<File | null>(null);
 
     const [titleError, setTitleError]= React.useState("")
     const [descriptionError, setDescriptionError] = React.useState("")
@@ -62,6 +65,9 @@ const Create = () => {
     const [categoryIdTouched, setCategoryIdTouched] = React.useState(false)
     const [supportTierTouched, setSupportTierTouched] =React.useState(false)
     const [imageTouched, setImageTouched] = React.useState(false)
+
+    const token = localStorage.getItem('authToken'); 
+    const userId = localStorage.getItem('userId');
 
     React.useEffect(() => {
         getPetitions()
@@ -147,6 +153,24 @@ const Create = () => {
         .then((response) => {
             console.log("Petition posted successfully", response.data)
             navigate("/")
+            setPetitionId(response.data.petitionId)
+            if (file != null) {
+                axios.put(`http://localhost:4941/api/v1/petitions/${response.data.petitionId}/image`, file, {
+                    headers: {
+                        'X-Authorization': token,
+                        'Content-Type': file.type
+                    }
+                })
+                .then((response) => {
+                    console.log("Added image")
+                    refreshPage()
+                }, (error) => {
+                    setErrorFlag(true);
+                    setErrorMessage(error.toString())
+                    console.log("Error: ", error.toString())
+                    console.log("Failed to add/update picture")
+                })
+            }
         }, (error) => {
             console.error('Petition failed to post', error.response)
             setErrorFlag(true);
@@ -172,6 +196,85 @@ const Create = () => {
         );
     }
 
+    const handleImageChange: React.ChangeEventHandler<HTMLInputElement> = async (event) => {
+        const fileHere = event.target.files ? event.target.files[0] : null;
+        console.log('File: ', fileHere)
+        setFile(fileHere)
+    }
+
+    const signOut = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        axios.post('http://localhost:4941/api/v1/users/logout', {}, {
+            headers: {
+                'X-Authorization': token
+            }
+        })
+        .then((response) => {
+            console.log("Reponse: ", response)
+            if (response.status === 200) {
+                localStorage.removeItem('authToken');
+                localStorage.removeItem('userId');
+                navigate('/');
+                refreshPage()
+            }
+        }, (error) => {
+            setErrorFlag(true);
+            setErrorMessage(error.toString())
+        });
+    }
+
+    function refreshPage(){ 
+        window.location.reload(); 
+    }
+
+    const status = () => {
+        if (!token) {
+            return (
+                <header className="header">
+                    <div className="logo" onClick={() => navigate(`/`)}>Petition Pledge</div>
+                    <nav className="nav-links">
+                        <a href="/users/register">Register</a>
+                        <a href="/users/login">Login</a>
+                    </nav>
+                </header>
+            )
+        } else {
+            return(
+                <header className="header">
+                    <div className="logo" onClick={() => navigate(`/`)}>Petition Pledge</div>
+                    <nav className="nav-links">
+                        <a href="/profile">Profile</a>
+                        <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#signoutModal">
+                            Log out
+                        </button>
+                            <div className='modal fade' id='signoutModal' tabIndex={-1} role="dialog"
+                                aria-labelledby="signoutModalLabel" aria-hiddden="true">
+                                    <div className="modal-dialog" role="document">
+                                        <div className="modal-content">
+                                            <div className="modal-header">
+                                                <h5 className='modal-title' id='usignoutModalLabel'>Sign out</h5>
+                                                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div className='modal-footer'>
+                                                Are you sure you want to sign out?
+                                                <form onSubmit={(e) => signOut(e)}>
+                                                    <input type="submit" value="Submit" />
+                                                </form>
+                                                <button type="button" className="btn btn-secondary" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    </nav>
+                </header>
+            )
+        }
+    }
+
     if (errorFlag) {
         return (
             <div>
@@ -185,6 +288,7 @@ const Create = () => {
     } else {
         return (
             <div>
+                {status()}
                 <div>
                     <h2> Create your own petition </h2>
                     <Box
@@ -309,9 +413,8 @@ const Create = () => {
                     </div>
                     <div>
                         <h6> Add your petition image: </h6>
-                        <Stack alignItems="center">
-                            <PortraitIcon sx={{ color: pink[200], fontSize: 60 }} />
-                        </Stack>
+                        Update or delete your profile picture:
+                        <input type="file" onChange={handleImageChange}/>
                     </div>
                     <Button type="submit" variant="outlined">Sumbit</Button>
                     </Box>

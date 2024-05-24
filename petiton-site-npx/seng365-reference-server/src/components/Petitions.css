@@ -83,14 +83,30 @@
 
 
 .make-button {
-    background-color: #172a2e;
-    border-color: #eb6bb6;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    display: flex;
+    gap: 1rem;
   }
+
+.make-button button {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #172a2e;
+    border-radius: 5px;
+}
+
+.make-button a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #172a2e;
+    border-radius: 5px;
+}
+
+.make-button a:hover {
+    background-color: #0e171a;
+}
+
 
 .filter-container {
     margin-top: 75px;

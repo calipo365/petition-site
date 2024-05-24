@@ -22,6 +22,10 @@ const Register = () => {
     const [lastName, setLastName] = React.useState("")
     const [email, setEmail] = React.useState("")
     const [password, setPassword] = React.useState("")
+    const [file, setFile] = React.useState<File | null>(null);
+
+    const token = localStorage.getItem('authToken'); 
+    const userId = localStorage.getItem('userId');
 
     const [firstNameError, setFirstNameError] = React.useState("")
     const [lastNameError, setLastNameError] = React.useState("")
@@ -52,7 +56,7 @@ const Register = () => {
     const validateEmail = () => {
         const emailRegex = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
         if (!emailRegex.test(email)) {
-            setEmailError("Invalid email format.");
+            setEmailError("Invalid email format. (Capitals also not accepted)");
         } else {
             setEmailError("");
         }
@@ -80,9 +84,30 @@ const Register = () => {
         axios.post('http://localhost:4941/api/v1/users/register', { "firstName": firstName, "lastName": lastName, "email": email, "password": password })
             .then((response) => {
                 axios.post('http://localhost:4941/api/v1/users/login', { "email": email, "password": password })
-                localStorage.setItem('authToken', response.data.token);
-                localStorage.setItem('userId', response.data.userId);
+                .then((response2) => {
+                    localStorage.setItem('authToken', response2.data.token);
+                    console.log("Set token: ", response2.data.token)
+                    localStorage.setItem('userId', response2.data.userId);
+                    if (file != null) {
+                        axios.put(`http://localhost:4941/api/v1/users/${response2.data.userId}/image`, file, {
+                            headers: {
+                                'X-Authorization': response2.data.token,
+                                'Content-Type': file.type
+                            }
+                        })
+                        .then((response) => {
+                            console.log("Added image")
+                            refreshPage()
+                        }, (error) => {
+                            setErrorFlag(true);
+                            setErrorMessage(error.toString())
+                            console.log("Error: ", error.toString())
+                            console.log("Failed to add/update picture")
+                        })
+                    }
+                })
                 navigate("/")
+
             }, (error) => {
                 console.error('Registration failed', error.response)
                 setErrorFlag(true);
@@ -103,12 +128,10 @@ const Register = () => {
         setPassword(event.target.value);
     }
 
-    function PortraitIcon(props: SvgIconProps) {
-        return (
-          <SvgIcon {...props}>
-            <path d="M12 12.25c1.24 0 2.25-1.01 2.25-2.25S13.24 7.75 12 7.75 9.75 8.76 9.75 10s1.01 2.25 2.25 2.25m4.5 4c0-1.5-3-2.25-4.5-2.25s-4.5.75-4.5 2.25V17h9zM19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m0 16H5V5h14z" />
-          </SvgIcon>
-        );
+    const handleImageChange: React.ChangeEventHandler<HTMLInputElement> = async (event) => {
+        const fileHere = event.target.files ? event.target.files[0] : null;
+        console.log('File: ', fileHere)
+        setFile(fileHere)
     }
 
     function VisiblityIcon(props: SvgIconProps) {
@@ -127,18 +150,31 @@ const Register = () => {
         );
     }
 
+    function refreshPage(){ 
+        window.location.reload(); 
+    }
+
     if (errorFlag) {
         return (
             <div>
                 <h2> Register as a new user </h2>
                 <div style={{ color: "red" }}>
                     {errorMessage}
+                    <h1></h1>
+                    <Link to={'/users/register'} onClick={ refreshPage }>Try again</Link>
                 </div>
             </div>
         )
     } else {
         return (
             <div>
+                <header className="header">
+                    <div className="logo" onClick={() => navigate(`/`)}>Petition Pledge</div>
+                    <nav className="nav-links">
+                        <a href="/users/register">Register</a>
+                        <a href="/users/login">Login</a>
+                    </nav>
+                </header>
                 <h2> Register as a new user </h2>
                 <h6> Already have an account? <Link to={'/users/login'}>Log in.</Link></h6>
                 <Box
@@ -220,9 +256,7 @@ const Register = () => {
                 <h1></h1>
                 <div>
                     <h6> Add a profile picture (optional): </h6>
-                    <Stack alignItems="center">
-                        <PortraitIcon sx={{ color: pink[200], fontSize: 60 }} />
-                    </Stack>
+                    <input type="file" onChange={handleImageChange}/>
                 </div>
                 <Button type="submit" variant="outlined">Register</Button>
                 </Box>

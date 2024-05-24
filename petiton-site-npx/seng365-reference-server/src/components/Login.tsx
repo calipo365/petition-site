@@ -23,6 +23,9 @@ const Login = () => {
     const [emailTouched, setEmailTouched] = React.useState(false);
     const [passwordTouched, setPasswordTouched] = React.useState(false);
 
+    const token = localStorage.getItem('authToken'); 
+    const userId = localStorage.getItem('userId');
+
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
@@ -51,7 +54,7 @@ const Login = () => {
     const validateEmail = () => {
         const emailRegex = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
         if (!emailRegex.test(email)) {
-            setEmailError("Invalid email format.");
+            setEmailError("Invalid email format. (Capitals also not accepted)");
         } else {
             setEmailError("");
         }
@@ -81,18 +84,31 @@ const Login = () => {
         );
     }
 
+    function refreshPage(){ 
+        window.location.reload(); 
+    }
+
     if (errorFlag) {
         return (
             <div>
                 <h2> Log in </h2>
                 <div style={{ color: "red" }}>
                     {errorMessage}
+                    <h1></h1>
+                    <Link to={'/users/login'} onClick={ refreshPage }>Try again</Link>
                 </div>
             </div>
         )
     } else {
         return (
             <div>
+                <header className="header">
+                    <div className="logo" onClick={() => navigate(`/`)}>Petition Pledge</div>
+                    <nav className="nav-links">
+                        <a href="/users/register">Register</a>
+                        <a href="/users/login">Login</a>
+                    </nav>
+                </header>
                 <h2> Log in </h2>
                 <h6> Don't have an account? <Link to={'/users/register'}>Register here.</Link></h6>
                 <Box
